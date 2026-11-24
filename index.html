@@ -3,259 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="RWDID and RWDID-C browser-based research dietary score calculator.">
+  <meta name="description" content="Browser-based calculator for the 15-component Risk-Weighted Dietary Index (RWDID) and its continuous companion score.">
   <meta name="theme-color" content="#ffffff">
-  <title>RWDID | Risk-Weighted Dietary Index Calculator</title>
+  <title>RWDID | Dietary Index Calculator</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/palette.js"></script>
   <script defer src="assets/scoring.js"></script>
   <script defer src="assets/app.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="#top"><span class="brand-mark">R</span><span>RWDID</span></a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#calculator">Calculator</a>
-        <a href="#methods">Scoring methods</a>
-        <a href="#analysis-code">Analysis code</a>
-        <a href="input-guide.html">Input guide</a>
-        <span class="local-pill"><i></i> Local processing</span>
-      </nav>
-    </div>
-  </header>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="RWDID home">
+      <span class="brand-mark">R</span><strong>RWDID</strong>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Calculator</a>
+      <a href="methods.html">Methods</a>
+      <a href="resources.html">Analysis code</a>
+      <a href="input-guide.html">Input guide</a>
+      <span class="local-pill"><i class="local-dot"></i> Local processing</span>
+    </nav>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-inner">
-        <span class="eyebrow">15-component dietary scoring framework</span>
-        <h1>RWDID</h1>
-        <p class="subhead">Risk-Weighted Dietary Index Calculator</p>
-        <p class="lead">
-          Calculate the binary β-weighted RWDID and the continuous equal-weight RWDID-C
-          from the study's 15-component dietary questionnaire. All calculations run locally
-          in your browser using the frozen research parameters.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#calculator">Start calculation</a>
-          <a class="btn btn-secondary" href="analysis_code/RWDID_complete_analysis.R" download>Download complete analysis code</a>
-        </div>
-        <div class="privacy-note">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-          Questionnaire responses are processed in this browser and are not uploaded by this website. Do not enter personal identifiers.
-        </div>
-        <div id="palette-warning" class="palette-warning" hidden>
-          <strong>Friendly13 palette asset not yet generated.</strong>
-          Before publishing, run <code>Rscript scripts/export_friendly13_palette.R</code> and commit the generated
-          <code>data/friendly13_palette.json</code>. No substitute palette is used.
-        </div>
-      </div>
-    </section>
+<div id="boot-state" class="boot-state">Loading calculator…</div>
 
-    <section class="what">
-      <div class="container">
-        <div class="section-kicker">What you need</div>
-        <h2 class="section-title">Three steps, two dietary scores</h2>
-        <p class="section-copy">The calculator applies the frozen 15-component scoring definitions. It does not refit the original Cox or RCS models.</p>
-        <div class="steps">
-          <article class="step-card">
-            <div class="step-num">1</div>
-            <h3>Complete the questionnaire</h3>
-            <p>Enter average daily intake for the 82 active questionnaire items across the 15 frozen dietary components.</p>
-          </article>
-          <article class="step-card">
-            <div class="step-num">2</div>
-            <h3>Apply frozen parameters</h3>
-            <p>Item responses are converted to portions per day using the Table S1 portion sizes and response encodings.</p>
-          </article>
-          <article class="step-card">
-            <div class="step-num">3</div>
-            <h3>Review both scores</h3>
-            <p>Obtain binary β-weighted RWDID, continuous RWDID-C, and component-level scoring details.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="calculator" class="assessment">
-      <div class="container">
-        <div class="assessment-head">
-          <div class="section-kicker">Personal dietary assessment</div>
-          <h2 class="section-title">Enter dietary intake</h2>
-          <p class="section-copy">
-            Enter the average amount consumed on a typical day. The original UK Biobank dietary
-            questions refer to the previous 24 hours; the research pipeline used available repeated
-            dietary-recall instances. See the input guide for response and portion details.
-          </p>
-        </div>
-
-        <div class="progress-panel">
-          <div class="progress-copy">
-            <strong id="progress-count">0 / 15 food groups completed</strong>
-            <div class="progress-track"><span id="progress-fill"></span></div>
-            <small id="progress-hint">Complete every food group or explicitly confirm no intake.</small>
-          </div>
-          <strong id="progress-percent" class="progress-percent">0%</strong>
-        </div>
-
-        <div class="assessment-grid">
-          <div class="questionnaire-column">
-            <div id="questionnaire-container">
-              <div class="loading-panel">Loading the frozen questionnaire and score parameters…</div>
-            </div>
-            <div class="form-actions">
-              <p id="form-status" class="status-text">Complete every food group to calculate both scores.</p>
-              <div class="action-buttons">
-                <button id="calculate-button" class="btn btn-primary" type="button" disabled>Calculate RWDID and RWDID-C</button>
-                <button id="reset-button" class="btn btn-secondary" type="button">Reset inputs</button>
-              </div>
-            </div>
-          </div>
-
-          <aside id="results-panel" class="panel result-panel" hidden aria-live="polite">
-            <div class="panel-head">
-              <span class="small">Calculated scores</span>
-              <h3>Your dietary score results</h3>
-              <p>Research indices calculated from the completed 15-component questionnaire.</p>
-            </div>
-            <div class="score-cards">
-              <article class="score-card score-card-a">
-                <span class="score-label">Binary β-weighted RWDID</span>
-                <strong id="rwdid-value">—</strong>
-                <small>Scale 0–1</small>
-                <div class="score-bar"><i id="rwdid-bar"></i></div>
-              </article>
-              <article class="score-card score-card-b">
-                <span class="score-label">Continuous equal-weight RWDID-C</span>
-                <strong id="rwdidc-value">—</strong>
-                <small>Scale 0–15</small>
-                <div class="score-bar"><i id="rwdidc-bar"></i></div>
-              </article>
-            </div>
-            <div class="result-note">
-              These are research dietary indices, not clinical risk predictions, diagnoses, or individual treatment recommendations.
-            </div>
-            <div class="table-wrap">
-              <table class="result-table">
-                <thead><tr><th>Component</th><th>Intake/day</th><th>Binary</th><th>β</th><th>Weight</th><th>RWDID-C</th></tr></thead>
-                <tbody id="component-results-body"></tbody>
-              </table>
-            </div>
-            <div class="result-actions">
-              <button id="download-results" class="btn btn-primary wide" type="button">Download result CSV</button>
-              <button id="print-results" class="btn btn-secondary wide" type="button">Print results</button>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section id="methods" class="methods-section">
-      <div class="container">
-        <div class="section-kicker">Scoring framework</div>
-        <h2 class="section-title">How the two scores are calculated</h2>
-        <p class="section-copy">The browser uses the frozen component-specific intake rules, training-derived β coefficients, and continuous scoring parameters supplied with this repository.</p>
-
-        <div class="method-grid">
-          <article class="method-card">
-            <span class="method-kicker">Primary binary score</span>
-            <h3>RWDID</h3>
-            <div class="formula">RWDID = Σ(S<sub>i</sub> × β<sub>i</sub>) / Σβ<sub>i</sub></div>
-            <p>Each component is scored 0 or 1 according to its frozen intake interval. The 15 binary indicators are combined using the mutually adjusted training-cohort Model 3 Cox coefficients.</p>
-            <ul><li>15 binary components</li><li>Training-derived β weights</li><li>Score range: 0–1</li><li>No imputation</li></ul>
-          </article>
-          <article class="method-card">
-            <span class="method-kicker">Continuous complementary score</span>
-            <h3>RWDID-C</h3>
-            <div class="formula">RWDID-C = Σ C<sub>i</sub></div>
-            <p>Each component is mapped to a continuous proportional score from 0 to 1 using its frozen target interval and training P1–P99 support. The 15 component scores are summed with equal weights.</p>
-            <ul><li>15 continuous components</li><li>Training-only P1–P99 support</li><li>Score range: 0–15</li><li>No imputation</li></ul>
-          </article>
-        </div>
-
-        <div class="section-subhead">Frozen component-specific parameters</div>
-        <div class="table-wrap">
-          <table class="parameter-table">
-            <thead><tr><th>Component</th><th>Binary interval</th><th>Training β</th><th>Normalised weight</th><th>RWDID-C target</th><th>Training P1–P99</th></tr></thead>
-            <tbody id="parameter-table-body"><tr><td colspan="6">Loading parameters…</td></tr></tbody>
-          </table>
-        </div>
-
-        <div class="section-subhead">cols4all friendly13 palette</div>
-        <p class="section-copy">The palette swatches below are populated from the exact ordered HEX vector generated by <code>cols4all::c4a("friendly13", 13)</code>.</p>
-        <div id="friendly13-swatches" class="palette-swatches"></div>
-        <p class="palette-meta" id="palette-status">Checking palette asset…</p>
-      </div>
-    </section>
-
-    <section id="analysis-code" class="analysis-section">
-      <div class="container">
-        <div class="section-kicker">Research transparency</div>
-        <h2 class="section-title">Underlying analysis code and reproducibility</h2>
-        <p class="section-copy">
-          The web calculator and the research analysis code serve different purposes.
-          This page applies the frozen score parameters; the complete consolidated analysis
-          source documents how the dietary data, scoring intervals, β coefficients, and
-          validation analyses were derived.
-        </p>
-
-        <div class="resource-grid">
-          <article class="resource-card featured-resource">
-            <div class="resource-icon">R</div>
-            <h3>Complete consolidated analysis code</h3>
-            <p>One consolidated source file with 11 ordered analysis blocks: dietary preparation, frozen cohort split, Model 2 reference selection, final-15 item/portion QC, RCS anchor derivation and interval reconciliation, final binary scoring, RWDID-C, beta-weighted training, and held-out validation.</p>
-            <a class="btn btn-primary" href="analysis_code/RWDID_complete_analysis.R" download>Download single analysis code</a>
-          </article>
-          <article class="resource-card">
-            <h3>Questionnaire and field mapping</h3>
-            <p>85 original Table S1 rows and the 82 active calculator inputs mapped to UK Biobank field metadata.</p>
-            <a href="data/field_mapping_final15_85.csv" download>Download 85-row mapping CSV</a>
-            <a href="data/field_mapping_active82.csv" download>Download active 82-input mapping CSV</a>
-            <a href="input-guide.html">Read the input guide</a>
-          </article>
-          <article class="resource-card">
-            <h3>Frozen scoring parameters</h3>
-            <p>Machine-readable binary rules, training β coefficients, continuous score targets, and P1–P99 support values.</p>
-            <a href="data/rwdid_parameters.json" download>Combined score parameters (JSON)</a>
-            <a href="data/RWDID_binary_scoring_rules_15_components.csv" download>Binary scoring rules (CSV)</a>
-            <a href="data/beta_coefficients_training.csv" download>Training β coefficients (CSV)</a>
-            <a href="data/Table_Sx_continuous_scoring_parameters_15.csv" download>RWDID-C parameters (CSV)</a>
-            <a href="data/training_only_P1_P99_support.csv" download>Training P1–P99 support (CSV)</a>
-          </article>
-          <article class="resource-card">
-            <h3>Additional audit and reviewer materials</h3>
-            <p>Interval derivation and field-mapping documentation supporting the calculator's frozen definitions.</p>
-            <a href="data/food_rcs_range_all_final.csv" download>Final RCS range audit (CSV)</a>
-            <a href="docs/field_mapping.md">Field mapping notes</a>
-            <a href="docs/scoring_methods.md">Scoring methods</a>
-            <a href="docs/reproducibility.md">Reproducibility statement</a>
-            <a href="docs/RESPONSE_TO_REVIEWER_LINE_917.md">Response to reviewer, Line 917</a>
-          </article>
-        </div>
-
-        <div class="note-block">
-          <strong>UK Biobank access and rerun requirements.</strong>
-          Individual-level UK Biobank data are not distributed in this public repository. Re-running the cohort-level analysis requires authorised UK Biobank access and the project-specific preprocessed data objects and source metadata listed in the consolidated analysis code. The included source blocks generate the frozen cohort split and the RCS20 interval anchors in sequence.
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="disclaimer">
+<main id="app-shell" hidden>
+  <section class="page-heading">
     <div class="container">
-      <p><strong>Research use only.</strong> RWDID and RWDID-C are dietary research indices. They are not validated clinical risk calculators, diagnostic tools, or prescriptive dietary recommendations. The calculator does not transmit questionnaire responses to a server.</p>
+      <div class="eyebrow">15-component dietary scoring framework</div>
+      <h1>RWDID</h1>
+      <p class="page-subtitle">Risk-Weighted Dietary Index Calculator</p>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container footer-row">
-      <span>RWDID · Risk-Weighted Dietary Index</span>
-      <div class="footer-links">
-        <a href="input-guide.html">Input guide</a>
-        <a href="analysis_code/RWDID_complete_analysis.R" download>Complete analysis code</a>
-        <a href="data/rwdid_parameters.json" download>Score parameters</a>
-        <span id="footer-palette-status">Palette status: checking</span>
+  <section id="calculator" class="calculator-section">
+    <div class="container">
+      <div class="instructions">
+        <div>
+          <h2>Instructions</h2>
+          <p>Enter your typical daily intake for each food item. Complete all 15 groups or confirm no intake. Both scores are calculated in this browser using the frozen research parameters.</p>
+        </div>
+        <div class="instruction-tags">
+          <span>15 components</span>
+          <span>82 questionnaire items</span>
+        </div>
+      </div>
+
+      <div class="calculator-layout">
+        <div class="questionnaire-column">
+          <div id="questionnaire-container">
+            <div class="loading-inline">Loading questionnaire…</div>
+          </div>
+
+          <div class="form-actions">
+            <p id="form-status" class="status-text">Complete all 15 groups to calculate both scores.</p>
+            <div class="action-buttons">
+              <button id="calculate-button" class="btn btn-primary" type="button" disabled>Calculate scores</button>
+              <button id="reset-button" class="btn btn-secondary" type="button">Reset</button>
+            </div>
+          </div>
+
+          <section id="results-panel" class="results-panel" hidden aria-live="polite">
+            <div class="results-head">
+              <h2>Your results</h2>
+              <p>Scores calculated from the completed questionnaire and frozen study parameters.</p>
+            </div>
+            <div class="score-grid">
+              <article class="score-card score-card-primary">
+                <div class="score-label">RWDID · Binary β-weighted</div>
+                <div id="rwdid-value" class="score-value">—</div>
+                <div class="score-scale">Range 0–1</div>
+                <div class="score-bar"><i id="rwdid-bar"></i></div>
+              </article>
+              <article class="score-card score-card-secondary">
+                <div class="score-label">RWDID-C · Continuous equal-weight</div>
+                <div id="rwdidc-value" class="score-value">—</div>
+                <div class="score-scale">Range 0–15</div>
+                <div class="score-bar"><i id="rwdidc-bar"></i></div>
+              </article>
+            </div>
+            <div class="results-note">Research indices only; not clinical risk predictions, diagnoses or individual dietary recommendations.</div>
+            <details class="result-details">
+              <summary>View component-level results</summary>
+              <div class="table-wrap">
+                <table class="result-table">
+                  <thead><tr><th>Component</th><th>Intake/day</th><th>Binary</th><th>β</th><th>Weight</th><th>RWDID-C</th></tr></thead>
+                  <tbody id="component-results-body"></tbody>
+                </table>
+              </div>
+            </details>
+            <div class="result-actions">
+              <button id="download-results" class="btn btn-primary" type="button">Download CSV</button>
+              <button id="print-results" class="btn btn-secondary" type="button">Print</button>
+            </div>
+          </section>
+        </div>
+
+        <aside class="sidebar">
+          <section class="side-card progress-card">
+            <div class="progress-head">
+              <strong>Progress</strong>
+              <span id="progress-percent" class="progress-percent">0%</span>
+            </div>
+            <div class="progress-track"><span id="progress-fill"></span></div>
+            <strong id="progress-count">0 / 15 completed</strong>
+            <p id="progress-hint">15 groups remaining</p>
+          </section>
+
+          <section class="side-card score-key">
+            <h3>Scores</h3>
+            <div class="score-mini"><strong>RWDID</strong><span>0–1</span></div>
+            <div class="score-mini"><strong>RWDID-C</strong><span>0–15</span></div>
+            <a class="side-link" href="methods.html">Scoring methods</a>
+          </section>
+
+          <p class="privacy-note"><span aria-hidden="true">●</span> Responses stay in this browser and are not uploaded.</p>
+        </aside>
       </div>
     </div>
-  </footer>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <span>RWDID · Research use only</span>
+    <div class="footer-links">
+      <a href="methods.html">Methods</a>
+      <a href="resources.html">Analysis code</a>
+      <a href="input-guide.html">Input guide</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

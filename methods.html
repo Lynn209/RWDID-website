@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scoring formulas and frozen component parameters for RWDID and RWDID-C.">
+  <title>RWDID | Methods</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/palette.js"></script>
+  <script defer src="assets/methods.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
+  <a class="brand" href="index.html"><span class="brand-mark">R</span><strong>RWDID</strong></a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Calculator</a><a href="methods.html" aria-current="page">Methods</a>
+    <a href="resources.html">Analysis code</a><a href="input-guide.html">Input guide</a>
+    <span class="local-pill"><i class="local-dot"></i> Local processing</span>
+  </nav>
+</div></header>
+<div id="boot-state" class="boot-state">Loading methods…</div>
+<main id="methods-content" hidden>
+  <section class="page-hero"><div class="container">
+    <div class="eyebrow">Scoring framework</div>
+    <h1>Scoring methods</h1>
+    <p>The calculator applies the frozen scoring rules and training-derived coefficients. It does not refit the original Cox or RCS models.</p>
+  </div></section>
+  <section class="content-section"><div class="container">
+    <div class="method-grid">
+      <article class="method-card">
+        <div class="method-label">Primary score · β-weighted</div>
+        <h2>RWDID</h2>
+        <div class="formula">RWDID = Σ(S<sub>i</sub> × β<sub>i</sub>) / Σβ<sub>i</sub></div>
+        <p>Fifteen binary component indicators are combined using mutually adjusted Model 3 Cox coefficients estimated in the training cohort.</p>
+        <ul><li>15 binary components</li><li>Training-derived β weights</li><li>Range: 0–1</li></ul>
+      </article>
+      <article class="method-card">
+        <div class="method-label">Complementary score · equal-weight</div>
+        <h2>RWDID-C</h2>
+        <div class="formula">RWDID-C = Σ C<sub>i</sub></div>
+        <p>Each component is mapped to a proportional score from 0 to 1 using its frozen target interval and training P1–P99 support.</p>
+        <ul><li>15 continuous component scores</li><li>Equal weights</li><li>Range: 0–15</li></ul>
+      </article>
+    </div>
+
+    <h2 class="section-title-small">Frozen component parameters</h2>
+    <p class="section-intro">The exact parameters used by the browser calculator. <span id="parameter-version"></span></p>
+    <div class="table-wrap">
+      <table class="parameter-table">
+        <thead><tr><th>Component</th><th>Binary interval</th><th>Training β</th><th>Weight</th><th>RWDID-C target</th><th>Training P1–P99</th></tr></thead>
+        <tbody id="parameter-table-body"><tr><td colspan="6">Loading…</td></tr></tbody>
+      </table>
+    </div>
+    <div class="callout">Research use only. RWDID and RWDID-C are not clinical risk calculators, diagnostic tools or prescriptive dietary recommendations. Missing intakes are not imputed.</div>
+    <p class="section-intro" style="margin-top:14px"><a href="index.html#calculator">← Return to calculator</a></p>
+  </div></section>
+</main>
+<footer class="footer"><div class="container footer-row">
+  <span>RWDID · Research use only</span><div class="footer-links"><a href="index.html">Calculator</a><a href="resources.html">Analysis code</a><a href="input-guide.html">Input guide</a></div>
+</div></footer>
+</body>
+</html>

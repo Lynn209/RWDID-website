@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete consolidated analysis code and supporting data files for RWDID.">
+  <title>RWDID | Analysis Code</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/palette.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="container nav">
+  <a class="brand" href="index.html"><span class="brand-mark">R</span><strong>RWDID</strong></a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Calculator</a><a href="methods.html">Methods</a>
+    <a href="resources.html" aria-current="page">Analysis code</a><a href="input-guide.html">Input guide</a>
+    <span class="local-pill"><i class="local-dot"></i> Local processing</span>
+  </nav>
+</div></header>
+<div id="boot-state" class="boot-state" hidden>Loading…</div>
+<main id="app-shell">
+  <section class="page-hero"><div class="container">
+    <div class="eyebrow">Research transparency</div>
+    <h1>Analysis code &amp; data</h1>
+    <p>One consolidated source file documents the research pipeline. Supporting files are provided for transparency and reproducibility.</p>
+  </div></section>
+  <section class="content-section"><div class="container">
+    <article class="resource-card">
+      <h2>Complete consolidated analysis code</h2>
+      <p>Single R source file containing the 11 ordered analysis blocks, from dietary preparation and interval derivation to RWDID scoring and held-out validation.</p>
+      <div class="resource-links"><a href="analysis_code/RWDID_complete_analysis.R" download>Download RWDID_complete_analysis.R</a></div>
+    </article>
+    <h2 class="section-title-small">Supporting files</h2>
+    <article class="resource-card">
+      <h2>Questionnaire mapping</h2>
+      <div class="resource-links">
+        <a href="data/field_mapping_final15_85.csv" download>Original 85-row mapping (CSV)</a>
+        <a href="data/field_mapping_active82.csv" download>Active 82-input mapping (CSV)</a>
+        <a href="input-guide.html">Input guide</a>
+      </div>
+    </article>
+    <article class="resource-card" style="margin-top:9px">
+      <h2>Frozen scoring parameters</h2>
+      <div class="resource-links">
+        <a href="data/rwdid_parameters.json" download>Combined parameters (JSON)</a>
+        <a href="data/RWDID_binary_scoring_rules_15_components.csv" download>Binary rules (CSV)</a>
+        <a href="data/beta_coefficients_training.csv" download>Training β coefficients (CSV)</a>
+        <a href="data/Table_Sx_continuous_scoring_parameters_15.csv" download>RWDID-C parameters (CSV)</a>
+        <a href="data/training_only_P1_P99_support.csv" download>Training P1–P99 support (CSV)</a>
+      </div>
+    </article>
+    <div class="callout"><strong>UK Biobank access:</strong> Individual-level data are not included in this public repository. Re-running cohort-level analyses requires authorised UK Biobank access and the project-specific preprocessed inputs. The browser calculator applies frozen parameters; it does not reproduce the cohort-level model fitting.</div>
+  </div></section>
+</main>
+<footer class="footer"><div class="container footer-row">
+  <span>RWDID · Research use only</span><div class="footer-links"><a href="index.html">Calculator</a><a href="methods.html">Methods</a><a href="input-guide.html">Input guide</a></div>
+</div></footer>
+</body>
+</html>

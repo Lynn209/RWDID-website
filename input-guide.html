@@ -3,75 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brief input guide for the 15-component RWDID dietary questionnaire.">
   <title>RWDID | Input Guide</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/palette.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="index.html"><span class="brand-mark">R</span><span>RWDID</span></a>
-      <nav class="nav-links">
-        <a href="index.html#calculator">Calculator</a>
-        <a href="index.html#methods">Scoring methods</a>
-        <a href="index.html#analysis-code">Analysis code</a>
-        <span class="local-pill"><i></i> Local processing</span>
-      </nav>
+<header class="topbar"><div class="container nav">
+  <a class="brand" href="index.html"><span class="brand-mark">R</span><strong>RWDID</strong></a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html">Calculator</a><a href="methods.html">Methods</a>
+    <a href="resources.html">Analysis code</a><a href="input-guide.html" aria-current="page">Input guide</a>
+    <span class="local-pill"><i class="local-dot"></i> Local processing</span>
+  </nav>
+</div></header>
+<div id="boot-state" class="boot-state" hidden>Loading…</div>
+<main id="app-shell">
+  <section class="page-hero"><div class="container">
+    <div class="eyebrow">Questionnaire help</div>
+    <h1>Input guide</h1>
+    <p>Use these brief rules when entering dietary intake.</p>
+  </div></section>
+  <section class="content-section"><div class="container">
+    <div class="guide-grid">
+      <article class="guide-card"><h2>Typical daily intake</h2><p>Enter the average amount consumed on a typical day, rather than an unusually high- or low-intake day.</p></article>
+      <article class="guide-card"><h2>Zero intake</h2><p>Select “0 · Not consumed” for an item not consumed. Use “No intake from this food group” only when none of its listed items were consumed.</p></article>
+      <article class="guide-card"><h2>Gram-based items</h2><p>For fields requiring grams, enter grams per day. The calculator converts grams to portions using the listed portion size.</p></article>
+      <article class="guide-card"><h2>Missing responses</h2><p>Do not leave an item blank. Missing responses are not treated as zero, and no imputation is performed.</p></article>
     </div>
-  </header>
-  <main class="methods-section">
-    <div class="container">
-      <div class="section-kicker">Input guide</div>
-      <h1 class="section-title">Preparing an RWDID assessment</h1>
-      <p class="section-copy">This guide explains how to enter the 15-component questionnaire for the browser calculator.</p>
-
-      <div class="method-grid">
-        <article class="method-card">
-          <h3>1. Intake period</h3>
-          <p>The UK Biobank dietary questions are based on the previous 24 hours. The research pipeline used available repeated dietary-recall instances. For this public calculator, enter your average intake on a typical day rather than a single unusually high- or low-intake day.</p>
-        </article>
-        <article class="method-card">
-          <h3>2. Portion and response units</h3>
-          <p>Most questions use the original UK Biobank response categories, converted to portions per day using the study's item-level encoding. Where the input is numeric grams, enter grams per day; the calculator divides by the Table S1 portion size to obtain portions per day.</p>
-        </article>
-        <article class="method-card">
-          <h3>3. No intake versus missing</h3>
-          <p>Select an explicit zero response or use “No intake from this food group” only when no listed item in that group was consumed. A blank field is missing and is not automatically treated as zero. The calculator requires a response for every active item.</p>
-        </article>
-        <article class="method-card">
-          <h3>4. Refined-grains mapping</h3>
-          <p>The 85-row audit retains four white-bread pseudo-fields. The frozen data-preparation script sequentially overwrites the same derived variable; the final retained assignment is the Bread roll item selected through Field ID 20094. The calculator follows the frozen active 82-input mapping.</p>
-        </article>
-      </div>
-
-      <div class="section-subhead">The 15 frozen dietary components</div>
-      <div class="resource-grid">
-        <article class="resource-card"><h3>Fruit and vegetables</h3><p>Citrus fruits · Red/orange vegetables · Other vegetables · Potatoes</p></article>
-        <article class="resource-card"><h3>Grains and animal foods</h3><p>Refined grains · Eggs · Low-fat dairy · Red meats · Processed meats · Fish and seafood</p></article>
-        <article class="resource-card"><h3>Beverages</h3><p>Coffee · Fruit juices · Sweetened beverages · Water · Wine</p></article>
-        <article class="resource-card"><h3>Scoring output</h3><p>RWDID: binary β-weighted score, 0–1. RWDID-C: continuous equal-weight score, 0–15.</p></article>
-      </div>
-
-      <div class="section-subhead">Download the mapping</div>
-      <p class="section-copy">The complete mapping contains 85 original Table S1 rows; the calculator uses 82 active input rows.</p>
-      <div class="resource-grid">
-        <article class="resource-card">
-          <h3>85-row original Table S1 mapping</h3>
-          <p>Original table items, Field IDs, portion sizes and metadata notes.</p>
-          <a class="btn btn-secondary" href="data/field_mapping_final15_85.csv" download>Download 85-row mapping</a>
-        </article>
-        <article class="resource-card">
-          <h3>82 active calculator inputs</h3>
-          <p>Frozen active item mapping used by the browser questionnaire.</p>
-          <a class="btn btn-secondary" href="data/field_mapping_active82.csv" download>Download active mapping</a>
-        </article>
-      </div>
-
-      <div class="note-block">
-        <strong>Interpretation.</strong> RWDID and RWDID-C are research dietary indices. They are not clinical risk estimates, diagnoses, or prescriptive dietary recommendations. Do not enter personal identifiers.
-      </div>
-      <p style="margin-top:24px"><a class="btn btn-primary" href="index.html#calculator">Return to calculator</a></p>
-    </div>
-  </main>
-  <footer class="footer"><div class="container footer-row"><span>RWDID input guide</span><div class="footer-links"><a href="index.html">Back to calculator</a></div></div></footer>
+    <p class="section-intro" style="margin-top:18px"><a href="index.html#calculator">← Return to calculator</a></p>
+  </div></section>
+</main>
+<footer class="footer"><div class="container footer-row">
+  <span>RWDID · Research use only</span><div class="footer-links"><a href="index.html">Calculator</a><a href="methods.html">Methods</a><a href="resources.html">Analysis code</a></div>
+</div></footer>
 </body>
 </html>
