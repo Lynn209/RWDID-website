@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Brief input guide for the 15-component RWDID dietary questionnaire.">
+  <meta name="description" content="UK Biobank Oxford WebQ response options and input instructions for the 15-component RWDID calculator.">
   <title>RWDID | Input Guide</title>
   <link rel="stylesheet" href="assets/styles.css">
   <script defer src="assets/palette.js"></script>
@@ -17,21 +17,50 @@
     <span class="local-pill"><i class="local-dot"></i> Local processing</span>
   </nav>
 </div></header>
-<div id="boot-state" class="boot-state" hidden>Loading…</div>
 <main id="app-shell">
   <section class="page-hero"><div class="container">
     <div class="eyebrow">Questionnaire help</div>
     <h1>Input guide</h1>
-    <p>Use these brief rules when entering dietary intake.</p>
+    <p>The response controls follow the UK Biobank Oxford WebQ questionnaire and the corresponding Showcase data-coding, with the six continuous total-weight fields handled separately.</p>
   </div></section>
   <section class="content-section"><div class="container">
     <div class="guide-grid">
-      <article class="guide-card"><h2>Typical daily intake</h2><p>Enter the average amount consumed on a typical day, rather than an unusually high- or low-intake day.</p></article>
-      <article class="guide-card"><h2>Zero intake</h2><p>Select “0 · Not consumed” for an item not consumed. Use “No intake from this food group” only when none of its listed items were consumed.</p></article>
-      <article class="guide-card"><h2>Gram-based items</h2><p>For fields requiring grams, enter grams per day. The calculator converts grams to portions using the listed portion size.</p></article>
-      <article class="guide-card"><h2>Missing responses</h2><p>Do not leave an item blank. Missing responses are not treated as zero, and no imputation is performed.</p></article>
+      <article class="guide-card">
+        <h2>1. Select whether an item was consumed</h2>
+        <p>For the 76 categorical Oxford WebQ fields, each food item is presented as a checkbox. Tick “Consumed yesterday” only when that item was eaten. Its amount selector then appears. An unticked categorical item contributes zero; zero is not an extra response category in the UKB coding.</p>
+      </article>
+      <article class="guide-card">
+        <h2>2. Choose the original response category</h2>
+        <p>Each categorical item displays its own UKB wording and category range. The options differ by data-coding: for example, vegetables use quarter/half/1/2/3+, fish and fruit use half/1/2/3/4+, and several drinks use half/1/2/3/4/5/6+.</p>
+      </article>
+      <article class="guide-card">
+        <h2>3. Six fields are continuous grams/day</h2>
+        <p>Fields 26102, 26131, 26133, 26151, 26152 and 26153 are UKB Showcase “Total weight by food group yesterday” fields with value type Continuous, g. They are not categorical Oxford WebQ item-response fields. Enter grams/day directly (enter 0 when there was no intake); the calculator divides by the corresponding Table S1 portion size.</p>
+      </article>
+      <article class="guide-card">
+        <h2>4. Confirm no intake at group level</h2>
+        <p>Use “No intake from this food group” only if none of the listed items in that component were consumed. Otherwise, tick each consumed item and complete its amount. Unselected items are treated as zero.</p>
+      </article>
+      <article class="guide-card">
+        <h2>5. A note on the five grain fields</h2>
+        <p>For fields with Showcase Data-Coding 100001, the released coding contains 555 = half, 1 = 1 and 200 = 2+. The frozen RWDID analysis maps code 200 to 2.0. Although the Oxford WebQ v1.5 appendix displays 2 and 3+ separately for these items, the released field coding does not distinguish those two values. To preserve compatibility with the analysed UKB fields and frozen R pipeline, this calculator displays one “2+” category and maps it to 2.0.</p>
+      </article>
+      <article class="guide-card">
+        <h2>6. Recall period and interpretation</h2>
+        <p>The original Oxford WebQ asks what was consumed yesterday. The research pipeline used available repeated 24-hour recall instances and averaged the item-level values. This browser calculator accepts one representative-day response per item; it does not recreate the repeated-instance averaging or impute missing days.</p>
+      </article>
     </div>
-    <p class="section-intro" style="margin-top:18px"><a href="index.html#calculator">← Return to calculator</a></p>
+    <p class="section-intro" style="margin-top:18px">
+      Source documents: <a href="https://biobank.ctsu.ox.ac.uk/showcase/showcase/docs/DietWebQ.pdf" target="_blank" rel="noopener">UK Biobank 24-hour dietary recall questionnaire (Oxford WebQ), v1.5</a>;
+      <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100017" target="_blank" rel="noopener">Showcase Data-Coding 100017</a>;
+      <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100006" target="_blank" rel="noopener">100006</a>;
+      <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100004" target="_blank" rel="noopener">100004</a>;
+      <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100003" target="_blank" rel="noopener">100003</a>;
+      <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100016" target="_blank" rel="noopener">100016</a>;
+      <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100001" target="_blank" rel="noopener">100001</a>.
+    </p>
+    <p class="section-intro"><a href="docs/ukb_questionnaire_response_mapping.md">Open the full 82-field response-mapping and source notes</a></p>
+    <p class="section-intro"><a href="index.html#calculator">← Return to calculator</a></p>
   </div></section>
 </main>
 <footer class="footer"><div class="container footer-row">

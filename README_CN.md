@@ -1,28 +1,23 @@
-# RWDID 网站 · Minimal Calculator Edition
+# RWDID GitHub Pages — v4 UKB 问卷匹配版
 
-## 页面结构
-- `index.html`：首页只保留 RWDID 标题、简短 Instructions、15组分问卷、进度和双评分结果。
-- `methods.html`：两种评分公式及冻结的15组分参数表。
-- `resources.html`：单一完整 Analysis Code 和必要的映射/参数下载。
-- `input-guide.html`：简短填写说明。
+本网站是静态浏览器计算器，用于计算冻结的15组分 RWDID 和 RWDID-C。
 
-首页不再放置三步说明卡片、完整参数表、Friendly13 色板展示、审稿回复或研究流程介绍。
-
-## Friendly13 配色
-网页的分类强调色严格使用 `cols4all::friendly13` 的13色。GitHub Actions 在部署时执行 `scripts/export_friendly13_palette.R`，生成并校验 `data/friendly13_palette.json`。没有生成有效色板时，部署检查会失败，不会静默换用其他调色板。
+## 本次问卷修订
+- 按照 Oxford WebQ 原始交互方式：先勾选昨天是否食用某项目，再选择对应数量。
+- 未勾选的分类项目按0摄入处理；下拉框不再人为添加“0 / Not consumed”。
+- 每个 Field ID 显示对应的UKB原始响应文字，而不是统一的数字范围。
+- 82个活动输入正确区分为76个分类 Oxford WebQ 字段和6个连续型 UKB Showcase 总重量字段。
+- 26102、26131、26133、26151、26152、26153为连续 g/day 字段，不是分类问卷选项。
+- 对 Data-Coding 100001 的PDF与Showcase编码差异作了说明：PDF v1.5显示2和3+，但发布的Showcase编码只有200=2+，且冻结R代码将200转换为2.0；网站遵循已发布编码和冻结分析。
+- 增加混合蔬菜/沙拉和寿司的防重复计入提示。
+- 已包含经核对的 cols4all friendly13 13色文件。
 
 ## 部署
-1. 解压 ZIP，将其中**全部文件和文件夹**上传到 `Lynn209/RWDID-website` 仓库根目录并覆盖同名文件。
-2. 确认根目录有 `index.html`、`assets/`、`data/`、`analysis_code/`、`scripts/` 和 `.github/workflows/pages.yml`。
-3. GitHub 仓库进入 **Settings → Pages**，将 Source 设为 **GitHub Actions**。
-4. 提交到 `main` 分支，进入 **Actions**，确认 `Build and deploy RWDID GitHub Pages` 的 build 和 deploy 均成功。
-5. 打开 `https://lynn209.github.io/RWDID-website/`，使用 Ctrl+F5 强制刷新。
+1. 解压ZIP。
+2. 将文件夹中的全部内容上传至 `Lynn209/RWDID-website` 仓库根目录并覆盖对应文件。
+3. 确认 `index.html`、`assets/`、`data/`、`docs/`、`scripts/` 和 `.github/workflows/pages.yml` 均位于根目录。
+4. GitHub → Settings → Pages 保持 Source = GitHub Actions。
+5. 提交至 main，在 Actions 中确认 `Build and deploy RWDID GitHub Pages` 成功。
+6. 强制刷新网站。
 
-## 评分定义
-- RWDID：15个二分类组分按训练集 β 系数加权，范围0–1。
-- RWDID-C：15个连续比例组分等权求和，范围0–15。
-- 网页只应用冻结参数，不重新拟合 Cox 或 RCS 模型。
-- 空白输入不视为零摄入；不进行缺失值插补。
-
-## 隐私与用途
-问卷输入仅在浏览器本地处理，不上传至服务器。RWDID 与 RWDID-C 是研究指数，不是临床风险预测或诊断工具。
+详细的82个字段响应映射见 `docs/ukb_questionnaire_response_mapping.md`。

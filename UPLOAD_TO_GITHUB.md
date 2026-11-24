@@ -9,3 +9,6 @@
 7. Open `https://lynn209.github.io/RWDID-website/` and hard-refresh with Ctrl+F5.
 
 The homepage is now calculator-first. Methods, analysis code and input instructions are on separate pages. The exact `cols4all::friendly13` palette is generated and validated during the Pages build; no alternative palette is substituted.
+
+
+The questionnaire now mirrors the UKB Oxford WebQ checkbox → amount workflow for 76 categorical items. Six Showcase total-weight fields are entered in g/day. The complete response-category crosswalk and coding exceptions are documented in `docs/ukb_questionnaire_response_mapping.md`.
