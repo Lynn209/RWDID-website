@@ -49,25 +49,44 @@
     let note = String(item.condition_note || item.field_notes || "");
     const prompt = String(item.question_prompt || "");
     if (prompt) note = note.replace(`Question asked: "${prompt}"`, "").trim();
-    return note;
+    const help = String(item.questionnaire_help_note || "").trim();
+    return [note, help].filter(Boolean).join(" ");
   }
 
   function renderField(item) {
     const id = `field-${item.active_item_id}`;
-    if (Number(item.encoding_id) === 0) {
-      return `<input class="answer response-input" id="${id}"
-        data-item-id="${escapeHTML(item.active_item_id)}" type="number"
-        min="0" step="any" inputmode="decimal" placeholder="Grams per day">`;
+    const itemId = escapeHTML(item.active_item_id);
+    const isContinuous = Number(item.encoding_id) === 0;
+
+    if (isContinuous) {
+      return `<div class="item-response continuous-response">
+        <div class="amount-control">
+          <label class="amount-label" for="${id}">Amount consumed (g/day)</label>
+          <input class="answer response-input" id="${id}"
+            data-item-id="${itemId}" type="number" min="0" step="any"
+            inputmode="decimal" placeholder="Enter 0 if none">
+        </div>
+      </div>`;
     }
+
     const options = (item.encoding_options || []).map(o =>
       `<option value="${escapeHTML(o.code)}">${escapeHTML(o.label)}</option>`
     ).join("");
-    return `<select class="answer response-input" id="${id}"
-      data-item-id="${escapeHTML(item.active_item_id)}">
-      <option value="">Select response</option>
-      <option value="0">0 · Not consumed</option>
-      ${options}
-    </select>`;
+
+    return `<div class="item-response">
+      <label class="item-consumed">
+        <input type="checkbox" class="item-consumed-check" data-item-id="${itemId}">
+        <span>Consumed yesterday</span>
+      </label>
+      <div class="amount-control" hidden>
+        <label class="amount-label" for="${id}">Amount consumed</label>
+        <select class="answer response-input" id="${id}"
+          data-item-id="${itemId}" disabled>
+          <option value="">Select UKB response</option>
+          ${options}
+        </select>
+      </div>
+    </div>`;
   }
 
   function renderQuestionnaire() {
@@ -92,20 +111,34 @@
       details.style.setProperty("--group-contrast", `var(--friendly-${paletteIndex}-contrast)`);
 
       const fields = group.items.map(item => {
-        const prompt = item.question_prompt || `Enter the amount consumed for ${item.food_item}.`;
+        const isContinuous = Number(item.encoding_id) === 0;
+        const prompt = item.question_prompt || (
+          isContinuous
+            ? "Enter the grams consumed per day for this UK Biobank continuous total-weight field."
+            : `How much ${item.food_item} did you consume yesterday?`
+        );
         const note = cleanNote(item);
-        const portion = item.portion_size_g == null ? "" : ` · Portion ${fmt(item.portion_size_g, 1)} g`;
-        const units = item.units ? ` · ${escapeHTML(item.units)}` : "";
-        const meta = `Field ID ${escapeHTML(item.table_s1_field_id)}${units}${portion}`;
+        const portion = item.portion_size_g == null ? "" : ` · Table S1 portion ${fmt(item.portion_size_g, 1)} g`;
+        const meta = isContinuous
+          ? `UKB Showcase Field ID ${escapeHTML(item.table_s1_field_id)} · Continuous g/day${portion}`
+          : `Field ID ${escapeHTML(item.table_s1_field_id)} · Data-Coding ${escapeHTML(item.encoding_id)}${portion}`;
+        const codingNote = item.field_id === 102710
+          ? `<p class="field-source-note">Showcase coding 100001 stores the upper category as 2+ (code 200); the frozen RWDID pipeline maps it to 2.0. This calculator follows that coding.</p>`
+          : "";
+        const questionnaireHelp = item.questionnaire_help_note
+          ? `<p class="field-caution">${escapeHTML(item.questionnaire_help_note)}</p>`
+          : "";
 
         return `<div class="field-card">
-          <label class="field-label" for="${escapeHTML(`field-${item.active_item_id}`)}">
+          <div class="field-label">
             ${escapeHTML(item.food_item)}
             ${note ? `<span class="field-info" tabindex="0" title="${escapeHTML(note)}" aria-label="Additional question information">i</span>` : ""}
-          </label>
+          </div>
           <p class="field-prompt">${escapeHTML(prompt)}</p>
           ${renderField(item)}
           <small class="field-meta">${meta}</small>
+          ${questionnaireHelp}
+          ${codingNote}
         </div>`;
       }).join("");
 
@@ -113,7 +146,7 @@
         <summary>
           <span class="group-index">${String(group.order).padStart(2, "0")}</span>
           <span class="group-title">${escapeHTML(group.name)}
-            <small>${group.items.length} questionnaire items</small>
+            <small>${group.items.length} dietary fields</small>
           </span>
           <span class="group-progress" data-group-status>Incomplete</span>
           <span class="chevron" aria-hidden="true">⌄</span>
@@ -124,6 +157,7 @@
               <input type="checkbox" class="no-intake-check">
               No intake from this food group
             </label>
+            <span class="group-hint">Tick categorical items; enter grams/day for continuous fields</span>
             <button type="button" class="clear-group">Clear</button>
           </div>
           <div class="field-grid">${fields}</div>
@@ -136,11 +170,48 @@
       input.addEventListener("change", updateProgress);
     });
 
+    $$(".item-consumed-check").forEach(check => check.addEventListener("change", e => {
+      const card = e.target.closest(".field-card");
+      const group = e.target.closest(".food-group");
+      const input = $(".response-input", card);
+      const amount = $(".amount-control", card);
+
+      if (e.target.checked) {
+        $(".no-intake-check", group).checked = false;
+        input.disabled = false;
+        amount.hidden = false;
+      } else {
+        input.value = "";
+        input.disabled = true;
+        amount.hidden = true;
+      }
+      updateProgress();
+    }));
+
     $$(".no-intake-check").forEach(check => check.addEventListener("change", e => {
       const group = e.target.closest(".food-group");
+      const noIntake = e.target.checked;
+
+      $$(".item-consumed-check", group).forEach(itemCheck => {
+        itemCheck.checked = false;
+        itemCheck.disabled = noIntake;
+      });
+
       $$(".response-input", group).forEach(input => {
-        input.value = e.target.checked ? "0" : "";
-        input.disabled = e.target.checked;
+        const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
+        const amount = $(".amount-control", input.closest(".field-card"));
+        if (noIntake) {
+          input.value = "";
+          input.disabled = true;
+          amount.hidden = true;
+        } else if (item && Number(item.encoding_id) === 0) {
+          input.disabled = false;
+          amount.hidden = false;
+        } else {
+          input.value = "";
+          input.disabled = true;
+          amount.hidden = true;
+        }
       });
       updateProgress();
     }));
@@ -148,9 +219,23 @@
     $$(".clear-group").forEach(button => button.addEventListener("click", e => {
       const group = e.target.closest(".food-group");
       $(".no-intake-check", group).checked = false;
+
+      $$(".item-consumed-check", group).forEach(check => {
+        check.checked = false;
+        check.disabled = false;
+      });
+
       $$(".response-input", group).forEach(input => {
+        const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
+        const amount = $(".amount-control", input.closest(".field-card"));
         input.value = "";
-        input.disabled = false;
+        if (item && Number(item.encoding_id) === 0) {
+          input.disabled = false;
+          amount.hidden = false;
+        } else {
+          input.disabled = true;
+          amount.hidden = true;
+        }
       });
       updateProgress();
     }));
@@ -158,7 +243,24 @@
 
   function isGroupComplete(el) {
     if ($(".no-intake-check", el).checked) return true;
-    return $$(".response-input", el).every(input => input.value !== "");
+
+    let anyIntake = false;
+    for (const item of items.filter(x => x.component_key === el.dataset.group)) {
+      const input = $(`.response-input[data-item-id="${item.active_item_id}"]`, el);
+      if (Number(item.encoding_id) === 0) {
+        if (!input || input.value === "") return false;
+        const grams = Number(input.value);
+        if (!Number.isFinite(grams) || grams < 0) return false;
+        if (grams > 0) anyIntake = true;
+      } else {
+        const check = $(`.item-consumed-check[data-item-id="${item.active_item_id}"]`, el);
+        if (check && check.checked) {
+          if (!input || input.value === "") return false;
+          anyIntake = true;
+        }
+      }
+    }
+    return anyIntake;
   }
 
   function updateProgress() {
@@ -179,8 +281,8 @@
       status.classList.toggle("complete", complete);
     });
     setStatus(done === 15
-      ? "All required responses are complete."
-      : "Complete all 15 groups, or explicitly confirm no intake.");
+      ? "All required components are complete."
+      : "For each component, confirm no intake or complete all gram fields and select amounts for consumed categorical items.");
   }
 
   function collectIntakes() {
@@ -189,9 +291,18 @@
       const el = $(`.food-group[data-group="${group.key}"]`);
       const noIntake = $(".no-intake-check", el).checked;
       let total = 0;
+
       for (const item of group.items) {
-        const input = $(`[data-item-id="${item.active_item_id}"]`, el);
-        const raw = noIntake ? "0" : input.value;
+        const input = $(`.response-input[data-item-id="${item.active_item_id}"]`, el);
+        let raw = "0";
+        if (!noIntake) {
+          if (Number(item.encoding_id) === 0) {
+            raw = input.value;
+          } else {
+            const check = $(`.item-consumed-check[data-item-id="${item.active_item_id}"]`, el);
+            raw = check && check.checked ? input.value : "0";
+          }
+        }
         const portion = window.RWDIDScoring.decodeItemValue(item, raw);
         if (portion === null) return null;
         total += portion;
@@ -282,8 +393,23 @@
     });
 
     $("#reset-button").addEventListener("click", () => {
-      $$(".response-input").forEach(input => { input.value = ""; input.disabled = false; });
       $$(".no-intake-check").forEach(check => { check.checked = false; });
+      $$(".item-consumed-check").forEach(check => {
+        check.checked = false;
+        check.disabled = false;
+      });
+      $$(".response-input").forEach(input => {
+        const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
+        const amount = $(".amount-control", input.closest(".field-card"));
+        input.value = "";
+        if (item && Number(item.encoding_id) === 0) {
+          input.disabled = false;
+          amount.hidden = false;
+        } else {
+          input.disabled = true;
+          amount.hidden = true;
+        }
+      });
       $("#results-panel").hidden = true;
       latestResult = null;
       updateProgress();
