@@ -2,9 +2,22 @@
   "palette": "cols4all::friendly13",
   "palette_type": "cat",
   "color_count": 13,
-  "colors": [],
-  "generated": false,
+  "colors": [
+    "#E73F74",
+    "#F1CE63",
+    "#77AADD",
+    "#009988",
+    "#9467BD",
+    "#FF9D9A",
+    "#99DDFF",
+    "#AAAA00",
+    "#225522",
+    "#882255",
+    "#997700",
+    "#4B4B8F",
+    "#8C564B"
+  ],
+  "generated": true,
   "package": "cols4all",
-  "package_version": "0.11",
-  "note": "Generated and validated by the GitHub Pages workflow before deployment."
+  "package_version": "0.11"
 }
