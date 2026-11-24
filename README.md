@@ -2,34 +2,6 @@
 
 Static, browser-only research calculator for the 15-component Risk-Weighted Dietary Index (RWDID) and continuous equal-weight RWDID-C.
 
-## Repository layout
-
-```text
-index.html
-input-guide.html
-assets/
-  app.js
-  scoring.js
-  styles.css
-data/
-  field_mapping_active82.json
-  field_mapping_active82.csv
-  field_mapping_final15_85.csv
-  rwdid_parameters.json
-  friendly13_palette.json
-  ...
-analysis_code/
-  RWDID_complete_analysis.R
-scripts/
-  export_friendly13_palette.R
-docs/
-  ...
-.nojekyll
-README.md
-README_CN.md
-```
-
-`index.html` is at the repository root. This is a static site: the browser performs the score calculation locally. No Shiny server, Python server, Node build, API key, database, or GitHub Actions workflow is required to serve the published website.
 
 ## Publish on GitHub Pages
 
