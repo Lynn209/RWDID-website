@@ -7,10 +7,9 @@
   let items = [];
   let params = null;
   let latestResult = null;
-  let paletteReady = false;
 
-  const escapeHTML = (v) => String(v ?? "").replace(/[&<>"']/g, c => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  const escapeHTML = v => String(v ?? "").replace(/[&<>"']/g, c => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
   }[c]));
 
   const fmt = (x, d = 3) => Number(x).toLocaleString(undefined, {
@@ -24,49 +23,9 @@
     el.className = `status-text ${kind}`.trim();
   }
 
-  function applyFriendly13(data) {
-    const valid = data &&
-      data.palette === "cols4all::friendly13" &&
-      data.generated === true &&
-      Array.isArray(data.colors) &&
-      data.colors.length === 13 &&
-      data.colors.every(c => typeof c === "string" && /^#[0-9A-Fa-f]{6}$/.test(c)) &&
-      new Set(data.colors.map(c => c.toUpperCase())).size === 13;
-
-    if (!valid) {
-      $("#palette-warning").hidden = false;
-      $("#palette-status").textContent = "Palette asset not generated";
-      const footerStatus = $("#footer-palette-status");
-      if (footerStatus) footerStatus.textContent = "Palette status: not generated";
-      return false;
-    }
-
-    data.colors.forEach((color, i) => {
-      document.documentElement.style.setProperty(`--friendly-${i + 1}`, color.toUpperCase());
-    });
-
-    const swatches = $("#friendly13-swatches");
-    if (swatches) {
-      swatches.innerHTML = data.colors.map((color, i) => `
-        <div class="palette-chip">
-          <span class="palette-color" style="background:${color}"></span>
-          <small>${String(i + 1).padStart(2, "0")} · ${color.toUpperCase()}</small>
-        </div>
-      `).join("");
-    }
-
-    $("#palette-warning").hidden = true;
-    $("#palette-status").textContent = `Verified cols4all friendly13 · ${data.package_version || "version recorded"}`;
-    const footerStatus = $("#footer-palette-status");
-    if (footerStatus) footerStatus.textContent = `Palette: friendly13 (${data.package_version || "version recorded"})`;
-    document.body.dataset.paletteReady = "true";
-    paletteReady = true;
-    return true;
-  }
-
   async function loadJSON(path) {
     const response = await fetch(path);
-    if (!response.ok) throw new Error(`Unable to load ${path} (${response.status}).`);
+    if (!response.ok) throw new Error(`Could not load ${path} (${response.status}).`);
     return response.json();
   }
 
@@ -86,6 +45,13 @@
     return [...map.values()].sort((a, b) => a.order - b.order);
   }
 
+  function cleanNote(item) {
+    let note = String(item.condition_note || item.field_notes || "");
+    const prompt = String(item.question_prompt || "");
+    if (prompt) note = note.replace(`Question asked: "${prompt}"`, "").trim();
+    return note;
+  }
+
   function renderField(item) {
     const id = `field-${item.active_item_id}`;
     if (Number(item.encoding_id) === 0) {
@@ -93,14 +59,12 @@
         data-item-id="${escapeHTML(item.active_item_id)}" type="number"
         min="0" step="any" inputmode="decimal" placeholder="Grams per day">`;
     }
-
     const options = (item.encoding_options || []).map(o =>
       `<option value="${escapeHTML(o.code)}">${escapeHTML(o.label)}</option>`
     ).join("");
-
     return `<select class="answer response-input" id="${id}"
       data-item-id="${escapeHTML(item.active_item_id)}">
-      <option value="">Choose response</option>
+      <option value="">Select response</option>
       <option value="0">0 · Not consumed</option>
       ${options}
     </select>`;
@@ -115,36 +79,35 @@
       details.className = "food-group";
       details.dataset.group = group.key;
       if (index === 0) details.open = true;
+      details.addEventListener("toggle", () => {
+        if (details.open) {
+          $$(".food-group").forEach(other => {
+            if (other !== details) other.open = false;
+          });
+        }
+      });
 
-      const colorIndex = (index % 13) + 1;
-      details.style.setProperty("--group-color", `var(--friendly-${colorIndex}, #64748b)`);
+      const paletteIndex = (index % 13) + 1;
+      details.style.setProperty("--group-color", `var(--friendly-${paletteIndex})`);
+      details.style.setProperty("--group-contrast", `var(--friendly-${paletteIndex}-contrast)`);
 
       const fields = group.items.map(item => {
         const prompt = item.question_prompt || `Enter the amount consumed for ${item.food_item}.`;
-        const note = item.field_notes || "";
+        const note = cleanNote(item);
         const portion = item.portion_size_g == null ? "" : ` · Portion ${fmt(item.portion_size_g, 1)} g`;
-        const units = item.units ? ` · ${item.units}` : "";
-        const selector = item.selector_field_id
-          ? ` · Selector Field ID ${item.selector_field_id}: ${escapeHTML(item.selector_value_label)}`
-          : "";
+        const units = item.units ? ` · ${escapeHTML(item.units)}` : "";
+        const meta = `Field ID ${escapeHTML(item.table_s1_field_id)}${units}${portion}`;
 
         return `<div class="field-card">
           <label class="field-label" for="${escapeHTML(`field-${item.active_item_id}`)}">
             ${escapeHTML(item.food_item)}
-            ${note ? `<span class="field-info" title="${escapeHTML(note)}" aria-label="Questionnaire note">i</span>` : ""}
+            ${note ? `<span class="field-info" tabindex="0" title="${escapeHTML(note)}" aria-label="Additional question information">i</span>` : ""}
           </label>
           <p class="field-prompt">${escapeHTML(prompt)}</p>
           ${renderField(item)}
-          <small class="field-meta">Field ID ${escapeHTML(item.table_s1_field_id)}${units}${portion}${selector}</small>
+          <small class="field-meta">${meta}</small>
         </div>`;
       }).join("");
-
-      const refinedNote = group.key === "refined_grains" ? `
-        <div class="inline-note">
-          <strong>Refined-grains mapping note:</strong> The 85-row audit retains four white-bread pseudo-fields.
-          The frozen food-group preparation script retains the final Bread roll item selected through Field ID 20094.
-          The calculator follows the frozen 82-input mapping.
-        </div>` : "";
 
       details.innerHTML = `
         <summary>
@@ -153,17 +116,18 @@
             <small>${group.items.length} questionnaire items</small>
           </span>
           <span class="group-progress" data-group-status>Incomplete</span>
-          <span class="chevron">⌄</span>
+          <span class="chevron" aria-hidden="true">⌄</span>
         </summary>
         <div class="group-content">
           <div class="group-tools">
-            <label class="no-intake"><input type="checkbox" class="no-intake-check"> No intake from this food group</label>
-            <button type="button" class="clear-group">Clear group</button>
+            <label class="no-intake">
+              <input type="checkbox" class="no-intake-check">
+              No intake from this food group
+            </label>
+            <button type="button" class="clear-group">Clear</button>
           </div>
-          ${refinedNote}
           <div class="field-grid">${fields}</div>
         </div>`;
-
       host.appendChild(details);
     });
 
@@ -201,23 +165,22 @@
     const groups = $$(".food-group");
     const done = groups.filter(isGroupComplete).length;
     const pct = groups.length ? Math.round(done / groups.length * 100) : 0;
-    $("#progress-count").textContent = `${done} / ${groups.length} food groups completed`;
+    $("#progress-count").textContent = `${done} / ${groups.length} completed`;
     $("#progress-fill").style.width = `${pct}%`;
     $("#progress-percent").textContent = `${pct}%`;
     $("#calculate-button").disabled = done !== 15;
     $("#progress-hint").textContent = done === 15
-      ? "All 15 components are complete."
-      : `${groups.length - done} food group(s) still need a response.`;
-
+      ? "All 15 components are complete. You can calculate both scores."
+      : `${groups.length - done} groups remaining`;
     groups.forEach(group => {
       const complete = isGroupComplete(group);
       const status = $("[data-group-status]", group);
       status.textContent = complete ? "Complete" : "Incomplete";
       status.classList.toggle("complete", complete);
     });
-
-    setStatus(done === 15 ? "Inputs complete. Both scores are ready to calculate." :
-      "Complete every group or explicitly confirm no intake.");
+    setStatus(done === 15
+      ? "All required responses are complete."
+      : "Complete all 15 groups, or explicitly confirm no intake.");
   }
 
   function collectIntakes() {
@@ -238,41 +201,6 @@
     return intakes;
   }
 
-  function binaryLabel(rule) {
-    const a = fmt(rule.value1, 3);
-    const b = rule.value2 == null ? null : fmt(rule.value2, 3);
-    if (rule.range_direction === "middle") return `${a}–${b}`;
-    if (rule.range_direction === "high") return `≥ ${a}`;
-    if (rule.range_direction === "low") return `≤ ${a}`;
-    return `Point ${a}`;
-  }
-
-  function continuousLabel(rule) {
-    const a = fmt(rule.value1, 3);
-    const b = rule.value2 == null ? null : fmt(rule.value2, 3);
-    if (rule.range_direction === "middle") return `${a}–${b}`;
-    if (rule.range_direction === "high") return `Adequacy ≥ ${a}`;
-    if (rule.range_direction === "low") return `Moderation ≤ ${a}`;
-    return `Point target ${a}`;
-  }
-
-  function renderParameters() {
-    const tbody = $("#parameter-table-body");
-    tbody.innerHTML = "";
-    params.components.forEach(c => {
-      const row = document.createElement("tr");
-      const weight = Number(c.beta) / Number(params.beta_sum);
-      row.innerHTML = `
-        <td>${escapeHTML(c.display_name)}</td>
-        <td>${escapeHTML(binaryLabel(c.binary))}</td>
-        <td>${fmt(Number(c.beta), 4)}</td>
-        <td>${fmt(weight * 100, 2)}%</td>
-        <td>${escapeHTML(continuousLabel(c.continuous))}</td>
-        <td>${fmt(c.continuous.support_p1, 2)}–${fmt(c.continuous.support_p99, 2)}</td>`;
-      tbody.appendChild(row);
-    });
-  }
-
   function renderResults(result) {
     latestResult = result;
     $("#results-panel").hidden = false;
@@ -286,7 +214,7 @@
     result.components.forEach((c, i) => {
       const row = document.createElement("tr");
       row.innerHTML = `
-        <td><span class="table-dot" style="background:var(--friendly-${(i % 13) + 1},#64748b)"></span>${escapeHTML(c.display_name)}</td>
+        <td><span class="table-dot" style="background:var(--friendly-${(i % 13) + 1})"></span>${escapeHTML(c.display_name)}</td>
         <td>${fmt(c.intake, 3)}</td>
         <td>${c.binary_score}</td>
         <td>${fmt(c.beta, 4)}</td>
@@ -323,14 +251,14 @@
   }
 
   async function init() {
-    const [mapping, parameters, palette] = await Promise.all([
+    await window.RWDIDPaletteReady;
+    const [mapping, parameters] = await Promise.all([
       loadJSON("data/field_mapping_active82.json"),
-      loadJSON("data/rwdid_parameters.json"),
-      loadJSON("data/friendly13_palette.json").catch(() => null)
+      loadJSON("data/rwdid_parameters.json")
     ]);
-
     items = mapping;
     params = parameters;
+
     if (!Array.isArray(items) || items.length !== 82) {
       throw new Error(`Expected 82 active questionnaire fields; found ${items?.length ?? "none"}.`);
     }
@@ -338,22 +266,15 @@
       throw new Error("Frozen parameter file must contain 15 components.");
     }
 
-    if (palette) applyFriendly13(palette);
-    else {
-      $("#palette-warning").hidden = false;
-      $("#palette-status").textContent = "Palette asset missing";
-    }
-
     renderQuestionnaire();
-    renderParameters();
     updateProgress();
 
     $("#calculate-button").addEventListener("click", () => {
       try {
         const intakes = collectIntakes();
-        if (!intakes) throw new Error("Complete all food groups before calculating.");
+        if (!intakes) throw new Error("Complete all questionnaire items before calculating.");
         const result = window.RWDIDScoring.calculateScores(intakes, params);
-        setStatus("Both scores calculated successfully.", "success");
+        setStatus("Both dietary scores have been calculated.", "success");
         renderResults(result);
       } catch (error) {
         setStatus(error.message, "error");
@@ -371,13 +292,19 @@
 
     $("#download-results").addEventListener("click", downloadResults);
     $("#print-results").addEventListener("click", () => window.print());
+
+    $("#boot-state").hidden = true;
+    $("#app-shell").hidden = false;
   }
 
   document.addEventListener("DOMContentLoaded", () => {
     init().catch(error => {
-      $("#questionnaire-container").innerHTML =
-        `<div class="error-panel">${escapeHTML(error.message)}</div>`;
-      setStatus(error.message, "error");
+      const boot = $("#boot-state");
+      if (boot) {
+        boot.classList.add("boot-error");
+        boot.innerHTML = `<strong>Calculator could not be initialized.</strong><p>${escapeHTML(error.message)}</p>`;
+      }
+      $("#app-shell").hidden = true;
     });
   });
 })();
