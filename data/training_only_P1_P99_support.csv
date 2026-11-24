@@ -1,0 +1,16 @@
+"food","support_p1","support_p99","n_training_intake_observed","n_training_intake_missing","training_intake_min","training_intake_max"
+"citrus_fruits",0,3.5,76578,0,0,8
+"red_orange_veg",0,5,76578,0,0,11
+"other_veg",0,8,76578,0,0,23
+"potatoes",0,3,76578,0,0,6
+"refined_grains",0,8,76578,0,0,19
+"eggs",0,3,76578,0,0,8
+"low_fat_dairy",0,3.70685971685971,76578,0,0,9.31274131274131
+"red_meats",0,3,76578,0,0,7.5
+"processed_meats",0,6,76578,0,0,12
+"fish_seafood",0,3,76578,0,0,12
+"coffee",0,7,76578,0,0,14.3333333333333
+"fruit_juices",0,3,76578,0,0,15.25
+"sweetened_bev",0,6,76578,0,0,30
+"water",0,6,76578,0,0,6
+"wine",0,4.14285714285714,76578,0,0,17.1428571428571

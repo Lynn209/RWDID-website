@@ -1,0 +1,4280 @@
+[
+  {
+    "component_order": 1,
+    "component_key": "citrus_fruits",
+    "component_name": "Citrus fruits",
+    "item_order": 1,
+    "food_item": "Grapefruit intake",
+    "table_s1_field_id": "104490",
+    "field_id": 104490,
+    "field_title": "Grapefruit intake",
+    "units": "Serving/whole fruit",
+    "encoding_id": 100004,
+    "portion_size_g": 148.0,
+    "question_prompt": "How many whole/servings of grapefruit (fresh, frozen, canned) did you have?",
+    "condition_note": "Question asked: \"How many whole/servings of grapefruit (fresh, frozen, canned) did you have?\" This question was only asked to participants who reported consuming fruit.",
+    "field_notes": "Question asked: \"How many whole/servings of grapefruit (fresh, frozen, canned) did you have?\" This question was only asked to participants who reported consuming fruit.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f104490"
+  },
+  {
+    "component_order": 1,
+    "component_key": "citrus_fruits",
+    "component_name": "Citrus fruits",
+    "item_order": 2,
+    "food_item": "Orange intake",
+    "table_s1_field_id": "104530",
+    "field_id": 104530,
+    "field_title": "Orange intake",
+    "units": "Whole fruit",
+    "encoding_id": 100004,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many oranges (fresh, frozen, canned) did you have?",
+    "condition_note": "Question asked: \"How many oranges (fresh, frozen, canned) did you have?\" This question was only asked to participants who reported consuming fruit.",
+    "field_notes": "Question asked: \"How many oranges (fresh, frozen, canned) did you have?\" This question was only asked to participants who reported consuming fruit.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f104530"
+  },
+  {
+    "component_order": 1,
+    "component_key": "citrus_fruits",
+    "component_name": "Citrus fruits",
+    "item_order": 3,
+    "food_item": "Satsuma intake",
+    "table_s1_field_id": "104540",
+    "field_id": 104540,
+    "field_title": "Satsuma intake",
+    "units": "Serving/whole fruit",
+    "encoding_id": 100004,
+    "portion_size_g": 70.0,
+    "question_prompt": "How many whole/servings of orange-like small fruits e.g. satsuma, clementine, mandarin (fresh, frozen, canned) did you have?",
+    "condition_note": "Question asked: \"How many whole/servings of orange-like small fruits e.g. satsuma, clementine, mandarin (fresh, frozen, canned) did you have?\" This question was only asked to participants who reported consuming fruit.",
+    "field_notes": "Question asked: \"How many whole/servings of orange-like small fruits e.g. satsuma, clementine, mandarin (fresh, frozen, canned) did you have?\" This question was only asked to participants who reported consuming fruit.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f104540"
+  },
+  {
+    "component_order": 2,
+    "component_key": "red_orange_veg",
+    "component_name": "Red/Orange vegetables",
+    "item_order": 1,
+    "food_item": "Butternut squash intake",
+    "table_s1_field_id": "104150",
+    "field_id": 104150,
+    "field_title": "Butternut squash intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 130.0,
+    "question_prompt": "How many servings of butternut squash did you have?",
+    "condition_note": "Question asked: \"How many servings of butternut squash did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of butternut squash did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104150"
+  },
+  {
+    "component_order": 2,
+    "component_key": "red_orange_veg",
+    "component_name": "Red/Orange vegetables",
+    "item_order": 2,
+    "food_item": "Carrot intake",
+    "table_s1_field_id": "104170",
+    "field_id": 104170,
+    "field_title": "Carrot intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many servings of carrots (fresh, frozen, raw, cooked) did you have?",
+    "condition_note": "Question asked: \"How many servings of carrots (fresh, frozen, raw, cooked) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of carrots (fresh, frozen, raw, cooked) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104170"
+  },
+  {
+    "component_order": 2,
+    "component_key": "red_orange_veg",
+    "component_name": "Red/Orange vegetables",
+    "item_order": 3,
+    "food_item": "Sweet pepper intake",
+    "table_s1_field_id": "104290",
+    "field_id": 104290,
+    "field_title": "Sweet pepper intake",
+    "units": "Whole pepper",
+    "encoding_id": 100017,
+    "portion_size_g": 133.0,
+    "question_prompt": "How many whole peppers (sweet) did you have?",
+    "condition_note": "Question asked: \"How many whole peppers (sweet) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many whole peppers (sweet) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104290"
+  },
+  {
+    "component_order": 2,
+    "component_key": "red_orange_veg",
+    "component_name": "Red/Orange vegetables",
+    "item_order": 4,
+    "food_item": "Sweet potato intake",
+    "table_s1_field_id": "104330",
+    "field_id": 104330,
+    "field_title": "Sweet potato intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 130.0,
+    "question_prompt": "How many servings of sweet potatoes did you have?",
+    "condition_note": "Question asked: \"How many servings of sweet potatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of sweet potatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104330"
+  },
+  {
+    "component_order": 2,
+    "component_key": "red_orange_veg",
+    "component_name": "Red/Orange vegetables",
+    "item_order": 5,
+    "food_item": "Fresh tomato intake",
+    "table_s1_field_id": "104340",
+    "field_id": 104340,
+    "field_title": "Fresh tomato intake",
+    "units": "Medium tomato",
+    "encoding_id": 100017,
+    "portion_size_g": 85.0,
+    "question_prompt": "How many medium fresh tomatoes did you have?",
+    "condition_note": "Question asked: \"How many medium fresh tomatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many medium fresh tomatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104340"
+  },
+  {
+    "component_order": 2,
+    "component_key": "red_orange_veg",
+    "component_name": "Red/Orange vegetables",
+    "item_order": 6,
+    "food_item": "Tinned tomato intake",
+    "table_s1_field_id": "104350",
+    "field_id": 104350,
+    "field_title": "Tinned tomato intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 135.0,
+    "question_prompt": "How many servings of cooked or tinned tomatoes did you have?",
+    "condition_note": "Question asked: \"How many servings of cooked or tinned tomatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of cooked or tinned tomatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104350"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 1,
+    "food_item": "Mixed vegetable intake",
+    "table_s1_field_id": "104060",
+    "field_id": 104060,
+    "field_title": "Mixed vegetable intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 90.0,
+    "question_prompt": "How many servings of mixed vegetables (e.g. frozen mixed veg) did you have?",
+    "condition_note": "Question asked: \"How many servings of mixed vegetables (e.g. frozen mixed veg) did you have?\" This question was only asked to participants who reported consuming vegetables. If the participant activated the Help feature they were shown the message: Vegetables recorded as 'Mixed vegetables', 'Vegetable pieces', 'Coleslaw' or 'Mixed side salad' should not be recorded individually further down the list.",
+    "field_notes": "Question asked: \"How many servings of mixed vegetables (e.g. frozen mixed veg) did you have?\" This question was only asked to participants who reported consuming vegetables. If the participant activated the Help feature they were shown the message: Vegetables recorded as 'Mixed vegetables', 'Vegetable pieces', 'Coleslaw' or 'Mixed side salad' should not be recorded individually further down the list.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104060"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 2,
+    "food_item": "Vegetable pieces intake",
+    "table_s1_field_id": "104070",
+    "field_id": 104070,
+    "field_title": "Vegetable pieces intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 90.0,
+    "question_prompt": "How many servings of vegetable pieces (too small to be counted as individual veg) did you have?",
+    "condition_note": "Question asked: \"How many servings of vegetable pieces (too small to be counted as individual veg) did you have?\" This question was only asked to participants who reported consuming vegetables. If the participant activated the Help feature they were shown the message: Vegetables recorded as 'Mixed vegetables', 'Vegetable pieces', 'Coleslaw' or 'Mixed side salad' should not be recorded individually further down the list.",
+    "field_notes": "Question asked: \"How many servings of vegetable pieces (too small to be counted as individual veg) did you have?\" This question was only asked to participants who reported consuming vegetables. If the participant activated the Help feature they were shown the message: Vegetables recorded as 'Mixed vegetables', 'Vegetable pieces', 'Coleslaw' or 'Mixed side salad' should not be recorded individually further down the list.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104070"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 3,
+    "food_item": "Coleslaw intake",
+    "table_s1_field_id": "104080",
+    "field_id": 104080,
+    "field_title": "Coleslaw intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 90.0,
+    "question_prompt": "How many servings of coleslaw or other salad vegetables in mayonnaise (e.g. waldorf salad) did you have?",
+    "condition_note": "Question asked: \"How many servings of coleslaw or other salad vegetables in mayonnaise (e.g. waldorf salad) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of coleslaw or other salad vegetables in mayonnaise (e.g. waldorf salad) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104080"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 4,
+    "food_item": "Side salad intake",
+    "table_s1_field_id": "104090",
+    "field_id": 104090,
+    "field_title": "Side salad intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 66.0,
+    "question_prompt": "How many servings of mixed side salad did you have?",
+    "condition_note": "Question asked: \"How many servings of mixed side salad did you have?\" If the participant activated the Help feature they were shown the message: Vegetables recorded as 'Mixed vegetables', 'Vegetable pieces', 'Coleslaw' or 'Mixed side salad' should not be recorded individually further down the list. A side serving of salad (e.g. a few lettuce leaves, a couple of slices of tomato, a slice of red onion and a little cucumber) would count as a serving of mixed side salad. A large salad can contain half or whole servings of individual salad vegetables such as lettuce or tomato.",
+    "field_notes": "Question asked: \"How many servings of mixed side salad did you have?\" If the participant activated the Help feature they were shown the message: Vegetables recorded as 'Mixed vegetables', 'Vegetable pieces', 'Coleslaw' or 'Mixed side salad' should not be recorded individually further down the list. A side serving of salad (e.g. a few lettuce leaves, a couple of slices of tomato, a slice of red onion and a little cucumber) would count as a serving of mixed side salad. A large salad can contain half or whole servings of individual salad vegetables such as lettuce or tomato.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104090"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 5,
+    "food_item": "Avocado intake",
+    "table_s1_field_id": "104100",
+    "field_id": 104100,
+    "field_title": "Avocado intake",
+    "units": "Medium avocado",
+    "encoding_id": 100017,
+    "portion_size_g": 136.0,
+    "question_prompt": "How many medium avocados did you have?",
+    "condition_note": "Question asked: \"How many medium avocados did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many medium avocados did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104100"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 6,
+    "food_item": "Beetroot intake",
+    "table_s1_field_id": "104130",
+    "field_id": 104130,
+    "field_title": "Beetroot intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 48.0,
+    "question_prompt": "How many servings of beetroot did you have?",
+    "condition_note": "Question asked: \"How many servings of beetroot did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of beetroot did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104130"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 7,
+    "food_item": "Cauliflower intake",
+    "table_s1_field_id": "104180",
+    "field_id": 104180,
+    "field_title": "Cauliflower intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 90.0,
+    "question_prompt": "How many servings of cauliflower did you have?",
+    "condition_note": "Question asked: \"How many servings of cauliflower did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of cauliflower did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104180"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 8,
+    "food_item": "Celery intake",
+    "table_s1_field_id": "104190",
+    "field_id": 104190,
+    "field_title": "Celery intake",
+    "units": "Stick",
+    "encoding_id": 100017,
+    "portion_size_g": 30.0,
+    "question_prompt": "How many sticks of celery did you have?",
+    "condition_note": "Question asked: \"How many sticks of celery did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many sticks of celery did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104190"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 9,
+    "food_item": "Courgette intake",
+    "table_s1_field_id": "104200",
+    "field_id": 104200,
+    "field_title": "Courgette intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 90.0,
+    "question_prompt": "How many servings of courgette did you have?",
+    "condition_note": "Question asked: \"How many servings of courgette did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of courgette did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104200"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 10,
+    "food_item": "Cucumber intake",
+    "table_s1_field_id": "104210",
+    "field_id": 104210,
+    "field_title": "Cucumber intake",
+    "units": "1inch / 25mm",
+    "encoding_id": 100017,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many 1 inch/2.5cm servings of cucumber did you have?",
+    "condition_note": "Question asked: \"How many 1 inch/2.5cm servings of cucumber did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many 1 inch/2.5cm servings of cucumber did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104210"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 11,
+    "food_item": "Garlic intake",
+    "table_s1_field_id": "104220",
+    "field_id": 104220,
+    "field_title": "Garlic intake",
+    "units": "Clove",
+    "encoding_id": 100017,
+    "portion_size_g": 5.0,
+    "question_prompt": "How many cloves of garlic did you have?",
+    "condition_note": "Question asked: \"How many cloves of garlic did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many cloves of garlic did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104220"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 12,
+    "food_item": "Leek intake",
+    "table_s1_field_id": "104230",
+    "field_id": 104230,
+    "field_title": "Leek intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 80.0,
+    "question_prompt": "How many servings of leeks did you have?",
+    "condition_note": "Question asked: \"How many servings of leeks did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of leeks did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104230"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 13,
+    "food_item": "Onion intake",
+    "table_s1_field_id": "104260",
+    "field_id": 104260,
+    "field_title": "Onion intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many servings of onions (red, white, pickled, shallots, spring) did you have?",
+    "condition_note": "Question asked: \"How many servings of onions (red, white, pickled, shallots, spring) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of onions (red, white, pickled, shallots, spring) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104260"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 14,
+    "food_item": "Parsnip intake",
+    "table_s1_field_id": "104270",
+    "field_id": 104270,
+    "field_title": "Parsnip intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 65.0,
+    "question_prompt": "How many servings of parsnip did you have?",
+    "condition_note": "Question asked: \"How many servings of parsnip did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of parsnip did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104270"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 15,
+    "food_item": "Turnip/swede intake",
+    "table_s1_field_id": "104360",
+    "field_id": 104360,
+    "field_title": "Turnip/swede intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many servings of turnip or swede did you have?",
+    "condition_note": "Question asked: \"How many servings of turnip or swede did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of turnip or swede did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104360"
+  },
+  {
+    "component_order": 3,
+    "component_key": "other_veg",
+    "component_name": "Other vegetables",
+    "item_order": 16,
+    "food_item": "Other vegetables intake",
+    "table_s1_field_id": "104380",
+    "field_id": 104380,
+    "field_title": "Other vegetables intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many servings of other vegetables (e.g. celeriac, asparagus, fennel, aubergine, pumpkin) did you have?",
+    "condition_note": "Question asked: \"How many servings of other vegetables (e.g. celeriac, asparagus, fennel, aubergine, pumpkin) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of other vegetables (e.g. celeriac, asparagus, fennel, aubergine, pumpkin) did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104380"
+  },
+  {
+    "component_order": 4,
+    "component_key": "potatoes",
+    "component_name": "Potatoes",
+    "item_order": 1,
+    "food_item": "Boiled/baked potatoes intake",
+    "table_s1_field_id": "104030",
+    "field_id": 104030,
+    "field_title": "Boiled/baked potatoes intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 175.0,
+    "question_prompt": "How many servings of baked or boiled potatoes did you have?",
+    "condition_note": "Question asked: \"How many servings of baked or boiled potatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "field_notes": "Question asked: \"How many servings of baked or boiled potatoes did you have?\" This question was only asked to participants who reported consuming vegetables.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104030"
+  },
+  {
+    "component_order": 4,
+    "component_key": "potatoes",
+    "component_name": "Potatoes",
+    "item_order": 2,
+    "food_item": "Mashed potato intake",
+    "table_s1_field_id": "104050",
+    "field_id": 104050,
+    "field_title": "Mashed potato intake",
+    "units": "Serving",
+    "encoding_id": 100017,
+    "portion_size_g": 180.0,
+    "question_prompt": "How many servings of mashed potatoes did you have?",
+    "condition_note": "Question asked: \"How many servings of mashed potatoes did you have?\"",
+    "field_notes": "Question asked: \"How many servings of mashed potatoes did you have?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      },
+      {
+        "code": "444",
+        "label": "¼",
+        "value": 0.25
+      }
+    ],
+    "active_item_id": "f104050"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 1,
+    "food_item": "Naan bread intake",
+    "table_s1_field_id": "101230",
+    "field_id": 101230,
+    "field_title": "Naan bread intake",
+    "units": "Bread item",
+    "encoding_id": 100006,
+    "portion_size_g": 160.0,
+    "question_prompt": "How many items of naan bread?",
+    "condition_note": "Question asked: \"How many items of naan bread?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "field_notes": "Question asked: \"How many items of naan bread?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f101230"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 2,
+    "food_item": "Garlic bread intake",
+    "table_s1_field_id": "101240",
+    "field_id": 101240,
+    "field_title": "Garlic bread intake",
+    "units": "Slice",
+    "encoding_id": 100006,
+    "portion_size_g": 20.0,
+    "question_prompt": "How many items of garlic bread?",
+    "condition_note": "Question asked: \"How many items of garlic bread?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "field_notes": "Question asked: \"How many items of garlic bread?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f101240"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 3,
+    "food_item": "Crispbread intake",
+    "table_s1_field_id": "101250",
+    "field_id": 101250,
+    "field_title": "Crispbread intake",
+    "units": "Biscuit  / Item",
+    "encoding_id": 100006,
+    "portion_size_g": 10.0,
+    "question_prompt": "How many items of crackers, crispbread, rice cakes, corn cakes (e.g. Ryvita)?",
+    "condition_note": "Question asked: \"How many items of crackers, crispbread, rice cakes, corn cakes (e.g. Ryvita)?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "field_notes": "Question asked: \"How many items of crackers, crispbread, rice cakes, corn cakes (e.g. Ryvita)?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f101250"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 4,
+    "food_item": "Oatcakes intake",
+    "table_s1_field_id": "101260",
+    "field_id": 101260,
+    "field_title": "Oatcakes intake",
+    "units": "Biscuit",
+    "encoding_id": 100006,
+    "portion_size_g": 13.0,
+    "question_prompt": "How many items of oat cakes?",
+    "condition_note": "Question asked: \"How many items of oat cakes?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "field_notes": "Question asked: \"How many items of oat cakes?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f101260"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 5,
+    "food_item": "Other bread intake",
+    "table_s1_field_id": "101270",
+    "field_id": 101270,
+    "field_title": "Other bread intake",
+    "units": "Slice / Item",
+    "encoding_id": 100006,
+    "portion_size_g": 45.0,
+    "question_prompt": "How many items of other bread (e.g. crumpets, tortilla wraps, breadsticks)?",
+    "condition_note": "Question asked: \"How many items of other bread (e.g. crumpets, tortilla wraps, breadsticks)?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "field_notes": "Question asked: \"How many items of other bread (e.g. crumpets, tortilla wraps, breadsticks)?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f101270"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 6,
+    "food_item": "White pasta intake",
+    "table_s1_field_id": "102710",
+    "field_id": 102710,
+    "field_title": "White pasta intake",
+    "units": "Serving",
+    "encoding_id": 100001,
+    "portion_size_g": 230.0,
+    "question_prompt": "How many servings of white pasta/noodles did you have?",
+    "condition_note": "Question asked: \"How many servings of white pasta/noodles did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous. If the participant activated the Help feature they were shown the message: Please treat coloured pasta (e.g. green) as white pasta.",
+    "field_notes": "Question asked: \"How many servings of white pasta/noodles did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous. If the participant activated the Help feature they were shown the message: Please treat coloured pasta (e.g. green) as white pasta.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "200",
+        "label": "2+",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102710"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 7,
+    "food_item": "White rice intake",
+    "table_s1_field_id": "102730",
+    "field_id": 102730,
+    "field_title": "White rice intake",
+    "units": "Serving",
+    "encoding_id": 100001,
+    "portion_size_g": 150.0,
+    "question_prompt": "How many servings of white rice did you have?",
+    "condition_note": "Question asked: \"How many servings of white rice did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous.",
+    "field_notes": "Question asked: \"How many servings of white rice did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "200",
+        "label": "2+",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102730"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 8,
+    "food_item": "Sushi intake",
+    "table_s1_field_id": "102750",
+    "field_id": 102750,
+    "field_title": "Sushi intake",
+    "units": "Sushi",
+    "encoding_id": 100001,
+    "portion_size_g": 278.0,
+    "question_prompt": "How many pieces of sushi did you have?",
+    "condition_note": "Question asked: \"How many pieces of sushi did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous. If the participant activated the Help feature they were shown the message: Sushi consists of sushi rice, sometimes with seaweed, with a variety of toppings/fillings made from vegetables, fish and meat. If you record that you have eaten sushi, then you do not need to record the toppings/fillings or seaweed elsewhere.",
+    "field_notes": "Question asked: \"How many pieces of sushi did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous. If the participant activated the Help feature they were shown the message: Sushi consists of sushi rice, sometimes with seaweed, with a variety of toppings/fillings made from vegetables, fish and meat. If you record that you have eaten sushi, then you do not need to record the toppings/fillings or seaweed elsewhere.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "200",
+        "label": "2+",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102750"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 9,
+    "food_item": "Snackpot intake",
+    "table_s1_field_id": "102760",
+    "field_id": 102760,
+    "field_title": "Snackpot intake",
+    "units": "Pot",
+    "encoding_id": 100001,
+    "portion_size_g": 280.0,
+    "question_prompt": "How many pots of snack pot, noodles/rice (e.g. Pot Noodle) did you have?",
+    "condition_note": "Question asked: \"How many pots of snack pot, noodles/rice (e.g. Pot Noodle) did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous.",
+    "field_notes": "Question asked: \"How many pots of snack pot, noodles/rice (e.g. Pot Noodle) did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "200",
+        "label": "2+",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102760"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 10,
+    "food_item": "Couscous intake",
+    "table_s1_field_id": "102770",
+    "field_id": 102770,
+    "field_title": "Couscous intake",
+    "units": "Serving",
+    "encoding_id": 100001,
+    "portion_size_g": 150.0,
+    "question_prompt": "How many servings of couscous did you have?",
+    "condition_note": "Question asked: \"How many servings of couscous did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous.",
+    "field_notes": "Question asked: \"How many servings of couscous did you have?\" This question was only asked to participants who reported consuming pasta, rice, sushi or couscous.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "200",
+        "label": "2+",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102770"
+  },
+  {
+    "component_order": 5,
+    "component_key": "refined_grains",
+    "component_name": "Refined grains",
+    "item_order": 14,
+    "food_item": "Bread roll intake (white)",
+    "table_s1_field_id": "w-101160",
+    "field_id": 101160,
+    "field_title": "Bread roll intake",
+    "units": "Bread item",
+    "encoding_id": 100006,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many items of bread roll, bap, burger bun, hotdog roll, bagel?",
+    "condition_note": "Question asked: \"How many items of bread roll, bap, burger bun, hotdog roll, bagel?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "field_notes": "Question asked: \"How many items of bread roll, bap, burger bun, hotdog roll, bagel?\" This question was only asked to participants who reported consuming bread or crackers yesterday.",
+    "selector_field_id": 20094,
+    "selector_field_title": "Type of bread roll eaten",
+    "selector_field_notes": "This field indicates the type(s) of bread roll the participant consumed yesterday. The data is an amalgamation of 5 individual tick boxes which were asked if the participant indicated they consumed bread roll.",
+    "selector_value_code": "1",
+    "selector_value_label": "White",
+    "is_derived_bread_item": true,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "w101160"
+  },
+  {
+    "component_order": 6,
+    "component_key": "eggs",
+    "component_name": "Eggs",
+    "item_order": 1,
+    "food_item": "Whole egg intake",
+    "table_s1_field_id": "102940",
+    "field_id": 102940,
+    "field_title": "Whole egg intake",
+    "units": "Number of eggs",
+    "encoding_id": 100003,
+    "portion_size_g": 50.0,
+    "question_prompt": "How many whole eggs (e.g. fried, boiled, poached) did you have?",
+    "condition_note": "Question asked: \"How many whole eggs (e.g. fried, boiled, poached) did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "field_notes": "Question asked: \"How many whole eggs (e.g. fried, boiled, poached) did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102940"
+  },
+  {
+    "component_order": 6,
+    "component_key": "eggs",
+    "component_name": "Eggs",
+    "item_order": 2,
+    "food_item": "Omelette intake",
+    "table_s1_field_id": "102950",
+    "field_id": 102950,
+    "field_title": "Omelette intake",
+    "units": "Serving",
+    "encoding_id": 100003,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many servings of omelettes or scrambled eggs did you have?",
+    "condition_note": "Question asked: \"How many servings of omelettes or scrambled eggs did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "field_notes": "Question asked: \"How many servings of omelettes or scrambled eggs did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102950"
+  },
+  {
+    "component_order": 6,
+    "component_key": "eggs",
+    "component_name": "Eggs",
+    "item_order": 3,
+    "food_item": "Eggs in sandwiches intake",
+    "table_s1_field_id": "102960",
+    "field_id": 102960,
+    "field_title": "Eggs in sandwiches intake",
+    "units": "Serving",
+    "encoding_id": 100003,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many servings of egg in sandwiches (made with or without mayonnaise) did you have?",
+    "condition_note": "Question asked: \"How many servings of egg in sandwiches (made with or without mayonnaise) did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "field_notes": "Question asked: \"How many servings of egg in sandwiches (made with or without mayonnaise) did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102960"
+  },
+  {
+    "component_order": 6,
+    "component_key": "eggs",
+    "component_name": "Eggs",
+    "item_order": 4,
+    "food_item": "Scotch egg intake",
+    "table_s1_field_id": "102970",
+    "field_id": 102970,
+    "field_title": "Scotch egg intake",
+    "units": "Each",
+    "encoding_id": 100003,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many scotch eggs did you have?",
+    "condition_note": "Question asked: \"How many scotch eggs did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "field_notes": "Question asked: \"How many scotch eggs did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102970"
+  },
+  {
+    "component_order": 6,
+    "component_key": "eggs",
+    "component_name": "Eggs",
+    "item_order": 5,
+    "food_item": "Other egg intake",
+    "table_s1_field_id": "102980",
+    "field_id": 102980,
+    "field_title": "Other egg intake",
+    "units": "Serving",
+    "encoding_id": 100003,
+    "portion_size_g": 75.0,
+    "question_prompt": "How many servings of other egg dishes did you have?",
+    "condition_note": "Question asked: \"How many servings of other egg dishes did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "field_notes": "Question asked: \"How many servings of other egg dishes did you have?\" This question was only asked to participants who reported consuming eggs.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102980"
+  },
+  {
+    "component_order": 7,
+    "component_key": "low_fat_dairy",
+    "component_name": "Low-fat dairy products",
+    "item_order": 1,
+    "food_item": "Low fat yogurt",
+    "table_s1_field_id": "26102",
+    "field_id": 26102,
+    "field_title": "Low fat yogurt",
+    "units": "g",
+    "encoding_id": 0,
+    "portion_size_g": 125.0,
+    "question_prompt": "",
+    "condition_note": "Total weight of food group: Low fat yogurt. Estimated intake from past 24 hours.",
+    "field_notes": "Total weight of food group: Low fat yogurt. Estimated intake from past 24 hours.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "grams",
+    "input_unit": "g/day",
+    "encoding_options": [],
+    "active_item_id": "f26102"
+  },
+  {
+    "component_order": 7,
+    "component_key": "low_fat_dairy",
+    "component_name": "Low-fat dairy products",
+    "item_order": 2,
+    "food_item": "Semi skimmed milk",
+    "table_s1_field_id": "26131",
+    "field_id": 26131,
+    "field_title": "Semi skimmed milk",
+    "units": "g",
+    "encoding_id": 0,
+    "portion_size_g": 259.0,
+    "question_prompt": "",
+    "condition_note": "Total weight of food group: Semi skimmed milk ( >1 g fat per 100 g). Estimated intake from past 24 hours.",
+    "field_notes": "Total weight of food group: Semi skimmed milk ( >1 g fat per 100 g). Estimated intake from past 24 hours.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "grams",
+    "input_unit": "g/day",
+    "encoding_options": [],
+    "active_item_id": "f26131"
+  },
+  {
+    "component_order": 7,
+    "component_key": "low_fat_dairy",
+    "component_name": "Low-fat dairy products",
+    "item_order": 3,
+    "food_item": "Skimmed milk and cholesterol-lowering milk",
+    "table_s1_field_id": "26133",
+    "field_id": 26133,
+    "field_title": "Skimmed milk and cholesterol-lowering milk",
+    "units": "g",
+    "encoding_id": 0,
+    "portion_size_g": 259.0,
+    "question_prompt": "",
+    "condition_note": "Total weight of food group: Skimmed milk and cholesterol-lowering milk. Estimated intake from past 24 hours .",
+    "field_notes": "Total weight of food group: Skimmed milk and cholesterol-lowering milk. Estimated intake from past 24 hours .",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "grams",
+    "input_unit": "g/day",
+    "encoding_options": [],
+    "active_item_id": "f26133"
+  },
+  {
+    "component_order": 7,
+    "component_key": "low_fat_dairy",
+    "component_name": "Low-fat dairy products",
+    "item_order": 4,
+    "food_item": "Low fat hard cheese intake",
+    "table_s1_field_id": "102810",
+    "field_id": 102810,
+    "field_title": "Low fat hard cheese intake",
+    "units": "Serving",
+    "encoding_id": 100003,
+    "portion_size_g": 40.0,
+    "question_prompt": "How many servings of low fat hard cheese (e.g. Edam, reduced fat Cheddar) did you have?",
+    "condition_note": "Question asked: \"How many servings of low fat hard cheese (e.g. Edam, reduced fat Cheddar) did you have?\" This question was only asked to participants who reported consuming cheese.",
+    "field_notes": "Question asked: \"How many servings of low fat hard cheese (e.g. Edam, reduced fat Cheddar) did you have?\" This question was only asked to participants who reported consuming cheese.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102810"
+  },
+  {
+    "component_order": 7,
+    "component_key": "low_fat_dairy",
+    "component_name": "Low-fat dairy products",
+    "item_order": 5,
+    "food_item": "Low fat cheese spread intake",
+    "table_s1_field_id": "102850",
+    "field_id": 102850,
+    "field_title": "Low fat cheese spread intake",
+    "units": "Serving",
+    "encoding_id": 100003,
+    "portion_size_g": 15.0,
+    "question_prompt": "How many servings of low fat spreadable cheese did you have?",
+    "condition_note": "Question asked: \"How many servings of low fat spreadable cheese did you have?\" This question was only asked to participants who reported consuming cheese.",
+    "field_notes": "Question asked: \"How many servings of low fat spreadable cheese did you have?\" This question was only asked to participants who reported consuming cheese.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102850"
+  },
+  {
+    "component_order": 7,
+    "component_key": "low_fat_dairy",
+    "component_name": "Low-fat dairy products",
+    "item_order": 6,
+    "food_item": "Cottage cheese intake",
+    "table_s1_field_id": "102870",
+    "field_id": 102870,
+    "field_title": "Cottage cheese intake",
+    "units": "Serving",
+    "encoding_id": 100003,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many servings of cottage cheese did you have?",
+    "condition_note": "Question asked: \"How many servings of cottage cheese did you have?\" This question was only asked to participants who reported consuming cheese.",
+    "field_notes": "Question asked: \"How many servings of cottage cheese did you have?\" This question was only asked to participants who reported consuming cheese.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "300",
+        "label": "3+",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f102870"
+  },
+  {
+    "component_order": 8,
+    "component_key": "red_meats",
+    "component_name": "Red meats",
+    "item_order": 1,
+    "food_item": "Beef intake",
+    "table_s1_field_id": "103020",
+    "field_id": 103020,
+    "field_title": "Beef intake",
+    "units": "Serving",
+    "encoding_id": 100016,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many servings of beef (e.g. roast, steak, mince, curry, burger) did you have?",
+    "condition_note": "Question asked: \"How many servings of beef (e.g. roast, steak, mince, curry, burger) did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "field_notes": "Question asked: \"How many servings of beef (e.g. roast, steak, mince, curry, burger) did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "500",
+        "label": "5+",
+        "value": 5
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103020"
+  },
+  {
+    "component_order": 8,
+    "component_key": "red_meats",
+    "component_name": "Red meats",
+    "item_order": 2,
+    "food_item": "Pork intake",
+    "table_s1_field_id": "103030",
+    "field_id": 103030,
+    "field_title": "Pork intake",
+    "units": "Serving",
+    "encoding_id": 100016,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many servings of pork (e.g. roast, chops, sweet and sour) did you have?",
+    "condition_note": "Question asked: \"How many servings of pork (e.g. roast, chops, sweet and sour) did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "field_notes": "Question asked: \"How many servings of pork (e.g. roast, chops, sweet and sour) did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "500",
+        "label": "5+",
+        "value": 5
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103030"
+  },
+  {
+    "component_order": 8,
+    "component_key": "red_meats",
+    "component_name": "Red meats",
+    "item_order": 3,
+    "food_item": "Lamb intake",
+    "table_s1_field_id": "103040",
+    "field_id": 103040,
+    "field_title": "Lamb intake",
+    "units": "Serving",
+    "encoding_id": 100016,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many servings of lamb or mutton (e.g. roast, chops, stew, burger) did you have?",
+    "condition_note": "Question asked: \"How many servings of lamb or mutton (e.g. roast, chops, stew, burger) did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "field_notes": "Question asked: \"How many servings of lamb or mutton (e.g. roast, chops, stew, burger) did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "500",
+        "label": "5+",
+        "value": 5
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103040"
+  },
+  {
+    "component_order": 9,
+    "component_key": "processed_meats",
+    "component_name": "Processed meats",
+    "item_order": 1,
+    "food_item": "Sausage intake",
+    "table_s1_field_id": "103010",
+    "field_id": 103010,
+    "field_title": "Sausage intake",
+    "units": "Each",
+    "encoding_id": 100016,
+    "portion_size_g": 30.0,
+    "question_prompt": "How many sausages did you have?",
+    "condition_note": "Question asked: \"How many sausages did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "field_notes": "Question asked: \"How many sausages did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "500",
+        "label": "5+",
+        "value": 5
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103010"
+  },
+  {
+    "component_order": 9,
+    "component_key": "processed_meats",
+    "component_name": "Processed meats",
+    "item_order": 2,
+    "food_item": "Bacon intake",
+    "table_s1_field_id": "103070",
+    "field_id": 103070,
+    "field_title": "Bacon intake",
+    "units": "Rasher",
+    "encoding_id": 100016,
+    "portion_size_g": 46.0,
+    "question_prompt": "How many rashers of bacon did you have?",
+    "condition_note": "Question asked: \"How many rashers of bacon did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "field_notes": "Question asked: \"How many rashers of bacon did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "500",
+        "label": "5+",
+        "value": 5
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103070"
+  },
+  {
+    "component_order": 9,
+    "component_key": "processed_meats",
+    "component_name": "Processed meats",
+    "item_order": 3,
+    "food_item": "Ham intake",
+    "table_s1_field_id": "103080",
+    "field_id": 103080,
+    "field_title": "Ham intake",
+    "units": "Slice",
+    "encoding_id": 100016,
+    "portion_size_g": 23.0,
+    "question_prompt": "How many slices of ham, Parma ham, salami, pastrami, cured meats did you have?",
+    "condition_note": "Question asked: \"How many slices of ham, Parma ham, salami, pastrami, cured meats did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "field_notes": "Question asked: \"How many slices of ham, Parma ham, salami, pastrami, cured meats did you have?\" This question was only asked to participants who reported consuming meat or poultry.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "500",
+        "label": "5+",
+        "value": 5
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103080"
+  },
+  {
+    "component_order": 10,
+    "component_key": "fish_seafood",
+    "component_name": "Fish and other seafood",
+    "item_order": 1,
+    "food_item": "Tinned tuna intake",
+    "table_s1_field_id": "103150",
+    "field_id": 103150,
+    "field_title": "Tinned tuna intake",
+    "units": "Serving",
+    "encoding_id": 100004,
+    "portion_size_g": 92.0,
+    "question_prompt": "How many servings of tinned tuna did you have?",
+    "condition_note": "Question asked: \"How many servings of tinned tuna did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "field_notes": "Question asked: \"How many servings of tinned tuna did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103150"
+  },
+  {
+    "component_order": 10,
+    "component_key": "fish_seafood",
+    "component_name": "Fish and other seafood",
+    "item_order": 2,
+    "food_item": "Oily fish intake",
+    "table_s1_field_id": "103160",
+    "field_id": 103160,
+    "field_title": "Oily fish intake",
+    "units": "Serving",
+    "encoding_id": 100004,
+    "portion_size_g": 100.0,
+    "question_prompt": "How many servings of oily fish (e.g. salmon, tinned salmon, herring, mackerel, sardines, fresh tuna steak) did you have?",
+    "condition_note": "Question asked: \"How many servings of oily fish (e.g. salmon, tinned salmon, herring, mackerel, sardines, fresh tuna steak) did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "field_notes": "Question asked: \"How many servings of oily fish (e.g. salmon, tinned salmon, herring, mackerel, sardines, fresh tuna steak) did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103160"
+  },
+  {
+    "component_order": 10,
+    "component_key": "fish_seafood",
+    "component_name": "Fish and other seafood",
+    "item_order": 3,
+    "food_item": "White fish intake",
+    "table_s1_field_id": "103190",
+    "field_id": 103190,
+    "field_title": "White fish intake",
+    "units": "Serving",
+    "encoding_id": 100004,
+    "portion_size_g": 120.0,
+    "question_prompt": "How many servings of white fish (e.g. cod, haddock, fish pie) did you have?",
+    "condition_note": "Question asked: \"How many servings of white fish (e.g. cod, haddock, fish pie) did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "field_notes": "Question asked: \"How many servings of white fish (e.g. cod, haddock, fish pie) did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103190"
+  },
+  {
+    "component_order": 10,
+    "component_key": "fish_seafood",
+    "component_name": "Fish and other seafood",
+    "item_order": 4,
+    "food_item": "Other fish intake",
+    "table_s1_field_id": "103230",
+    "field_id": 103230,
+    "field_title": "Other fish intake",
+    "units": "Serving",
+    "encoding_id": 100004,
+    "portion_size_g": 100.0,
+    "question_prompt": "How many servings of other fish did you have?",
+    "condition_note": "Question asked: \"How many servings of other fish did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "field_notes": "Question asked: \"How many servings of other fish did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103230"
+  },
+  {
+    "component_order": 10,
+    "component_key": "fish_seafood",
+    "component_name": "Fish and other seafood",
+    "item_order": 5,
+    "food_item": "Prawns intake",
+    "table_s1_field_id": "103200",
+    "field_id": 103200,
+    "field_title": "Prawns intake",
+    "units": "Serving",
+    "encoding_id": 100004,
+    "portion_size_g": 60.0,
+    "question_prompt": "How many servings of prawns did you have?",
+    "condition_note": "Question asked: \"How many servings of prawns did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "field_notes": "Question asked: \"How many servings of prawns did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103200"
+  },
+  {
+    "component_order": 10,
+    "component_key": "fish_seafood",
+    "component_name": "Fish and other seafood",
+    "item_order": 6,
+    "food_item": "Lobster/crab intake",
+    "table_s1_field_id": "103210",
+    "field_id": 103210,
+    "field_title": "Lobster/crab intake",
+    "units": "Serving",
+    "encoding_id": 100004,
+    "portion_size_g": 85.0,
+    "question_prompt": "How many servings of lobster or crab did you have?",
+    "condition_note": "Question asked: \"How many servings of lobster or crab did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "field_notes": "Question asked: \"How many servings of lobster or crab did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103210"
+  },
+  {
+    "component_order": 10,
+    "component_key": "fish_seafood",
+    "component_name": "Fish and other seafood",
+    "item_order": 7,
+    "food_item": "Shellfish intake",
+    "table_s1_field_id": "103220",
+    "field_id": 103220,
+    "field_title": "Shellfish intake",
+    "units": "Serving",
+    "encoding_id": 100004,
+    "portion_size_g": 40.0,
+    "question_prompt": "How many servings of shellfish (e.g. mussels, scallops) did you have?",
+    "condition_note": "Question asked: \"How many servings of shellfish (e.g. mussels, scallops) did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "field_notes": "Question asked: \"How many servings of shellfish (e.g. mussels, scallops) did you have?\" This question was only asked to participants who reported consuming fish or seafood.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "400",
+        "label": "4+",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f103220"
+  },
+  {
+    "component_order": 11,
+    "component_key": "coffee",
+    "component_name": "Coffee",
+    "item_order": 1,
+    "food_item": "Instant coffee intake",
+    "table_s1_field_id": "100250",
+    "field_id": 100250,
+    "field_title": "Instant coffee intake",
+    "units": "Mug/Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 190.0,
+    "question_prompt": "How many cups/mugs of instant coffee did you drink yesterday?",
+    "condition_note": "Question asked: \"How many cups/mugs of instant coffee did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "field_notes": "Question asked: \"How many cups/mugs of instant coffee did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100250"
+  },
+  {
+    "component_order": 11,
+    "component_key": "coffee",
+    "component_name": "Coffee",
+    "item_order": 2,
+    "food_item": "Filtered coffee intake",
+    "table_s1_field_id": "100270",
+    "field_id": 100270,
+    "field_title": "Filtered coffee intake",
+    "units": "Mug/Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 190.0,
+    "question_prompt": "How many cups/mugs of filter/americano/cafetiere coffee did you drink yesterday?",
+    "condition_note": "Question asked: \"How many cups/mugs of filter/americano/cafetiere coffee did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "field_notes": "Question asked: \"How many cups/mugs of filter/americano/cafetiere coffee did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100270"
+  },
+  {
+    "component_order": 11,
+    "component_key": "coffee",
+    "component_name": "Coffee",
+    "item_order": 3,
+    "food_item": "Cappuccino intake",
+    "table_s1_field_id": "100290",
+    "field_id": 100290,
+    "field_title": "Cappuccino intake",
+    "units": "Mug/Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 30.0,
+    "question_prompt": "How many cups/mugs of cappuccino did you drink yesterday?",
+    "condition_note": "Question asked: \"How many cups/mugs of cappuccino did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "field_notes": "Question asked: \"How many cups/mugs of cappuccino did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100290"
+  },
+  {
+    "component_order": 11,
+    "component_key": "coffee",
+    "component_name": "Coffee",
+    "item_order": 4,
+    "food_item": "Latte intake",
+    "table_s1_field_id": "100300",
+    "field_id": 100300,
+    "field_title": "Latte intake",
+    "units": "Mug/Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 30.0,
+    "question_prompt": "How many cups/mugs of latte did you drink yesterday?",
+    "condition_note": "Question asked: \"How many cups/mugs of latte did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "field_notes": "Question asked: \"How many cups/mugs of latte did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100300"
+  },
+  {
+    "component_order": 11,
+    "component_key": "coffee",
+    "component_name": "Coffee",
+    "item_order": 5,
+    "food_item": "Espresso intake",
+    "table_s1_field_id": "100310",
+    "field_id": 100310,
+    "field_title": "Espresso intake",
+    "units": "Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 30.0,
+    "question_prompt": "How many cups/mugs of espresso did you drink yesterday?",
+    "condition_note": "Question asked: \"How many cups/mugs of espresso did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "field_notes": "Question asked: \"How many cups/mugs of espresso did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100310"
+  },
+  {
+    "component_order": 11,
+    "component_key": "coffee",
+    "component_name": "Coffee",
+    "item_order": 6,
+    "food_item": "Other coffee type",
+    "table_s1_field_id": "100330",
+    "field_id": 100330,
+    "field_title": "Other coffee type",
+    "units": "Mug/Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 190.0,
+    "question_prompt": "How many cups/mugs of other coffee drinks did you drink yesterday?",
+    "condition_note": "Question asked: \"How many cups/mugs of other coffee drinks did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "field_notes": "Question asked: \"How many cups/mugs of other coffee drinks did you drink yesterday?\" This question was only asked to participants who reported drinking coffee yesterday.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100330"
+  },
+  {
+    "component_order": 12,
+    "component_key": "fruit_juices",
+    "component_name": "Fruit juices",
+    "item_order": 1,
+    "food_item": "Orange juice intake",
+    "table_s1_field_id": "100190",
+    "field_id": 100190,
+    "field_title": "Orange juice intake",
+    "units": "Glass/Carton/250ml",
+    "encoding_id": 100006,
+    "portion_size_g": 250.0,
+    "question_prompt": "How many glasses/cartons/250ml of pure orange juice did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cartons/250ml of pure orange juice did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/cartons/250ml of pure orange juice did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100190"
+  },
+  {
+    "component_order": 12,
+    "component_key": "fruit_juices",
+    "component_name": "Fruit juices",
+    "item_order": 2,
+    "food_item": "Grapefruit juice intake",
+    "table_s1_field_id": "100200",
+    "field_id": 100200,
+    "field_title": "Grapefruit juice intake",
+    "units": "Glass/Carton/250ml",
+    "encoding_id": 100006,
+    "portion_size_g": 250.0,
+    "question_prompt": "How many glasses/cartons/250ml of pure grapefruit juice did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cartons/250ml of pure grapefruit juice did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/cartons/250ml of pure grapefruit juice did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100200"
+  },
+  {
+    "component_order": 12,
+    "component_key": "fruit_juices",
+    "component_name": "Fruit juices",
+    "item_order": 3,
+    "food_item": "Pure fruit/vegetable juice intake",
+    "table_s1_field_id": "100210",
+    "field_id": 100210,
+    "field_title": "Pure fruit/vegetable juice intake",
+    "units": "Glass/Carton/250ml",
+    "encoding_id": 100006,
+    "portion_size_g": 250.0,
+    "question_prompt": "How many glasses/cartons/250ml of other pure fruit / vegetable juice did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cartons/250ml of other pure fruit / vegetable juice did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/cartons/250ml of other pure fruit / vegetable juice did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100210"
+  },
+  {
+    "component_order": 13,
+    "component_key": "sweetened_bev",
+    "component_name": "Sweetened beverages",
+    "item_order": 1,
+    "food_item": "Fizzy drink intake",
+    "table_s1_field_id": "100170",
+    "field_id": 100170,
+    "field_title": "Fizzy drink intake",
+    "units": "Glass/Can",
+    "encoding_id": 100006,
+    "portion_size_g": 330.0,
+    "question_prompt": "How many glasses/cans of carbonated (fizzy) drinks did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cans of carbonated (fizzy) drinks did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/cans of carbonated (fizzy) drinks did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100170"
+  },
+  {
+    "component_order": 13,
+    "component_key": "sweetened_bev",
+    "component_name": "Sweetened beverages",
+    "item_order": 2,
+    "food_item": "Squash intake",
+    "table_s1_field_id": "100180",
+    "field_id": 100180,
+    "field_title": "Squash intake",
+    "units": "Glass/Carton/250ml",
+    "encoding_id": 100006,
+    "portion_size_g": 250.0,
+    "question_prompt": "How many glasses/cartons/250ml of fruit drinks, J20, squash or cordial did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cartons/250ml of fruit drinks, J20, squash or cordial did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/cartons/250ml of fruit drinks, J20, squash or cordial did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100180"
+  },
+  {
+    "component_order": 13,
+    "component_key": "sweetened_bev",
+    "component_name": "Sweetened beverages",
+    "item_order": 3,
+    "food_item": "Fruit smoothie intake",
+    "table_s1_field_id": "100220",
+    "field_id": 100220,
+    "field_title": "Fruit smoothie intake",
+    "units": "Glass/Bottle/250ml",
+    "encoding_id": 100006,
+    "portion_size_g": 260.0,
+    "question_prompt": "How many glasses/cartons/250ml of fruit smoothie did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cartons/250ml of fruit smoothie did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/cartons/250ml of fruit smoothie did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100220"
+  },
+  {
+    "component_order": 13,
+    "component_key": "sweetened_bev",
+    "component_name": "Sweetened beverages",
+    "item_order": 4,
+    "food_item": "Dairy smoothie intake",
+    "table_s1_field_id": "100230",
+    "field_id": 100230,
+    "field_title": "Dairy smoothie intake",
+    "units": "Glass/Bottle/250ml",
+    "encoding_id": 100006,
+    "portion_size_g": 260.0,
+    "question_prompt": "How many glasses/cartons/250ml of dairy/yogurt based smoothie did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cartons/250ml of dairy/yogurt based smoothie did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/cartons/250ml of dairy/yogurt based smoothie did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100230"
+  },
+  {
+    "component_order": 13,
+    "component_key": "sweetened_bev",
+    "component_name": "Sweetened beverages",
+    "item_order": 5,
+    "food_item": "Hot chocolate intake",
+    "table_s1_field_id": "100550",
+    "field_id": 100550,
+    "field_title": "Hot chocolate intake",
+    "units": "Mug/Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 143.0,
+    "question_prompt": "How many mugs/cups of hot chocolate or other milk-based drinks (including Horlicks) did you consume yesterday?",
+    "condition_note": "Question asked: \"How many mugs/cups of hot chocolate or other milk-based drinks (including Horlicks) did you consume yesterday?\"",
+    "field_notes": "Question asked: \"How many mugs/cups of hot chocolate or other milk-based drinks (including Horlicks) did you consume yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100550"
+  },
+  {
+    "component_order": 13,
+    "component_key": "sweetened_bev",
+    "component_name": "Sweetened beverages",
+    "item_order": 6,
+    "food_item": "Low calorie drink intake",
+    "table_s1_field_id": "100160",
+    "field_id": 100160,
+    "field_title": "Low calorie drink intake",
+    "units": "Glass/Can",
+    "encoding_id": 100006,
+    "portion_size_g": 330.0,
+    "question_prompt": "How many glasses/cans of low calorie or diet drinks (e.g. fizzy, squash) did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/cans of low calorie or diet drinks (e.g. fizzy, squash) did you drink yesterday?\" If the participant activated the Help feature they were shown the message: Low calorie flavoured water should be recorded under low calorie drinks.",
+    "field_notes": "Question asked: \"How many glasses/cans of low calorie or diet drinks (e.g. fizzy, squash) did you drink yesterday?\" If the participant activated the Help feature they were shown the message: Low calorie flavoured water should be recorded under low calorie drinks.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100160"
+  },
+  {
+    "component_order": 13,
+    "component_key": "sweetened_bev",
+    "component_name": "Sweetened beverages",
+    "item_order": 7,
+    "food_item": "Low calorie hot chocolate intake",
+    "table_s1_field_id": "100540",
+    "field_id": 100540,
+    "field_title": "Low calorie hot chocolate intake",
+    "units": "Mug/Cup",
+    "encoding_id": 100006,
+    "portion_size_g": 143.0,
+    "question_prompt": "How many mugs/cups of low calorie hot chocolate drinks did you consume yesterday?",
+    "condition_note": "Question asked: \"How many mugs/cups of low calorie hot chocolate drinks did you consume yesterday?\"",
+    "field_notes": "Question asked: \"How many mugs/cups of low calorie hot chocolate drinks did you consume yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100540"
+  },
+  {
+    "component_order": 14,
+    "component_key": "water",
+    "component_name": "Water",
+    "item_order": 1,
+    "food_item": "Drinking water intake",
+    "table_s1_field_id": "100150",
+    "field_id": 100150,
+    "field_title": "Drinking water intake",
+    "units": "Glass/Beaker",
+    "encoding_id": 100006,
+    "portion_size_g": 250.0,
+    "question_prompt": "How many glasses/beakers of water (e.g. still, fizzy, tap) did you drink yesterday?",
+    "condition_note": "Question asked: \"How many glasses/beakers of water (e.g. still, fizzy, tap) did you drink yesterday?\"",
+    "field_notes": "Question asked: \"How many glasses/beakers of water (e.g. still, fizzy, tap) did you drink yesterday?\"",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "select",
+    "input_unit": "response category",
+    "encoding_options": [
+      {
+        "code": "5",
+        "label": "5",
+        "value": 5
+      },
+      {
+        "code": "600",
+        "label": "6+",
+        "value": 6
+      },
+      {
+        "code": "4",
+        "label": "4",
+        "value": 4
+      },
+      {
+        "code": "3",
+        "label": "3",
+        "value": 3
+      },
+      {
+        "code": "2",
+        "label": "2",
+        "value": 2
+      },
+      {
+        "code": "1",
+        "label": "1",
+        "value": 1
+      },
+      {
+        "code": "555",
+        "label": "½",
+        "value": 0.5
+      }
+    ],
+    "active_item_id": "f100150"
+  },
+  {
+    "component_order": 15,
+    "component_key": "wine",
+    "component_name": "Wine",
+    "item_order": 1,
+    "food_item": "Fortified wine intake",
+    "table_s1_field_id": "26151",
+    "field_id": 26151,
+    "field_title": "Fortified wine",
+    "units": "g",
+    "encoding_id": 0,
+    "portion_size_g": 50.0,
+    "question_prompt": "",
+    "condition_note": "Total weight of food group: Fortified wine. Estimated intake from past 24 hours.",
+    "field_notes": "Total weight of food group: Fortified wine. Estimated intake from past 24 hours.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "grams",
+    "input_unit": "g/day",
+    "encoding_options": [],
+    "active_item_id": "f26151"
+  },
+  {
+    "component_order": 15,
+    "component_key": "wine",
+    "component_name": "Wine",
+    "item_order": 2,
+    "food_item": "Red wine intake",
+    "table_s1_field_id": "26152",
+    "field_id": 26152,
+    "field_title": "Red wine",
+    "units": "g",
+    "encoding_id": 0,
+    "portion_size_g": 175.0,
+    "question_prompt": "",
+    "condition_note": "Total weight of food group: Red wine. Estimated intake from past 24 hours.",
+    "field_notes": "Total weight of food group: Red wine. Estimated intake from past 24 hours.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "grams",
+    "input_unit": "g/day",
+    "encoding_options": [],
+    "active_item_id": "f26152"
+  },
+  {
+    "component_order": 15,
+    "component_key": "wine",
+    "component_name": "Wine",
+    "item_order": 3,
+    "food_item": "White wine intake",
+    "table_s1_field_id": "26153",
+    "field_id": 26153,
+    "field_title": "White wine",
+    "units": "g",
+    "encoding_id": 0,
+    "portion_size_g": 175.0,
+    "question_prompt": "",
+    "condition_note": "Total weight of food group: White wine. Estimated intake from past 24 hours.",
+    "field_notes": "Total weight of food group: White wine. Estimated intake from past 24 hours.",
+    "selector_field_id": null,
+    "selector_field_title": "",
+    "selector_field_notes": "",
+    "selector_value_code": "",
+    "selector_value_label": "",
+    "is_derived_bread_item": false,
+    "input_type": "grams",
+    "input_unit": "g/day",
+    "encoding_options": [],
+    "active_item_id": "f26153"
+  }
+]

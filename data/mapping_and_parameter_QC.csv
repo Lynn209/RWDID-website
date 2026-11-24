@@ -1,0 +1,18 @@
+﻿check,value,detail
+Table S1 rows parsed,206,Uploaded Table S1 rows across 34 food groups.
+Final components,15,Frozen final RWDID components.
+Final Table S1 rows,85,Selected item rows in the final 15 groups.
+Field dictionary matches,85,All numeric Table S1 FieldIDs matched field.csv.
+Direct items,81,Direct UK Biobank food-item fields.
+White-bread pseudo items,4,Four Table S1 pseudo-IDs require bread-type selectors.
+Active calculator inputs,82,81 direct fields plus the retained white bread roll pseudo-field.
+Inactive white-bread pseudo items,3,Not retained in frozen Step_02_1_1 sequential overwrite implementation.
+Encoding ID 0 gram fields,6,Converted from grams using Table S1 portion sizes.
+Legacy field_data_final rows,98,Old Shiny mapping superseded.
+Legacy missing final groups,2,Fruit juices; Water
+Legacy non-final groups,2,Green leafy vegetables; High-fat dairy products
+Beta coefficient sum,-1.6217920821267078,Denominator for current RWDID formula.
+All beta estimates negative,True,Current uploaded coefficient file.
+P1/P99 support reconciliation,True,Separate support file matches RWDID-C parameter table.
+Binary/continuous interval reconciliation,True,15 component order and intake anchors reconcile.
+Training score formula max absolute difference,1.2212453270876722e-15,Recomputed from participant-level training score file; not published.

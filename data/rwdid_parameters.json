@@ -1,0 +1,462 @@
+{
+  "version": "2026-11-24",
+  "score_definitions": {
+    "RWDID": "Binary 0/1 component scores weighted by the 15 training-set Cox beta coefficients and divided by their algebraic sum.",
+    "RWDID_C": "Equal-weight sum of 15 continuous proportional component scores, each bounded between 0 and 1."
+  },
+  "beta_sum": -1.6217920821267078,
+  "beta_all_negative": true,
+  "components": [
+    {
+      "order": 1,
+      "food": "citrus_fruits",
+      "display_name": "Citrus fruits",
+      "group": "Citrus fruits",
+      "beta": -0.144506795008572,
+      "hazard_ratio": 0.865449031649538,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.034338,
+        "value2": 1.682583,
+        "score_rule": "0.03 <= x <= 1.68",
+        "score_1": "1 if 0.03 <= x <= 1.68",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.034338,
+        "value2": 1.682583,
+        "support_p1": 0.0,
+        "support_p99": 3.5,
+        "score_type": "optimum",
+        "target_low": 0.034338,
+        "target_high": 1.682583,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 2,
+      "food": "red_orange_veg",
+      "display_name": "Red and orange vegetables",
+      "group": "Red/orange vegetables",
+      "beta": -0.0922491528112969,
+      "hazard_ratio": 0.911877924290964,
+      "binary": {
+        "range_direction": "high",
+        "value1": 0.01,
+        "value2": null,
+        "score_rule": "x >= 0.01",
+        "score_1": "1 if x >= 0.01",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "high",
+        "value1": 0.01,
+        "value2": null,
+        "support_p1": 0.0,
+        "support_p99": 5.0,
+        "score_type": "adequacy",
+        "target_low": 0.01,
+        "target_high": null,
+        "scoring_function": "Linear adequacy ramp from training P1 to lower cutpoint; then 1",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 3,
+      "food": "other_veg",
+      "display_name": "Other vegetables",
+      "group": "Other vegetables",
+      "beta": -0.132186241368443,
+      "hazard_ratio": 0.876177799330598,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.01,
+        "value2": 4.62,
+        "score_rule": "0.01 <= x <= 4.62",
+        "score_1": "1 if 0.01 <= x <= 4.62",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.01,
+        "value2": 4.62,
+        "support_p1": 0.0,
+        "support_p99": 8.0,
+        "score_type": "optimum",
+        "target_low": 0.01,
+        "target_high": 4.62,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 4,
+      "food": "potatoes",
+      "display_name": "Potatoes",
+      "group": "Potatoes",
+      "beta": -0.0828740288004394,
+      "hazard_ratio": 0.920467092260872,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 1.0,
+        "value2": 1.5,
+        "score_rule": "1.00 <= x <= 1.50",
+        "score_1": "1 if 1.00 <= x <= 1.50",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 1.0,
+        "value2": 1.5,
+        "support_p1": 0.0,
+        "support_p99": 3.0,
+        "score_type": "optimum",
+        "target_low": 1.0,
+        "target_high": 1.5,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 5,
+      "food": "refined_grains",
+      "display_name": "Refined grains",
+      "group": "Refined grains",
+      "beta": -0.0464719107503243,
+      "hazard_ratio": 0.954591373948826,
+      "binary": {
+        "range_direction": "high",
+        "value1": 3.0,
+        "value2": null,
+        "score_rule": "x >= 3.00",
+        "score_1": "1 if x >= 3.00",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "high",
+        "value1": 3.0,
+        "value2": null,
+        "support_p1": 0.0,
+        "support_p99": 8.0,
+        "score_type": "adequacy",
+        "target_low": 3.0,
+        "target_high": null,
+        "scoring_function": "Linear adequacy ramp from training P1 to lower cutpoint; then 1",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 6,
+      "food": "eggs",
+      "display_name": "Eggs",
+      "group": "Eggs",
+      "beta": -0.168821792691931,
+      "hazard_ratio": 0.844659414455035,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.030151,
+        "value2": 1.869347,
+        "score_rule": "0.03 <= x <= 1.87",
+        "score_1": "1 if 0.03 <= x <= 1.87",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.030151,
+        "value2": 1.869347,
+        "support_p1": 0.0,
+        "support_p99": 3.0,
+        "score_type": "optimum",
+        "target_low": 0.030151,
+        "target_high": 1.869347,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 7,
+      "food": "low_fat_dairy",
+      "display_name": "Low-fat dairy",
+      "group": "Low fat dairy",
+      "beta": -0.158183497104018,
+      "hazard_ratio": 0.853693117380413,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.135135135135135,
+        "value2": 2.1969111969112,
+        "score_rule": "0.14 <= x <= 2.20",
+        "score_1": "1 if 0.14 <= x <= 2.20",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.135135135135135,
+        "value2": 2.1969111969112,
+        "support_p1": 0.0,
+        "support_p99": 3.70685971685971,
+        "score_type": "optimum",
+        "target_low": 0.135135135135135,
+        "target_high": 2.1969111969112,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 8,
+      "food": "red_meats",
+      "display_name": "Red meats",
+      "group": "Red meats",
+      "beta": -0.084461676068406,
+      "hazard_ratio": 0.919006874658556,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 1.0,
+        "value2": 1.75,
+        "score_rule": "1.00 <= x <= 1.75",
+        "score_1": "1 if 1.00 <= x <= 1.75",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 1.0,
+        "value2": 1.75,
+        "support_p1": 0.0,
+        "support_p99": 3.0,
+        "score_type": "optimum",
+        "target_low": 1.0,
+        "target_high": 1.75,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 9,
+      "food": "processed_meats",
+      "display_name": "Processed meats",
+      "group": "Processed meats",
+      "beta": -0.158752444858219,
+      "hazard_ratio": 0.853207548743193,
+      "binary": {
+        "range_direction": "high",
+        "value1": 2.7,
+        "value2": null,
+        "score_rule": "x >= 2.70",
+        "score_1": "1 if x >= 2.70",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "high",
+        "value1": 2.7,
+        "value2": null,
+        "support_p1": 0.0,
+        "support_p99": 6.0,
+        "score_type": "adequacy",
+        "target_low": 2.7,
+        "target_high": null,
+        "scoring_function": "Linear adequacy ramp from training P1 to lower cutpoint; then 1",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 10,
+      "food": "fish_seafood",
+      "display_name": "Fish and seafood",
+      "group": "Fish and seafood",
+      "beta": -0.0265563975087475,
+      "hazard_ratio": 0.973793122780684,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 1.98,
+        "score_rule": "0 <= x <= 1.98",
+        "score_1": "1 if 0 <= x <= 1.98",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 1.98,
+        "support_p1": 0.0,
+        "support_p99": 3.0,
+        "score_type": "optimum",
+        "target_low": 0.0,
+        "target_high": 1.98,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 11,
+      "food": "coffee",
+      "display_name": "Coffee",
+      "group": "Coffee",
+      "beta": -0.129262337525132,
+      "hazard_ratio": 0.878743407934086,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.01,
+        "value2": 4.5,
+        "score_rule": "0.01 <= x <= 4.50",
+        "score_1": "1 if 0.01 <= x <= 4.50",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.01,
+        "value2": 4.5,
+        "support_p1": 0.0,
+        "support_p99": 7.0,
+        "score_type": "optimum",
+        "target_low": 0.01,
+        "target_high": 4.5,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 12,
+      "food": "fruit_juices",
+      "display_name": "Fruit juices",
+      "group": "Fruit juices",
+      "beta": -0.131014668433951,
+      "hazard_ratio": 0.877204907074431,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 1.37,
+        "score_rule": "0 <= x <= 1.37",
+        "score_1": "1 if 0 <= x <= 1.37",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 1.37,
+        "support_p1": 0.0,
+        "support_p99": 3.0,
+        "score_type": "optimum",
+        "target_low": 0.0,
+        "target_high": 1.37,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 13,
+      "food": "sweetened_bev",
+      "display_name": "Sweetened beverages",
+      "group": "Sweetened beverages",
+      "beta": -0.202458384937463,
+      "hazard_ratio": 0.816720469764341,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 2.08,
+        "score_rule": "0 <= x <= 2.08",
+        "score_1": "1 if 0 <= x <= 2.08",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 2.08,
+        "support_p1": 0.0,
+        "support_p99": 6.0,
+        "score_type": "optimum",
+        "target_low": 0.0,
+        "target_high": 2.08,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 14,
+      "food": "water",
+      "display_name": "Water",
+      "group": "Water",
+      "beta": -0.0307747647249431,
+      "hazard_ratio": 0.969693957766433,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.01,
+        "value2": 3.08,
+        "score_rule": "0.01 <= x <= 3.08",
+        "score_1": "1 if 0.01 <= x <= 3.08",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.01,
+        "value2": 3.08,
+        "support_p1": 0.0,
+        "support_p99": 6.0,
+        "score_type": "optimum",
+        "target_low": 0.01,
+        "target_high": 3.08,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    },
+    {
+      "order": 15,
+      "food": "wine",
+      "display_name": "Wine",
+      "group": "Wine",
+      "beta": -0.0332179895348214,
+      "hazard_ratio": 0.967327669295279,
+      "binary": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 2.0,
+        "score_rule": "0 <= x <= 2.00",
+        "score_1": "1 if 0 <= x <= 2.00",
+        "score_0": "0 otherwise",
+        "missing_rule": "NA; no imputation"
+      },
+      "continuous": {
+        "range_direction": "middle",
+        "value1": 0.0,
+        "value2": 2.0,
+        "support_p1": 0.0,
+        "support_p99": 4.14285714285714,
+        "score_type": "optimum",
+        "target_low": 0.0,
+        "target_high": 2.0,
+        "scoring_function": "Linear rise to 1 at lower cutpoint; 1 within interval; linear decline to training P99",
+        "outside_support_rule": "Clamp intake to training-derived P1-P99 before applying the frozen function",
+        "missing_rule": "NA; no imputation; total NA unless all 15 components observed"
+      }
+    }
+  ],
+  "missing_rule": "No imputation. A total score is returned only when all 15 component intakes are available."
+}

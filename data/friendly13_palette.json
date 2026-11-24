@@ -1,0 +1,11 @@
+{
+  "palette": "cols4all::friendly13",
+  "palette_type": "cat",
+  "color_count": 13,
+  "colors": [],
+  "generated": false,
+  "package": "cols4all",
+  "package_version": null,
+  "source_call": "cols4all::c4a(palette = \"friendly13\", n = 13, type = \"cat\", format = \"hex\")",
+  "note": "Run scripts/export_friendly13_palette.R once before publishing. No substitute colors are used."
+}
