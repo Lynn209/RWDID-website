@@ -24,32 +24,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a grapefruit or half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 grapefruit or serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 grapefruits or servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 grapefruits or servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ grapefruits or servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f104490"
+    "active_item_id": "f104490",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104490,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "89",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fruit — fresh, frozen or canned",
+    "portion_size_note": "Table S1 standard portion: 148 g."
   },
   {
     "component_order": 1,
@@ -76,32 +85,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half an orange",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 orange",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 oranges",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 oranges",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ oranges",
+        "value": 4
       }
     ],
-    "active_item_id": "f104530"
+    "active_item_id": "f104530",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104530,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "90",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fruit — fresh, frozen or canned",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 1,
@@ -128,32 +146,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a small citrus fruit or half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 small citrus fruit or serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 small citrus fruits or servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 small citrus fruits or servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ small citrus fruits or servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f104540"
+    "active_item_id": "f104540",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104540,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "90",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fruit — fresh, frozen or canned",
+    "portion_size_note": "Table S1 standard portion: 70 g."
   },
   {
     "component_order": 2,
@@ -180,32 +207,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104150"
+    "active_item_id": "f104150",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104150,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "82",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 130 g."
   },
   {
     "component_order": 2,
@@ -232,32 +268,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104170"
+    "active_item_id": "f104170",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104170,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "83",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 2,
@@ -284,32 +329,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a (whole) pepper",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a (whole) pepper",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 (whole) pepper",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 (whole) peppers",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ (whole) peppers",
+        "value": 3
       }
     ],
-    "active_item_id": "f104290"
+    "active_item_id": "f104290",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104290,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "85",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 133 g."
   },
   {
     "component_order": 2,
@@ -336,32 +390,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104330"
+    "active_item_id": "f104330",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104330,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "85",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 130 g."
   },
   {
     "component_order": 2,
@@ -388,32 +451,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a medium tomato",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a medium tomato",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 medium tomato",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 medium tomatoes",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ medium tomatoes",
+        "value": 3
       }
     ],
-    "active_item_id": "f104340"
+    "active_item_id": "f104340",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104340,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "85",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 85 g."
   },
   {
     "component_order": 2,
@@ -440,32 +512,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104350"
+    "active_item_id": "f104350",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104350,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "86",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 135 g."
   },
   {
     "component_order": 3,
@@ -492,32 +573,42 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104060"
+    "active_item_id": "f104060",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104060,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "81",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 90 g.",
+    "questionnaire_help_note": "If you enter mixed vegetables here, do not enter the same vegetables again under the individual vegetable items."
   },
   {
     "component_order": 3,
@@ -544,32 +635,42 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104070"
+    "active_item_id": "f104070",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104070,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "81",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 90 g.",
+    "questionnaire_help_note": "If you enter vegetable pieces here, do not enter those same vegetables again under the individual vegetable items."
   },
   {
     "component_order": 3,
@@ -596,32 +697,42 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104080"
+    "active_item_id": "f104080",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104080,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "81",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 90 g.",
+    "questionnaire_help_note": "If you enter coleslaw or mayonnaise-based salad vegetables here, do not enter those same vegetables again under the individual vegetable items."
   },
   {
     "component_order": 3,
@@ -648,32 +759,42 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104090"
+    "active_item_id": "f104090",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104090,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "81",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 66 g.",
+    "questionnaire_help_note": "If you enter mixed side salad here, do not enter those same vegetables again under the individual vegetable items."
   },
   {
     "component_order": 3,
@@ -700,32 +821,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a medium avocado",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a medium avocado",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 medium avocado",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 medium avocados",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ medium avocados",
+        "value": 3
       }
     ],
-    "active_item_id": "f104100"
+    "active_item_id": "f104100",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104100,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "81",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 136 g."
   },
   {
     "component_order": 3,
@@ -752,32 +882,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104130"
+    "active_item_id": "f104130",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104130,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "82",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 48 g."
   },
   {
     "component_order": 3,
@@ -804,32 +943,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104180"
+    "active_item_id": "f104180",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104180,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "83",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 90 g."
   },
   {
     "component_order": 3,
@@ -856,32 +1004,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a stick",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a stick",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 stick",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 sticks",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ sticks",
+        "value": 3
       }
     ],
-    "active_item_id": "f104190"
+    "active_item_id": "f104190",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104190,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "83",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 30 g."
   },
   {
     "component_order": 3,
@@ -908,32 +1065,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104200"
+    "active_item_id": "f104200",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104200,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "83",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 90 g."
   },
   {
     "component_order": 3,
@@ -960,32 +1126,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of an inch",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half an inch",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 inch (2.5 cm)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 inches",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ inches",
+        "value": 3
       }
     ],
-    "active_item_id": "f104210"
+    "active_item_id": "f104210",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104210,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "83",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 3,
@@ -1012,32 +1187,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a clove",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a clove",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 clove",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 cloves",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ cloves",
+        "value": 3
       }
     ],
-    "active_item_id": "f104220"
+    "active_item_id": "f104220",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104220,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "83",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 5 g."
   },
   {
     "component_order": 3,
@@ -1064,32 +1248,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104230"
+    "active_item_id": "f104230",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104230,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "84",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 80 g."
   },
   {
     "component_order": 3,
@@ -1116,32 +1309,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104260"
+    "active_item_id": "f104260",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104260,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "84",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 3,
@@ -1168,32 +1370,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104270"
+    "active_item_id": "f104270",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104270,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "84",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 65 g."
   },
   {
     "component_order": 3,
@@ -1220,32 +1431,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104360"
+    "active_item_id": "f104360",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104360,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "86",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 3,
@@ -1272,32 +1492,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104380"
+    "active_item_id": "f104380",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104380,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "86",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 4,
@@ -1324,32 +1553,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104030"
+    "active_item_id": "f104030",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104030,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "80",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables — potatoes",
+    "portion_size_note": "Table S1 standard portion: 175 g."
   },
   {
     "component_order": 4,
@@ -1376,32 +1614,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
+        "code": "444",
+        "label": "Quarter of a serving",
+        "value": 0.25
       },
       {
         "code": "555",
-        "label": "½",
+        "label": "Half a serving",
         "value": 0.5
       },
       {
-        "code": "444",
-        "label": "¼",
-        "value": 0.25
+        "code": "1",
+        "label": "1 serving",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f104050"
+    "active_item_id": "f104050",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 104050,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "81",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Vegetables — potatoes",
+    "portion_size_note": "Table S1 standard portion: 180 g."
   },
   {
     "component_order": 5,
@@ -1428,42 +1675,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a naan",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 naan",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 naan",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 naan",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 naan",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 naan",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ naan",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f101230"
+    "active_item_id": "f101230",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 101230,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "48",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 160 g."
   },
   {
     "component_order": 5,
@@ -1490,42 +1746,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a slice",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 slice",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 slices",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 slices",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 slices",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 slices",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ slices",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f101240"
+    "active_item_id": "f101240",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 101240,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "48",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 20 g."
   },
   {
     "component_order": 5,
@@ -1552,42 +1817,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a cracker/crispbread/cake",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 cracker/crispbread/cake",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 crackers/crispbreads/cakes",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 crackers/crispbreads/cakes",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 crackers/crispbreads/cakes",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 crackers/crispbreads/cakes",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ crackers/crispbreads/cakes",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f101250"
+    "active_item_id": "f101250",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 101250,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "48",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 10 g."
   },
   {
     "component_order": 5,
@@ -1614,42 +1888,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half an oatcake",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 oatcake",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 oatcakes",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 oatcakes",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 oatcakes",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 oatcakes",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ oatcakes",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f101260"
+    "active_item_id": "f101260",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 101260,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "48",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 13 g."
   },
   {
     "component_order": 5,
@@ -1676,42 +1959,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a slice/wrap/stick/item",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 slice/wrap/stick/item",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 slices/wraps/sticks/items",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 slices/wraps/sticks/items",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 slices/wraps/sticks/items",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 slices/wraps/sticks/items",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ slices/wraps/sticks/items",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f101270"
+    "active_item_id": "f101270",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 101270,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "49",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 45 g."
   },
   {
     "component_order": 5,
@@ -1738,22 +2030,32 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "200",
-        "label": "2+",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "200",
+        "label": "2+ servings",
+        "value": 2
       }
     ],
-    "active_item_id": "f102710"
+    "active_item_id": "f102710",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102710,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "65",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "coding_discrepancy_note": "Oxford WebQ v1.5 Appendix 1 displays half, 1, 2 and 3+ options for these grain items, whereas the UKB Showcase Data-Coding 100001 attached to the released fields contains only 555=half, 1=1 and 200=2+. The frozen RWDID analysis recodes 200 to 2.0. To preserve exact compatibility with the released UKB fields and frozen analysis, this calculator uses a single '2+ ' category with numeric value 2.0 rather than inventing a separate 3+ code.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 230 g."
   },
   {
     "component_order": 5,
@@ -1780,22 +2082,32 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "200",
-        "label": "2+",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "200",
+        "label": "2+ servings",
+        "value": 2
       }
     ],
-    "active_item_id": "f102730"
+    "active_item_id": "f102730",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102730,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "66",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "coding_discrepancy_note": "Oxford WebQ v1.5 Appendix 1 displays half, 1, 2 and 3+ options for these grain items, whereas the UKB Showcase Data-Coding 100001 attached to the released fields contains only 555=half, 1=1 and 200=2+. The frozen RWDID analysis recodes 200 to 2.0. To preserve exact compatibility with the released UKB fields and frozen analysis, this calculator uses a single '2+ ' category with numeric value 2.0 rather than inventing a separate 3+ code.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 150 g."
   },
   {
     "component_order": 5,
@@ -1822,22 +2134,33 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "200",
-        "label": "2+",
-        "value": 2
+        "code": "555",
+        "label": "Half a sushi",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 sushi",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "200",
+        "label": "2+ sushi",
+        "value": 2
       }
     ],
-    "active_item_id": "f102750"
+    "active_item_id": "f102750",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102750,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "66",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "coding_discrepancy_note": "Oxford WebQ v1.5 Appendix 1 displays half, 1, 2 and 3+ options for these grain items, whereas the UKB Showcase Data-Coding 100001 attached to the released fields contains only 555=half, 1=1 and 200=2+. The frozen RWDID analysis recodes 200 to 2.0. To preserve exact compatibility with the released UKB fields and frozen analysis, this calculator uses a single '2+ ' category with numeric value 2.0 rather than inventing a separate 3+ code.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 278 g.",
+    "questionnaire_help_note": "If you record sushi here, do not record its fish, meat, vegetable or seaweed toppings/fillings again in other food groups."
   },
   {
     "component_order": 5,
@@ -1864,22 +2187,32 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "200",
-        "label": "2+",
-        "value": 2
+        "code": "555",
+        "label": "Half a pot",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 pot",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "200",
+        "label": "2+ pots",
+        "value": 2
       }
     ],
-    "active_item_id": "f102760"
+    "active_item_id": "f102760",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102760,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "66",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "coding_discrepancy_note": "Oxford WebQ v1.5 Appendix 1 displays half, 1, 2 and 3+ options for these grain items, whereas the UKB Showcase Data-Coding 100001 attached to the released fields contains only 555=half, 1=1 and 200=2+. The frozen RWDID analysis recodes 200 to 2.0. To preserve exact compatibility with the released UKB fields and frozen analysis, this calculator uses a single '2+ ' category with numeric value 2.0 rather than inventing a separate 3+ code.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 280 g."
   },
   {
     "component_order": 5,
@@ -1906,22 +2239,32 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "200",
-        "label": "2+",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "200",
+        "label": "2+ servings",
+        "value": 2
       }
     ],
-    "active_item_id": "f102770"
+    "active_item_id": "f102770",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102770,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "66",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "coding_discrepancy_note": "Oxford WebQ v1.5 Appendix 1 displays half, 1, 2 and 3+ options for these grain items, whereas the UKB Showcase Data-Coding 100001 attached to the released fields contains only 555=half, 1=1 and 200=2+. The frozen RWDID analysis recodes 200 to 2.0. To preserve exact compatibility with the released UKB fields and frozen analysis, this calculator uses a single '2+ ' category with numeric value 2.0 rather than inventing a separate 3+ code.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 150 g."
   },
   {
     "component_order": 5,
@@ -1948,42 +2291,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a roll/bap/bun/bagel",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 roll/bap/bun/bagel",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 rolls/baps/buns/bagels",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 rolls/baps/buns/bagels",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 rolls/baps/buns/bagels",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 rolls/baps/buns/bagels",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ rolls/baps/buns/bagels",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "w101160"
+    "active_item_id": "w101160",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 101160,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "47",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Bread / grains",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 6,
@@ -2010,27 +2362,37 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half an egg",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 egg",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 eggs",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ eggs",
+        "value": 3
       }
     ],
-    "active_item_id": "f102940"
+    "active_item_id": "f102940",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102940,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "69",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Eggs",
+    "portion_size_note": "Table S1 standard portion: 50 g.",
+    "questionnaire_help_note": "Do not count eggs used only as cooking ingredients, such as eggs in cakes or homemade burgers."
   },
   {
     "component_order": 6,
@@ -2057,27 +2419,36 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f102950"
+    "active_item_id": "f102950",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102950,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "69",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Eggs",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 6,
@@ -2104,27 +2475,36 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f102960"
+    "active_item_id": "f102960",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102960,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "69",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Eggs",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 6,
@@ -2151,27 +2531,36 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a Scotch egg",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 Scotch egg",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 Scotch eggs",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ Scotch eggs",
+        "value": 3
       }
     ],
-    "active_item_id": "f102970"
+    "active_item_id": "f102970",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102970,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "69",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Eggs",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 6,
@@ -2198,27 +2587,37 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f102980"
+    "active_item_id": "f102980",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102980,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "69",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Eggs",
+    "portion_size_note": "Table S1 standard portion: 75 g.",
+    "field_id_discrepancy_note": "The Oxford WebQ v1.5 PDF appendix prints Field ID 120980 for other egg dishes, but UKB Showcase identifies the released data field as 102980. This calculator uses 102980, which matches the Showcase field, Data-Coding 100003, the Table S1 mapping and the frozen analysis."
   },
   {
     "component_order": 7,
@@ -2232,9 +2631,9 @@
     "units": "g",
     "encoding_id": 0,
     "portion_size_g": 125.0,
-    "question_prompt": "",
+    "question_prompt": "Enter grams consumed per day. This is a continuous UK Biobank Showcase total-weight field, not a categorical Oxford WebQ response.",
     "condition_note": "Total weight of food group: Low fat yogurt. Estimated intake from past 24 hours.",
-    "field_notes": "Total weight of food group: Low fat yogurt. Estimated intake from past 24 hours.",
+    "field_notes": "UK Biobank Showcase field 26102: continuous total weight by food group yesterday, measured in grams.",
     "selector_field_id": null,
     "selector_field_title": "",
     "selector_field_notes": "",
@@ -2244,7 +2643,16 @@
     "input_type": "grams",
     "input_unit": "g/day",
     "encoding_options": [],
-    "active_item_id": "f26102"
+    "active_item_id": "f26102",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 26102,
+    "response_control": "checkbox_then_grams",
+    "input_source_type": "UKB Showcase continuous total-weight field",
+    "showcase_value_type": "Continuous, g",
+    "questionnaire_source_page": null,
+    "response_options_note": "Continuous grams/day; no categorical response options.",
+    "questionnaire_section": "Cheese / total weight by food group",
+    "portion_size_note": "Table S1 standard portion: 125 g."
   },
   {
     "component_order": 7,
@@ -2258,9 +2666,9 @@
     "units": "g",
     "encoding_id": 0,
     "portion_size_g": 259.0,
-    "question_prompt": "",
+    "question_prompt": "Enter grams consumed per day. This is a continuous UK Biobank Showcase total-weight field, not a categorical Oxford WebQ response.",
     "condition_note": "Total weight of food group: Semi skimmed milk ( >1 g fat per 100 g). Estimated intake from past 24 hours.",
-    "field_notes": "Total weight of food group: Semi skimmed milk ( >1 g fat per 100 g). Estimated intake from past 24 hours.",
+    "field_notes": "UK Biobank Showcase field 26131: continuous total weight by food group yesterday, measured in grams.",
     "selector_field_id": null,
     "selector_field_title": "",
     "selector_field_notes": "",
@@ -2270,7 +2678,16 @@
     "input_type": "grams",
     "input_unit": "g/day",
     "encoding_options": [],
-    "active_item_id": "f26131"
+    "active_item_id": "f26131",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 26131,
+    "response_control": "checkbox_then_grams",
+    "input_source_type": "UKB Showcase continuous total-weight field",
+    "showcase_value_type": "Continuous, g",
+    "questionnaire_source_page": null,
+    "response_options_note": "Continuous grams/day; no categorical response options.",
+    "questionnaire_section": "Cheese / total weight by food group",
+    "portion_size_note": "Table S1 standard portion: 259 g."
   },
   {
     "component_order": 7,
@@ -2284,9 +2701,9 @@
     "units": "g",
     "encoding_id": 0,
     "portion_size_g": 259.0,
-    "question_prompt": "",
+    "question_prompt": "Enter grams consumed per day. This is a continuous UK Biobank Showcase total-weight field, not a categorical Oxford WebQ response.",
     "condition_note": "Total weight of food group: Skimmed milk and cholesterol-lowering milk. Estimated intake from past 24 hours .",
-    "field_notes": "Total weight of food group: Skimmed milk and cholesterol-lowering milk. Estimated intake from past 24 hours .",
+    "field_notes": "UK Biobank Showcase field 26133: continuous total weight by food group yesterday, measured in grams.",
     "selector_field_id": null,
     "selector_field_title": "",
     "selector_field_notes": "",
@@ -2296,7 +2713,16 @@
     "input_type": "grams",
     "input_unit": "g/day",
     "encoding_options": [],
-    "active_item_id": "f26133"
+    "active_item_id": "f26133",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 26133,
+    "response_control": "checkbox_then_grams",
+    "input_source_type": "UKB Showcase continuous total-weight field",
+    "showcase_value_type": "Continuous, g",
+    "questionnaire_source_page": null,
+    "response_options_note": "Continuous grams/day; no categorical response options.",
+    "questionnaire_section": "Cheese / total weight by food group",
+    "portion_size_note": "Table S1 standard portion: 259 g."
   },
   {
     "component_order": 7,
@@ -2323,27 +2749,36 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f102810"
+    "active_item_id": "f102810",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102810,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "68",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Cheese / total weight by food group",
+    "portion_size_note": "Table S1 standard portion: 40 g."
   },
   {
     "component_order": 7,
@@ -2370,27 +2805,36 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f102850"
+    "active_item_id": "f102850",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102850,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "68",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Cheese / total weight by food group",
+    "portion_size_note": "Table S1 standard portion: 15 g."
   },
   {
     "component_order": 7,
@@ -2417,27 +2861,36 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "300",
-        "label": "3+",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "300",
+        "label": "3+ servings",
+        "value": 3
       }
     ],
-    "active_item_id": "f102870"
+    "active_item_id": "f102870",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 102870,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "68",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Cheese / total weight by food group",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 8,
@@ -2464,37 +2917,46 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "500",
-        "label": "5+",
-        "value": 5
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 servings",
+        "value": 4
+      },
+      {
+        "code": "500",
+        "label": "5+ servings",
+        "value": 5
       }
     ],
-    "active_item_id": "f103020"
+    "active_item_id": "f103020",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103020,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "70",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Meat",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 8,
@@ -2521,37 +2983,46 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "500",
-        "label": "5+",
-        "value": 5
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 servings",
+        "value": 4
+      },
+      {
+        "code": "500",
+        "label": "5+ servings",
+        "value": 5
       }
     ],
-    "active_item_id": "f103030"
+    "active_item_id": "f103030",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103030,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "70",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Meat",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 8,
@@ -2578,37 +3049,46 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "500",
-        "label": "5+",
-        "value": 5
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 servings",
+        "value": 4
+      },
+      {
+        "code": "500",
+        "label": "5+ servings",
+        "value": 5
       }
     ],
-    "active_item_id": "f103040"
+    "active_item_id": "f103040",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103040,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "71",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Meat",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 9,
@@ -2635,37 +3115,46 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "500",
-        "label": "5+",
-        "value": 5
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a sausage",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 sausage",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 sausages",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 sausages",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 sausages",
+        "value": 4
+      },
+      {
+        "code": "500",
+        "label": "5+ sausages",
+        "value": 5
       }
     ],
-    "active_item_id": "f103010"
+    "active_item_id": "f103010",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103010,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "70",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Meat",
+    "portion_size_note": "Table S1 standard portion: 30 g."
   },
   {
     "component_order": 9,
@@ -2692,37 +3181,46 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "500",
-        "label": "5+",
-        "value": 5
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a rasher",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 rasher",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 rashers",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 rashers",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 rashers",
+        "value": 4
+      },
+      {
+        "code": "500",
+        "label": "5+ rashers",
+        "value": 5
       }
     ],
-    "active_item_id": "f103070"
+    "active_item_id": "f103070",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103070,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "72",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Meat",
+    "portion_size_note": "Table S1 standard portion: 46 g."
   },
   {
     "component_order": 9,
@@ -2749,37 +3247,46 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "500",
-        "label": "5+",
-        "value": 5
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a slice",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 slice",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 slices",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 slices",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 slices",
+        "value": 4
+      },
+      {
+        "code": "500",
+        "label": "5+ slices",
+        "value": 5
       }
     ],
-    "active_item_id": "f103080"
+    "active_item_id": "f103080",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103080,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "72",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Meat",
+    "portion_size_note": "Table S1 standard portion: 23 g."
   },
   {
     "component_order": 10,
@@ -2806,32 +3313,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f103150"
+    "active_item_id": "f103150",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103150,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "74",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fish & seafood",
+    "portion_size_note": "Table S1 standard portion: 92 g."
   },
   {
     "component_order": 10,
@@ -2858,32 +3374,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f103160"
+    "active_item_id": "f103160",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103160,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "74",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fish & seafood",
+    "portion_size_note": "Table S1 standard portion: 100 g."
   },
   {
     "component_order": 10,
@@ -2910,32 +3435,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f103190"
+    "active_item_id": "f103190",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103190,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "74",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fish & seafood",
+    "portion_size_note": "Table S1 standard portion: 120 g."
   },
   {
     "component_order": 10,
@@ -2962,32 +3496,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f103230"
+    "active_item_id": "f103230",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103230,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "75",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fish & seafood",
+    "portion_size_note": "Table S1 standard portion: 100 g."
   },
   {
     "component_order": 10,
@@ -3014,32 +3557,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f103200"
+    "active_item_id": "f103200",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103200,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "74",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fish & seafood",
+    "portion_size_note": "Table S1 standard portion: 60 g."
   },
   {
     "component_order": 10,
@@ -3066,32 +3618,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f103210"
+    "active_item_id": "f103210",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103210,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "75",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fish & seafood",
+    "portion_size_note": "Table S1 standard portion: 85 g."
   },
   {
     "component_order": 10,
@@ -3118,32 +3679,41 @@
     "input_unit": "response category",
     "encoding_options": [
       {
-        "code": "400",
-        "label": "4+",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
+        "code": "555",
+        "label": "Half a serving",
+        "value": 0.5
       },
       {
         "code": "1",
-        "label": "1",
+        "label": "1 serving",
         "value": 1
       },
       {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
+        "code": "2",
+        "label": "2 servings",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 servings",
+        "value": 3
+      },
+      {
+        "code": "400",
+        "label": "4+ servings",
+        "value": 4
       }
     ],
-    "active_item_id": "f103220"
+    "active_item_id": "f103220",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 103220,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "75",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Fish & seafood",
+    "portion_size_note": "Table S1 standard portion: 40 g."
   },
   {
     "component_order": 11,
@@ -3170,42 +3740,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a mug/cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 mug/cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 mugs/cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 mugs/cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 mugs/cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 mugs/cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ mugs/cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100250"
+    "active_item_id": "f100250",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100250,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "23",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Coffee",
+    "portion_size_note": "Table S1 standard portion: 190 g."
   },
   {
     "component_order": 11,
@@ -3232,42 +3811,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a mug/cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 mug/cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 mugs/cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 mugs/cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 mugs/cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 mugs/cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ mugs/cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100270"
+    "active_item_id": "f100270",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100270,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "24",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Coffee",
+    "portion_size_note": "Table S1 standard portion: 190 g."
   },
   {
     "component_order": 11,
@@ -3294,42 +3882,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a mug/cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 mug/cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 mugs/cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 mugs/cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 mugs/cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 mugs/cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ mugs/cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100290"
+    "active_item_id": "f100290",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100290,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "25",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Coffee",
+    "portion_size_note": "Table S1 standard portion: 30 g."
   },
   {
     "component_order": 11,
@@ -3356,42 +3953,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a mug/cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 mug/cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 mugs/cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 mugs/cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 mugs/cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 mugs/cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ mugs/cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100300"
+    "active_item_id": "f100300",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100300,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "25",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Coffee",
+    "portion_size_note": "Table S1 standard portion: 30 g."
   },
   {
     "component_order": 11,
@@ -3418,42 +4024,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100310"
+    "active_item_id": "f100310",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100310,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "26",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Coffee",
+    "portion_size_note": "Table S1 standard portion: 30 g."
   },
   {
     "component_order": 11,
@@ -3480,42 +4095,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a mug/cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 mug/cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 mugs/cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 mugs/cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 mugs/cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 mugs/cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ mugs/cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100330"
+    "active_item_id": "f100330",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100330,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "27",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Coffee",
+    "portion_size_note": "Table S1 standard portion: 190 g."
   },
   {
     "component_order": 12,
@@ -3542,42 +4166,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/carton",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/carton (250 ml)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/cartons",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/cartons",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/cartons",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/cartons",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/cartons",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100190"
+    "active_item_id": "f100190",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100190,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "33",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks — pure juice",
+    "portion_size_note": "Table S1 standard portion: 250 g."
   },
   {
     "component_order": 12,
@@ -3604,42 +4237,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/carton",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/carton (250 ml)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/cartons",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/cartons",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/cartons",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/cartons",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/cartons",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100200"
+    "active_item_id": "f100200",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100200,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "33",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks — pure juice",
+    "portion_size_note": "Table S1 standard portion: 250 g."
   },
   {
     "component_order": 12,
@@ -3666,42 +4308,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/carton",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/carton (250 ml)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/cartons",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/cartons",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/cartons",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/cartons",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/cartons",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100210"
+    "active_item_id": "f100210",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100210,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "34",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks — pure juice",
+    "portion_size_note": "Table S1 standard portion: 250 g."
   },
   {
     "component_order": 13,
@@ -3728,42 +4379,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/can",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/can",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/cans",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/cans",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/cans",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/cans",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/cans",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100170"
+    "active_item_id": "f100170",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100170,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "33",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 330 g."
   },
   {
     "component_order": 13,
@@ -3790,42 +4450,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/carton",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/carton (250 ml)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/cartons",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/cartons",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/cartons",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/cartons",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/cartons",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100180"
+    "active_item_id": "f100180",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100180,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "33",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 250 g."
   },
   {
     "component_order": 13,
@@ -3852,42 +4521,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/bottle",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/bottle (250 ml)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/bottles",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/bottles",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/bottles",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/bottles",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/bottles",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100220"
+    "active_item_id": "f100220",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100220,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "34",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 260 g."
   },
   {
     "component_order": 13,
@@ -3914,42 +4592,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/bottle",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/bottle (250 ml)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/bottles",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/bottles",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/bottles",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/bottles",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/bottles",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100230"
+    "active_item_id": "f100230",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100230,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "34",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 260 g."
   },
   {
     "component_order": 13,
@@ -3976,42 +4663,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a mug/cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 mug/cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 mugs/cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 mugs/cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 mugs/cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 mugs/cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ mugs/cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100550"
+    "active_item_id": "f100550",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100550,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "35",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 143 g."
   },
   {
     "component_order": 13,
@@ -4038,42 +4734,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/can",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/can",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/cans",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/cans",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/cans",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/cans",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/cans",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100160"
+    "active_item_id": "f100160",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100160,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "32",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 330 g."
   },
   {
     "component_order": 13,
@@ -4100,42 +4805,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a mug/cup",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 mug/cup",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 mugs/cups",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 mugs/cups",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 mugs/cups",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 mugs/cups",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ mugs/cups",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100540"
+    "active_item_id": "f100540",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100540,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "35",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 143 g."
   },
   {
     "component_order": 14,
@@ -4162,42 +4876,51 @@
     "input_unit": "response category",
     "encoding_options": [
       {
+        "code": "555",
+        "label": "Half a glass/beaker",
+        "value": 0.5
+      },
+      {
+        "code": "1",
+        "label": "1 glass/beaker (250 ml)",
+        "value": 1
+      },
+      {
+        "code": "2",
+        "label": "2 glasses/beakers",
+        "value": 2
+      },
+      {
+        "code": "3",
+        "label": "3 glasses/beakers",
+        "value": 3
+      },
+      {
+        "code": "4",
+        "label": "4 glasses/beakers",
+        "value": 4
+      },
+      {
         "code": "5",
-        "label": "5",
+        "label": "5 glasses/beakers",
         "value": 5
       },
       {
         "code": "600",
-        "label": "6+",
+        "label": "6+ glasses/beakers",
         "value": 6
-      },
-      {
-        "code": "4",
-        "label": "4",
-        "value": 4
-      },
-      {
-        "code": "3",
-        "label": "3",
-        "value": 3
-      },
-      {
-        "code": "2",
-        "label": "2",
-        "value": 2
-      },
-      {
-        "code": "1",
-        "label": "1",
-        "value": 1
-      },
-      {
-        "code": "555",
-        "label": "½",
-        "value": 0.5
       }
     ],
-    "active_item_id": "f100150"
+    "active_item_id": "f100150",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 100150,
+    "response_control": "checkbox_then_select",
+    "input_source_type": "Oxford WebQ categorical response",
+    "showcase_value_type": "Categorical (single)",
+    "questionnaire_source_page": "32",
+    "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
+    "questionnaire_section": "Soft drinks",
+    "portion_size_note": "Table S1 standard portion: 250 g."
   },
   {
     "component_order": 15,
@@ -4211,9 +4934,9 @@
     "units": "g",
     "encoding_id": 0,
     "portion_size_g": 50.0,
-    "question_prompt": "",
+    "question_prompt": "Enter grams consumed per day. This is a continuous UK Biobank Showcase total-weight field, not a categorical Oxford WebQ response.",
     "condition_note": "Total weight of food group: Fortified wine. Estimated intake from past 24 hours.",
-    "field_notes": "Total weight of food group: Fortified wine. Estimated intake from past 24 hours.",
+    "field_notes": "UK Biobank Showcase field 26151: continuous total weight by food group yesterday, measured in grams.",
     "selector_field_id": null,
     "selector_field_title": "",
     "selector_field_notes": "",
@@ -4223,7 +4946,16 @@
     "input_type": "grams",
     "input_unit": "g/day",
     "encoding_options": [],
-    "active_item_id": "f26151"
+    "active_item_id": "f26151",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 26151,
+    "response_control": "checkbox_then_grams",
+    "input_source_type": "UKB Showcase continuous total-weight field",
+    "showcase_value_type": "Continuous, g",
+    "questionnaire_source_page": null,
+    "response_options_note": "Continuous grams/day; no categorical response options.",
+    "questionnaire_section": "Total weight by food group — wine",
+    "portion_size_note": "Table S1 standard portion: 50 g."
   },
   {
     "component_order": 15,
@@ -4237,9 +4969,9 @@
     "units": "g",
     "encoding_id": 0,
     "portion_size_g": 175.0,
-    "question_prompt": "",
+    "question_prompt": "Enter grams consumed per day. This is a continuous UK Biobank Showcase total-weight field, not a categorical Oxford WebQ response.",
     "condition_note": "Total weight of food group: Red wine. Estimated intake from past 24 hours.",
-    "field_notes": "Total weight of food group: Red wine. Estimated intake from past 24 hours.",
+    "field_notes": "UK Biobank Showcase field 26152: continuous total weight by food group yesterday, measured in grams.",
     "selector_field_id": null,
     "selector_field_title": "",
     "selector_field_notes": "",
@@ -4249,7 +4981,16 @@
     "input_type": "grams",
     "input_unit": "g/day",
     "encoding_options": [],
-    "active_item_id": "f26152"
+    "active_item_id": "f26152",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 26152,
+    "response_control": "checkbox_then_grams",
+    "input_source_type": "UKB Showcase continuous total-weight field",
+    "showcase_value_type": "Continuous, g",
+    "questionnaire_source_page": null,
+    "response_options_note": "Continuous grams/day; no categorical response options.",
+    "questionnaire_section": "Total weight by food group — wine",
+    "portion_size_note": "Table S1 standard portion: 175 g."
   },
   {
     "component_order": 15,
@@ -4263,9 +5004,9 @@
     "units": "g",
     "encoding_id": 0,
     "portion_size_g": 175.0,
-    "question_prompt": "",
+    "question_prompt": "Enter grams consumed per day. This is a continuous UK Biobank Showcase total-weight field, not a categorical Oxford WebQ response.",
     "condition_note": "Total weight of food group: White wine. Estimated intake from past 24 hours.",
-    "field_notes": "Total weight of food group: White wine. Estimated intake from past 24 hours.",
+    "field_notes": "UK Biobank Showcase field 26153: continuous total weight by food group yesterday, measured in grams.",
     "selector_field_id": null,
     "selector_field_title": "",
     "selector_field_notes": "",
@@ -4275,6 +5016,15 @@
     "input_type": "grams",
     "input_unit": "g/day",
     "encoding_options": [],
-    "active_item_id": "f26153"
+    "active_item_id": "f26153",
+    "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
+    "showcase_field_id": 26153,
+    "response_control": "checkbox_then_grams",
+    "input_source_type": "UKB Showcase continuous total-weight field",
+    "showcase_value_type": "Continuous, g",
+    "questionnaire_source_page": null,
+    "response_options_note": "Continuous grams/day; no categorical response options.",
+    "questionnaire_section": "Total weight by food group — wine",
+    "portion_size_note": "Table S1 standard portion: 175 g."
   }
 ]
