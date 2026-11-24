@@ -19,5 +19,7 @@
   ],
   "generated": true,
   "package": "cols4all",
-  "package_version": "0.11"
+  "package_version": "0.11",
+  "source_call": "cols4all::c4a(\"friendly13\")",
+  "ordered_hex_sha256": "bd9787155968d099b21dab7bccd79237dcecdfa6fc159b90ad5c1e4c0b31260b"
 }
