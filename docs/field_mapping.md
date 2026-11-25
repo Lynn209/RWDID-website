@@ -6,7 +6,7 @@ The website mapping starts from the final 15 food components in Table S1, select
 - The final 15 components contribute 85 Table S1 rows.
 - All 85/85 numeric Field IDs matched the source dictionary.
 - Three of the 85 rows are not active calculator inputs; the frozen Step_02_1_1 implementation retains 82 active inputs.
-- The 82 active inputs comprise **76 categorical Oxford WebQ response fields** and **6 continuous UKB Showcase total-weight fields**. One categorical input (`w-101160`) is a derived white-bread row and requires the dependent multi-response type selector, Field 20094.
+- The 82 active inputs comprise **76 categorical Oxford WebQ response fields** and **6 continuous UKB Showcase total-weight fields**.
 
 ## Correct questionnaire interaction
 
@@ -17,9 +17,7 @@ The Oxford WebQ presents categorical food items as a checkbox and, when selected
 3. Leave an unconsumed item unticked; it contributes zero.
 4. Alternatively, select `No intake from this food group` to set all fields in that component to zero.
 
-The amount selector does not include a synthetic `0 / Not consumed` category. This is important because zero intake is represented by an unchecked item in the original questionnaire, not by one of the categorical amount codes.
-
-For the derived white-bread item `w-101160`, the UI also requests Field 20094 (bread-roll type). The amount is included in refined grains only when the recorded type response is exactly White alone (`[1]`), reproducing the original Step_02_1_1 code. Multiple selected bread types are not treated as White alone.
+The amount selector does not include a synthetic `0 / Not consumed` category. This is important because zero intake is represented by an unchecked item in the original questionnaire, not by one of the categorical amount codes. The derived white bread-roll item is linked to Field 20094: its Field 101160 amount contributes only when the multiple-response selector contains exactly White (code 1) and no other type, matching the frozen R condition `p20094_iN == "[1]"`.
 
 ## Coded response values
 

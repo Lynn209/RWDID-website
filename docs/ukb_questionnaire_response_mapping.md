@@ -6,7 +6,7 @@ This file documents the 82 active inputs used by the frozen 15-component RWDID c
 
 Primary questionnaire source: [UK Biobank 24-hour dietary recall questionnaire (Oxford WebQ), v1.5, Appendix 1](https://biobank.ctsu.ox.ac.uk/showcase/showcase/docs/DietWebQ.pdf).
 
-Each categorical WebQ food item is presented as a checkbox followed by a single-choice amount response. The website therefore uses an item checkbox (`Consumed yesterday`) and reveals the amount selector only after the checkbox is selected. An unchecked item contributes zero. Zero is not inserted as a fake UKB coding category.
+Each categorical WebQ food item is presented as a checkbox followed by a single-choice amount response. The website therefore uses an item checkbox (`Consumed yesterday`) and reveals the amount selector only after the checkbox is selected. An unchecked item contributes zero. Zero is not inserted as a fake UKB coding category. The active Field 101160 bread-roll amount is a linked exception: it is gated by the multiple-response type field 20094 (Data-Coding 81).
 
 UKB Showcase coding sources: [100017](https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100017), [100004](https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100004), [100006](https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100006), [100003](https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100003), [100016](https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100016), and [100001](https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100001).
 
@@ -110,13 +110,11 @@ These numeric values reproduce the recoding in the frozen RWDID preparation code
 | Wine | 26152 | Red wine intake | Showcase continuous g/day | 175 | Enter grams/day; no categorical response options | Showcase field metadata |
 | Wine | 26153 | White wine intake | Showcase continuous g/day | 175 | Enter grams/day; no categorical response options | Showcase field metadata |
 
-## Dependent bread-type selector for Field 101160
+## Linked selector: bread-roll amount and type (Fields 101160 and 20094)
 
-The active 82-input map includes one derived white-bread item, `w-101160` (Bread roll intake), rather than treating Field 101160 as an unconditional white-bread intake. UK Biobank Showcase identifies Field 20094, **Type of bread roll eaten**, as a multiple-response selector associated with Field 101160. Data-Coding 81 has five values: 1=White, 2=Mixed, 3=Wholemeal, 4=Seeded, and 5=Other.
+UKB Showcase identifies Field 20094 as a categorical-multiple field using Data-Coding 81, with five possible types: 1=White, 2=Mixed, 3=Wholemeal, 4=Seeded, and 5=Other. Its notes state that the type field is asked when Field 101160 (Bread roll intake) has determined the participant is eligible for the follow-up. The frozen Step_02_1_1 preparation code creates the retained white bread-roll pseudo-item only when the stored Field 20094 response is exactly `[1]` for that recall instance (`p20094_iN == "[1]"`). Therefore, this calculator asks for all type selections and the Field 101160 amount, but passes the amount into the refined-grains component only when White is the sole selected type. A non-White selection or a multi-type response (including White plus another type) contributes zero to this derived item. This reproduces the existing frozen preprocessing logic; it does not alter the score definition. The type selector is an additional linked questionnaire control, not an 83rd scored intake item or a 16th component.
 
-The calculator therefore asks for the bread-roll amount and the type selection. To reproduce the frozen Step_02_1_1 pipeline exactly, the amount is included in the refined-grains component only when the selector response is exactly `[1]` (White alone). A multi-type response such as White plus Wholemeal is not counted in this specific derived row, because the original R code tests `selector_value == "[1]"`. The website displays this rule explicitly rather than silently counting all bread rolls as white bread.
-
-Sources: [Showcase Field 101160](https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=101160), [Showcase Field 20094](https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=20094), and [Data-Coding 81](https://biobank.ndph.ox.ac.uk/ukb/coding.cgi?id=81).
+Sources: [Field 20094](https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=20094), [Field 101160](https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=101160), [Data-Coding 81](https://biobank.ndph.ox.ac.uk/ukb/coding.cgi?id=81).
 
 ## Important discrepancy: Data-Coding 100001
 
