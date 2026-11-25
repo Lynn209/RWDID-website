@@ -16,3 +16,4 @@ All beta estimates negative,True,Current uploaded coefficient file.
 P1/P99 support reconciliation,True,Separate support file matches RWDID-C parameter table.
 Binary/continuous interval reconciliation,True,15 component order and intake anchors reconcile.
 Training score formula max absolute difference,1.2212453270876722e-15,Recomputed from participant-level training score file; not published.
+Bread-roll selector linkage,PASS,Field 101160 is gated by Field 20094 (Data-Coding 81); exact single White code 1 is reproduced from frozen Step_02_1_1.
