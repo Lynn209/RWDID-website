@@ -110,6 +110,14 @@ These numeric values reproduce the recoding in the frozen RWDID preparation code
 | Wine | 26152 | Red wine intake | Showcase continuous g/day | 175 | Enter grams/day; no categorical response options | Showcase field metadata |
 | Wine | 26153 | White wine intake | Showcase continuous g/day | 175 | Enter grams/day; no categorical response options | Showcase field metadata |
 
+## Dependent bread-type selector for Field 101160
+
+The active 82-input map includes one derived white-bread item, `w-101160` (Bread roll intake), rather than treating Field 101160 as an unconditional white-bread intake. UK Biobank Showcase identifies Field 20094, **Type of bread roll eaten**, as a multiple-response selector associated with Field 101160. Data-Coding 81 has five values: 1=White, 2=Mixed, 3=Wholemeal, 4=Seeded, and 5=Other.
+
+The calculator therefore asks for the bread-roll amount and the type selection. To reproduce the frozen Step_02_1_1 pipeline exactly, the amount is included in the refined-grains component only when the selector response is exactly `[1]` (White alone). A multi-type response such as White plus Wholemeal is not counted in this specific derived row, because the original R code tests `selector_value == "[1]"`. The website displays this rule explicitly rather than silently counting all bread rolls as white bread.
+
+Sources: [Showcase Field 101160](https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=101160), [Showcase Field 20094](https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=20094), and [Data-Coding 81](https://biobank.ndph.ox.ac.uk/ukb/coding.cgi?id=81).
+
 ## Important discrepancy: Data-Coding 100001
 
 The Oxford WebQ v1.5 PDF appendix displays four response labels for the five grain fields in this component set: half, 1, 2 and 3+. However, the UKB Showcase Data-Coding 100001 attached to the released fields lists only three stored categories: `555 = half`, `1 = 1`, and `200 = 2+`. The frozen RWDID R code maps `200` to `2.0`. The website therefore presents `2+` as one category and maps it to `2.0`; it does not create a separate 3+ category that cannot be recovered from the released coded field.
