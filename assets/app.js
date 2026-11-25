@@ -53,11 +53,46 @@
     return [note, help].filter(Boolean).join(" ");
   }
 
+  function isDerivedWhiteBread(item) {
+    return Number(item.field_id) === 101160 && Number(item.selector_field_id) === 20094;
+  }
+
   function renderField(item) {
     const id = `field-${item.active_item_id}`;
     const itemId = escapeHTML(item.active_item_id);
     const isContinuous = Number(item.encoding_id) === 0;
-    const isDerivedBread = item.is_derived_bread_item === true;
+
+    if (isDerivedWhiteBread(item)) {
+      const selectorOptions = (item.selector_options || []).map(option => `
+        <label class="selector-option">
+          <input type="checkbox" class="bread-roll-type-check"
+            data-item-id="${itemId}" data-selector-code="${escapeHTML(option.code)}">
+          <span>${escapeHTML(option.label)}</span>
+        </label>`).join("");
+      const amountOptions = (item.encoding_options || []).map(option =>
+        `<option value="${escapeHTML(option.code)}">${escapeHTML(option.label)}</option>`
+      ).join("");
+      return `<div class="item-response derived-bread-response">
+        <label class="item-consumed bread-roll-no-intake-label">
+          <input type="checkbox" class="bread-roll-no-intake" data-item-id="${itemId}">
+          <span>No bread roll consumed</span>
+        </label>
+        <div class="selector-block">
+          <div class="selector-heading">${escapeHTML(item.selector_question_prompt || "Which type(s) of bread roll did you eat yesterday?")}</div>
+          <div class="bread-roll-type-list">${selectorOptions}</div>
+          <small class="selector-meta">UKB Field ID ${escapeHTML(item.selector_field_id)} · Data-Coding ${escapeHTML(item.selector_encoding_id)} · Multiple response</small>
+        </div>
+        <div class="amount-control bread-roll-amount-control" hidden>
+          <label class="amount-label" for="${id}">How many bread rolls/baps/buns/bagels did you consume?</label>
+          <select class="answer response-input derived-bread-input" id="${id}"
+            data-item-id="${itemId}" disabled>
+            <option value="">Select UKB response</option>
+            ${amountOptions}
+          </select>
+        </div>
+        <p class="selector-explanation">Frozen scoring rule: the amount is included only when <strong>White</strong> is the sole selected type (code 1). Other types selected alone, or White selected together with another type, contribute zero to this derived white-bread item.</p>
+      </div>`;
+    }
 
     if (isContinuous) {
       return `<div class="item-response continuous-response">
@@ -74,45 +109,52 @@
       `<option value="${escapeHTML(o.code)}">${escapeHTML(o.label)}</option>`
     ).join("");
 
-    const amountControl = `<div class="amount-control" hidden>
-      <label class="amount-label" for="${id}">Amount consumed</label>
-      <select class="answer response-input" id="${id}"
-        data-item-id="${itemId}" disabled>
-        <option value="">Select UKB response</option>
-        ${options}
-      </select>
-    </div>`;
-
-    if (isDerivedBread) {
-      const selectorOptions = (item.selector_response_options || []).map(option => `
-        <label class="selector-option">
-          <input type="checkbox" class="bread-type-check"
-            data-item-id="${itemId}" value="${escapeHTML(option.code)}" disabled>
-          <span>${escapeHTML(option.label)}</span>
-        </label>
-      `).join("");
-
-      return `<div class="item-response derived-bread-response">
-        <label class="item-consumed">
-          <input type="checkbox" class="item-consumed-check" data-item-id="${itemId}">
-          <span>Consumed yesterday</span>
-        </label>
-        ${amountControl}
-        <div class="selector-control" hidden>
-          <span class="amount-label">Bread type · Field ID ${escapeHTML(item.selector_field_id)} · Select all that apply</span>
-          <div class="selector-option-list">${selectorOptions}</div>
-          <p class="field-caution">The frozen research pipeline includes this bread-roll amount in the refined-grains component only when the recorded bread type is White alone (code 1). If multiple types are selected, this row contributes zero, matching the original analysis code.</p>
-        </div>
-      </div>`;
-    }
-
     return `<div class="item-response">
       <label class="item-consumed">
         <input type="checkbox" class="item-consumed-check" data-item-id="${itemId}">
         <span>Consumed yesterday</span>
       </label>
-      ${amountControl}
+      <div class="amount-control" hidden>
+        <label class="amount-label" for="${id}">Amount consumed</label>
+        <select class="answer response-input" id="${id}"
+          data-item-id="${itemId}" disabled>
+          <option value="">Select UKB response</option>
+          ${options}
+        </select>
+      </div>
     </div>`;
+  }
+
+  function syncDerivedBreadCard(card) {
+    if (!card) return;
+    const group = card.closest(".food-group");
+    const groupNoIntake = Boolean(group && $(".no-intake-check", group)?.checked);
+    const noBreadRoll = $(".bread-roll-no-intake", card);
+    const typeChecks = $$(".bread-roll-type-check", card);
+    const amount = $(".bread-roll-amount-control", card);
+    const input = $(".derived-bread-input", card);
+
+    if (groupNoIntake) {
+      if (noBreadRoll) { noBreadRoll.checked = false; noBreadRoll.disabled = true; }
+      typeChecks.forEach(check => { check.checked = false; check.disabled = true; });
+      if (input) { input.value = ""; input.disabled = true; }
+      if (amount) amount.hidden = true;
+      return;
+    }
+
+    if (noBreadRoll) noBreadRoll.disabled = false;
+    if (noBreadRoll?.checked) {
+      typeChecks.forEach(check => { check.checked = false; check.disabled = true; });
+      if (input) { input.value = ""; input.disabled = true; }
+      if (amount) amount.hidden = true;
+      return;
+    }
+
+    typeChecks.forEach(check => { check.disabled = false; });
+    const hasType = typeChecks.some(check => check.checked);
+    if (input) input.disabled = !hasType;
+    if (amount) amount.hidden = !hasType;
+    if (!hasType && input) input.value = "";
   }
 
   function renderQuestionnaire() {
@@ -145,13 +187,15 @@
         );
         const note = cleanNote(item);
         const portion = item.portion_size_g == null ? "" : ` · Table S1 portion ${fmt(item.portion_size_g, 1)} g`;
+        const selectorMeta = isDerivedWhiteBread(item)
+          ? ` · Type selector: Field ID ${escapeHTML(item.selector_field_id)}`
+          : "";
+        const actualFieldId = escapeHTML(item.field_id ?? item.table_s1_field_id);
         const meta = isContinuous
-          ? `UKB Showcase Field ID ${escapeHTML(item.table_s1_field_id)} · Continuous g/day${portion}`
-          : item.is_derived_bread_item
-            ? `UKB Field ID ${escapeHTML(item.field_id)} · type selector ${escapeHTML(item.selector_field_id)} · Data-Coding ${escapeHTML(item.encoding_id)}${portion}`
-            : `Field ID ${escapeHTML(item.table_s1_field_id)} · Data-Coding ${escapeHTML(item.encoding_id)}${portion}`;
-        const codingNote = Number(item.encoding_id) === 100001
-          ? `<p class="field-source-note">Showcase Data-Coding 100001 stores the upper category as 2+ (code 200); the frozen RWDID pipeline maps it to 2.0. This calculator follows that released coding for all five fields using this encoding.</p>`
+          ? `UKB Showcase Field ID ${actualFieldId} · Continuous g/day${portion}`
+          : `Field ID ${actualFieldId} · Data-Coding ${escapeHTML(item.encoding_id)}${portion}${selectorMeta}`;
+        const codingNote = item.field_id === 102710
+          ? `<p class="field-source-note">Showcase coding 100001 stores the upper category as 2+ (code 200); the frozen RWDID pipeline maps it to 2.0. This calculator follows that coding.</p>`
           : "";
         const questionnaireHelp = item.questionnaire_help_note
           ? `<p class="field-caution">${escapeHTML(item.questionnaire_help_note)}</p>`
@@ -185,7 +229,7 @@
               <input type="checkbox" class="no-intake-check">
               No intake from this food group
             </label>
-            <span class="group-hint">Tick categorical items; enter grams/day for continuous fields</span>
+            <span class="group-hint">Select consumed items and linked types; enter grams/day for continuous fields</span>
             <button type="button" class="clear-group">Clear</button>
           </div>
           <div class="field-grid">${fields}</div>
@@ -203,36 +247,32 @@
       const group = e.target.closest(".food-group");
       const input = $(".response-input", card);
       const amount = $(".amount-control", card);
-      const selector = $(".selector-control", card);
 
       if (e.target.checked) {
         $(".no-intake-check", group).checked = false;
         input.disabled = false;
         amount.hidden = false;
-        if (selector) {
-          selector.hidden = false;
-          $$(".bread-type-check", card).forEach(typeCheck => {
-            typeCheck.disabled = false;
-          });
-        }
       } else {
         input.value = "";
         input.disabled = true;
         amount.hidden = true;
-        if (selector) {
-          selector.hidden = true;
-          $$(".bread-type-check", card).forEach(typeCheck => {
-            typeCheck.checked = false;
-            typeCheck.disabled = true;
-          });
-        }
       }
       updateProgress();
     }));
 
-    $$(".bread-type-check").forEach(check => {
-      check.addEventListener("change", updateProgress);
-    });
+    $$(".bread-roll-no-intake").forEach(check => check.addEventListener("change", e => {
+      const card = e.target.closest(".field-card");
+      syncDerivedBreadCard(card);
+      updateProgress();
+    }));
+
+    $$(".bread-roll-type-check").forEach(check => check.addEventListener("change", e => {
+      const card = e.target.closest(".field-card");
+      const noBreadRoll = $(".bread-roll-no-intake", card);
+      if (e.target.checked && noBreadRoll) noBreadRoll.checked = false;
+      syncDerivedBreadCard(card);
+      updateProgress();
+    }));
 
     $$(".no-intake-check").forEach(check => check.addEventListener("change", e => {
       const group = e.target.closest(".food-group");
@@ -243,19 +283,12 @@
         itemCheck.disabled = noIntake;
       });
 
-      $$(".bread-type-check", group).forEach(typeCheck => {
-        typeCheck.checked = false;
-        typeCheck.disabled = true;
-      });
-
-      $$(".selector-control", group).forEach(selector => {
-        selector.hidden = true;
-      });
-
       $$(".response-input", group).forEach(input => {
         const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
         const amount = $(".amount-control", input.closest(".field-card"));
-        if (noIntake) {
+        if (isDerivedWhiteBread(item)) {
+          syncDerivedBreadCard(input.closest(".field-card"));
+        } else if (noIntake) {
           input.value = "";
           input.disabled = true;
           amount.hidden = true;
@@ -280,17 +313,13 @@
         check.disabled = false;
       });
 
-      $$(".bread-type-check", group).forEach(check => {
-        check.checked = false;
-        check.disabled = true;
-      });
-      $$(".selector-control", group).forEach(selector => { selector.hidden = true; });
-
       $$(".response-input", group).forEach(input => {
         const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
         const amount = $(".amount-control", input.closest(".field-card"));
         input.value = "";
-        if (item && Number(item.encoding_id) === 0) {
+        if (isDerivedWhiteBread(item)) {
+          syncDerivedBreadCard(input.closest(".field-card"));
+        } else if (item && Number(item.encoding_id) === 0) {
           input.disabled = false;
           amount.hidden = false;
         } else {
@@ -298,6 +327,10 @@
           amount.hidden = true;
         }
       });
+      $$(".bread-roll-no-intake", group).forEach(check => { check.checked = false; check.disabled = false; });
+      $$(".bread-roll-type-check", group).forEach(check => { check.checked = false; check.disabled = false; });
+      $$(".derived-bread-input", group).forEach(input => { input.value = ""; });
+      $$(".derived-bread-response", group).forEach(card => syncDerivedBreadCard(card.closest(".field-card")));
       updateProgress();
     }));
   }
@@ -308,7 +341,16 @@
     let anyIntake = false;
     for (const item of items.filter(x => x.component_key === el.dataset.group)) {
       const input = $(`.response-input[data-item-id="${item.active_item_id}"]`, el);
-      if (Number(item.encoding_id) === 0) {
+      if (isDerivedWhiteBread(item)) {
+        const noBreadRoll = $(`.bread-roll-no-intake[data-item-id="${item.active_item_id}"]`, el);
+        if (noBreadRoll?.checked) continue;
+        const selectedTypes = $$(`.bread-roll-type-check[data-item-id="${item.active_item_id}"]:checked`, el);
+        if (selectedTypes.length === 0) return false;
+        if (!input || input.value === "") return false;
+        const amountCode = String(input.value);
+        if (!(item.encoding_options || []).some(option => String(option.code) === amountCode)) return false;
+        anyIntake = true;
+      } else if (Number(item.encoding_id) === 0) {
         if (!input || input.value === "") return false;
         const grams = Number(input.value);
         if (!Number.isFinite(grams) || grams < 0) return false;
@@ -317,11 +359,6 @@
         const check = $(`.item-consumed-check[data-item-id="${item.active_item_id}"]`, el);
         if (check && check.checked) {
           if (!input || input.value === "") return false;
-          if (item.is_derived_bread_item) {
-            const card = input.closest(".field-card");
-            const selectedTypes = $$(".bread-type-check:checked", card).map(x => x.value);
-            if (selectedTypes.length === 0) return false;
-          }
           anyIntake = true;
         }
       }
@@ -348,7 +385,7 @@
     });
     setStatus(done === 15
       ? "All required components are complete."
-      : "For each component, confirm no intake or complete all gram fields and select amounts for consumed categorical items.");
+      : "For each component, confirm no intake or complete consumed items, including the linked bread-roll type and amount when applicable.");
   }
 
   function collectIntakes() {
@@ -362,22 +399,21 @@
         const input = $(`.response-input[data-item-id="${item.active_item_id}"]`, el);
         let raw = "0";
         if (!noIntake) {
-          if (Number(item.encoding_id) === 0) {
+          if (isDerivedWhiteBread(item)) {
+            const noBreadRoll = $(`.bread-roll-no-intake[data-item-id="${item.active_item_id}"]`, el);
+            const selectedTypes = $$(
+              `.bread-roll-type-check[data-item-id="${item.active_item_id}"]:checked`, el
+            ).map(check => String(check.dataset.selectorCode));
+            const gatedValue = window.RWDIDScoring.selectorGatedIntake(
+              item, input.value, selectedTypes, Boolean(noBreadRoll?.checked)
+            );
+            total += gatedValue;
+            continue;
+          } else if (Number(item.encoding_id) === 0) {
             raw = input.value;
           } else {
             const check = $(`.item-consumed-check[data-item-id="${item.active_item_id}"]`, el);
-            if (check && check.checked) {
-              if (item.is_derived_bread_item) {
-                const card = input.closest(".field-card");
-                const selectedTypes = $$(".bread-type-check:checked", card).map(x => x.value);
-                const includeAmount = window.RWDIDScoring.isDerivedItemIncluded(item, selectedTypes);
-                raw = includeAmount ? input.value : "0";
-              } else {
-                raw = input.value;
-              }
-            } else {
-              raw = "0";
-            }
+            raw = check && check.checked ? input.value : "0";
           }
         }
         const portion = window.RWDIDScoring.decodeItemValue(item, raw);
@@ -475,16 +511,13 @@
         check.checked = false;
         check.disabled = false;
       });
-      $$(".bread-type-check").forEach(check => {
-        check.checked = false;
-        check.disabled = true;
-      });
-      $$(".selector-control").forEach(selector => { selector.hidden = true; });
       $$(".response-input").forEach(input => {
         const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
         const amount = $(".amount-control", input.closest(".field-card"));
         input.value = "";
-        if (item && Number(item.encoding_id) === 0) {
+        if (isDerivedWhiteBread(item)) {
+          syncDerivedBreadCard(input.closest(".field-card"));
+        } else if (item && Number(item.encoding_id) === 0) {
           input.disabled = false;
           amount.hidden = false;
         } else {
@@ -492,6 +525,10 @@
           amount.hidden = true;
         }
       });
+      $$(".bread-roll-no-intake").forEach(check => { check.checked = false; check.disabled = false; });
+      $$(".bread-roll-type-check").forEach(check => { check.checked = false; check.disabled = false; });
+      $$(".derived-bread-input").forEach(input => { input.value = ""; });
+      $$(".derived-bread-response").forEach(card => syncDerivedBreadCard(card.closest(".field-card")));
       $("#results-panel").hidden = true;
       latestResult = null;
       updateProgress();
