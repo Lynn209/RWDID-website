@@ -2,6 +2,11 @@
 # Package version is pinned to 0.11 so the published colors are reproducible.
 
 required_version <- "0.11"
+expected_colors <- c(
+  "#E73F74", "#F1CE63", "#77AADD", "#009988", "#9467BD",
+  "#FF9D9A", "#99DDFF", "#AAAA00", "#225522", "#882255",
+  "#997700", "#4B4B8F", "#8C564B"
+)
 repos <- c("https://cols4all.r-universe.dev", "https://cloud.r-project.org")
 
 if (
@@ -42,6 +47,12 @@ if (
 }
 
 colors <- toupper(colors)
+if (!identical(colors, expected_colors)) {
+  stop(
+    "The ordered HEX values do not match the verified cols4all::friendly13 vector. ",
+    "Do not substitute or reorder colors."
+  )
+}
 palette_hash <- digest::digest(
   paste(colors, collapse = "|"),
   algo = "sha256",
