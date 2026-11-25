@@ -23,12 +23,19 @@
 - GitHub Actions now validates the 82-field mapping, option counts, six continuous fields, the Data-Coding 100001 exception, palette, and score-engine smoke test before deployment.
 
 
-## v5 — dependent bread-type selector and deployment/QC hardening
+## Revision: V6 — linked bread-roll type selector (Field 20094)
 
-- Added the missing dependent UKB Field 20094 selector for the active derived white-bread row `w-101160`.
-- The refined-grains calculator includes Field 101160 amount only when Field 20094 is exactly White alone (`[1]`), matching the frozen Step_02_1_1 R source.
-- Added the exact five multiple-response labels and Data-Coding 81 code map.
-- Added a visible note explaining the White-only inclusion rule.
-- Applied cache-busting query strings to the current CSS and JavaScript assets.
-- Added a GitHub Actions workflow that regenerates the exact cols4all 0.11 Friendly13 palette, validates the 82 field mappings and 15 scoring parameters, runs a synthetic score test, and deploys GitHub Pages.
-- Added exact HEX-order validation for Friendly13 and a deterministic maximum-score test profile.
+### User-facing changes
+- Field 101160 now displays the linked Field 20094 type selector with all five UKB Data-Coding 81 choices: White, Mixed, Wholemeal, Seeded and Other.
+- The amount response is required when any bread-roll type is selected; users can explicitly confirm that no bread roll was consumed.
+- The group-level no-intake and clear/reset controls also reset and disable the linked selector correctly.
+
+### Frozen analysis compatibility
+- The calculator applies the original Step_02_1_1 condition exactly: Field 101160 contributes only when Field 20094 is the exact single selection White (`[1]`).
+- Other single types and multi-type selections (including White plus another type) contribute zero to the derived white bread-roll item, as in the frozen source code.
+- The 82 scored input fields, 15 components, RWDID intervals, β coefficients, RWDID-C targets, P1–P99 supports and score equations are unchanged. Field 20094 is a linked selector, not an extra scored item.
+- Added machine-readable selector metadata to both mapping CSVs and the active 82-field JSON.
+
+### Validation
+- Mapping, selector coding, selector gating, palette and score-engine tests are run before packaging.
+- Browser interaction tests cover White only, non-White only, White plus another type, no bread-roll intake, group-level no intake, clear and reset.

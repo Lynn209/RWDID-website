@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="UK Biobank Oxford WebQ response options and input instructions for the 15-component RWDID calculator.">
   <title>RWDID | Input Guide</title>
-  <link rel="stylesheet" href="assets/styles.css?v=20261124-v5">
-  <script defer src="assets/palette.js?v=20261124-v5"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/palette.js"></script>
 </head>
 <body>
 <header class="topbar"><div class="container nav">
@@ -34,16 +34,16 @@
         <p>Each categorical item displays its own UKB wording and category range. The options differ by data-coding: for example, vegetables use quarter/half/1/2/3+, fish and fruit use half/1/2/3/4+, and several drinks use half/1/2/3/4/5/6+.</p>
       </article>
       <article class="guide-card">
-        <h2>3. Six fields are continuous grams/day</h2>
+        <h2>3. Bread-roll type selector (Fields 101160 and 20094)</h2>
+        <p>For the refined-grains white bread-roll item, first indicate whether any bread roll/bap/burger bun/hotdog roll/bagel was consumed, select all applicable types in Field 20094 (Data-Coding 81), and enter the Field 101160 amount. To reproduce the frozen Step_02_1_1 code exactly, the amount contributes to the derived white-bread item only when the selected type is exactly White (code 1) and no other type is selected. A selection of another type, or White together with another type, contributes zero to this derived item. This selector is a linked questionnaire field, not an additional dietary component.</p>
+      </article>
+      <article class="guide-card">
+        <h2>4. Six fields are continuous grams/day</h2>
         <p>Fields 26102, 26131, 26133, 26151, 26152 and 26153 are UKB Showcase “Total weight by food group yesterday” fields with value type Continuous, g. They are not categorical Oxford WebQ item-response fields. Enter grams/day directly (enter 0 when there was no intake); the calculator divides by the corresponding Table S1 portion size.</p>
       </article>
       <article class="guide-card">
-        <h2>4. Confirm no intake at group level</h2>
+        <h2>5. Confirm no intake at group level</h2>
         <p>Use “No intake from this food group” only if none of the listed items in that component were consumed. Otherwise, tick each consumed item and complete its amount. Unselected items are treated as zero.</p>
-      </article>
-      <article class="guide-card">
-        <h2>5. Bread-roll type is a separate UKB field</h2>
-        <p>For bread rolls, Field 101160 records the amount and Field 20094 records the bread type (a multiple-response field: White; mixed/granary; Wholemeal; Other flour; Seeded). The website asks for both. To reproduce the frozen Step_02_1_1 research pipeline exactly, the bread-roll amount contributes to refined grains only when the selector response is White alone (code 1). If more than one bread type is selected, this specific row contributes zero, matching the source R code.</p>
       </article>
       <article class="guide-card">
         <h2>6. A note on the five grain fields</h2>
@@ -62,8 +62,9 @@
       <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100003" target="_blank" rel="noopener">100003</a>;
       <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100016" target="_blank" rel="noopener">100016</a>;
       <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=100001" target="_blank" rel="noopener">100001</a>;
+      <a href="https://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=81" target="_blank" rel="noopener">Data-Coding 81 (bread type)</a>;
       <a href="https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=20094" target="_blank" rel="noopener">Field 20094</a>;
-      <a href="https://biobank.ndph.ox.ac.uk/ukb/coding.cgi?id=81" target="_blank" rel="noopener">Data-Coding 81</a>.
+      <a href="https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=101160" target="_blank" rel="noopener">Field 101160</a>.
     </p>
     <p class="section-intro"><a href="docs/ukb_questionnaire_response_mapping.md">Open the full 82-field response-mapping and source notes</a></p>
     <p class="section-intro"><a href="index.html#calculator">← Return to calculator</a></p>

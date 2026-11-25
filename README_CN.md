@@ -1,4 +1,4 @@
-# RWDID GitHub Pages — v5 UKB 问卷匹配版
+# RWDID GitHub Pages — v4 UKB 问卷匹配版
 
 本网站是静态浏览器计算器，用于计算冻结的15组分 RWDID 和 RWDID-C。
 
@@ -10,8 +10,7 @@
 - 26102、26131、26133、26151、26152、26153为连续 g/day 字段，不是分类问卷选项。
 - 对 Data-Coding 100001 的PDF与Showcase编码差异作了说明：PDF v1.5显示2和3+，但发布的Showcase编码只有200=2+，且冻结R代码将200转换为2.0；网站遵循已发布编码和冻结分析。
 - 增加混合蔬菜/沙拉和寿司的防重复计入提示。
-- 对最终有效的白面包卷项目 `w-101160` 增加依赖字段 20094（面包类型，多选）；只有单独选择 White（编码1）时才计入 refined grains，严格复现冻结 Step_02_1_1 R 代码。
-- 已包含经核对的 cols4all friendly13 13色文件，并在浏览器与 GitHub Actions 中校验完整13色及顺序。
+- 已包含经核对的 cols4all friendly13 13色文件。
 
 ## 部署
 1. 解压ZIP。
@@ -24,5 +23,5 @@
 详细的82个字段响应映射见 `docs/ukb_questionnaire_response_mapping.md`。
 
 
-## v5 自动检查
-GitHub Actions 会生成并校验 Friendly13 色板，验证82项映射、15项评分参数，并运行一个合成目标评分测试。测试返回 RWDID=1.0000、RWDID-C=15.00，仅用于软件验证，不构成饮食建议。详情见 `docs/synthetic_scoring_test_profile.md`。
+## V6：面包卷类型联动修复
+Field 101160（面包卷摄入量）现在与 UKB Field 20094（面包卷类型，多选，Data-Coding 81）联动，提供 White、Mixed、Wholemeal、Seeded、Other 五种选项。严格复现原始 Step_02_1_1：只有当 Field 20094 恰好仅选择 White（代码1）时，Field 101160 的数量才计入最终白面包卷伪组分；其他单一类型或多类型组合均计为该伪组分的0。Field 20094 只是联动问卷字段，不是新增评分项。82个评分输入、15个组分、评分区间、β系数、RWDID-C参数和公式全部保持冻结。详见 `docs/ukb_questionnaire_response_mapping.md` 和 `CHANGELOG_UKB_QUESTIONNAIRE_FIX.md`。
