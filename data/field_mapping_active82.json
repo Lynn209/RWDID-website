@@ -2329,13 +2329,40 @@
     "active_item_id": "w101160",
     "questionnaire_version": "Oxford WebQ v1.5 (3 February 2025)",
     "showcase_field_id": 101160,
-    "response_control": "checkbox_then_select",
+    "response_control": "checkbox_then_select_plus_dependent_multiselect",
     "input_source_type": "Oxford WebQ categorical response",
     "showcase_value_type": "Categorical (single)",
     "questionnaire_source_page": "47",
     "response_options_note": "Options transcribed from the UK Biobank Oxford WebQ v1.5 Appendix 1; codes and numeric values follow the corresponding UKB Showcase Data-Coding.",
     "questionnaire_section": "Bread / grains",
-    "portion_size_note": "Table S1 standard portion: 60 g."
+    "portion_size_note": "Table S1 standard portion: 60 g.",
+    "selector_field_encoding_id": 81,
+    "selector_selection_mode": "multiple",
+    "selector_response_options": [
+      {
+        "code": "1",
+        "label": "White"
+      },
+      {
+        "code": "2",
+        "label": "Granary, brown, mixed flours/grains, white with extras (e.g. Best of Both, 50/50)"
+      },
+      {
+        "code": "3",
+        "label": "Wholemeal"
+      },
+      {
+        "code": "5",
+        "label": "Other flour - please describe"
+      },
+      {
+        "code": "4",
+        "label": "Seeded (inside and/or on top)"
+      }
+    ],
+    "selector_scoring_rule": "Include this amount in the frozen refined-grains component only when the selector response is exactly [1] (White only), matching the Step_02_1_1 R pipeline.",
+    "selector_source_url": "https://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=20094",
+    "selector_coding_source_url": "https://biobank.ndph.ox.ac.uk/ukb/coding.cgi?id=81"
   },
   {
     "component_order": 6,
