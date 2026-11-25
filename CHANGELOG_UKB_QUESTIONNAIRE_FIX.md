@@ -21,3 +21,14 @@
 - No binary scoring intervals, β coefficients, continuous scoring targets, P1–P99 support values, or score formulas were changed.
 - The consolidated R analysis code was retained unchanged.
 - GitHub Actions now validates the 82-field mapping, option counts, six continuous fields, the Data-Coding 100001 exception, palette, and score-engine smoke test before deployment.
+
+
+## v5 — dependent bread-type selector and deployment/QC hardening
+
+- Added the missing dependent UKB Field 20094 selector for the active derived white-bread row `w-101160`.
+- The refined-grains calculator includes Field 101160 amount only when Field 20094 is exactly White alone (`[1]`), matching the frozen Step_02_1_1 R source.
+- Added the exact five multiple-response labels and Data-Coding 81 code map.
+- Added a visible note explaining the White-only inclusion rule.
+- Applied cache-busting query strings to the current CSS and JavaScript assets.
+- Added a GitHub Actions workflow that regenerates the exact cols4all 0.11 Friendly13 palette, validates the 82 field mappings and 15 scoring parameters, runs a synthetic score test, and deploys GitHub Pages.
+- Added exact HEX-order validation for Friendly13 and a deterministic maximum-score test profile.

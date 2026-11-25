@@ -1,4 +1,4 @@
-# RWDID GitHub Pages — v4 UKB questionnaire-aligned calculator
+# RWDID GitHub Pages — v5 UKB questionnaire-aligned calculator
 
 A static, browser-based calculator for the frozen 15-component RWDID and RWDID-C scoring framework.
 
@@ -7,6 +7,7 @@ A static, browser-based calculator for the frozen 15-component RWDID and RWDID-C
 - Unchecked categorical items contribute zero; the amount selector does not contain a synthetic zero option.
 - Each field shows its item-specific UKB response labels rather than a generic numeric range.
 - The 82 active inputs are correctly described as 76 categorical Oxford WebQ fields plus 6 continuous UKB Showcase total-weight fields.
+- The derived white-bread item (`w-101160`) now uses its dependent multiple-response bread-type selector, Field 20094. Its amount contributes only when White is the sole selected type, matching the frozen Step_02_1_1 R code.
 - The six continuous fields (26102, 26131, 26133, 26151, 26152, 26153) accept grams/day; they are not categorical WebQ response fields.
 - The discrepancy for Data-Coding 100001 is documented: the v1.5 PDF lists 2 and 3+ separately, but the released Showcase coding has 200=2+ and the frozen R pipeline maps 200 to 2.0. The calculator follows the released coding and the frozen analysis.
 - UKB questionnaire cautions are included for mixed vegetables/salads and sushi to reduce double counting.
@@ -38,3 +39,7 @@ A static, browser-based calculator for the frozen 15-component RWDID and RWDID-C
 
 ## Privacy and use
 Questionnaire inputs are processed locally in the browser and are not uploaded. RWDID and RWDID-C are research indices, not clinical risk predictions or diagnostic tools. Public files do not include individual-level UK Biobank data.
+
+
+## Deterministic test
+Run `node scripts/validate_questionnaire_mapping.js` and `node scripts/test_scoring_engine.js`. The synthetic target-profile test returns RWDID 1.0000 and RWDID-C 15.00 by construction; it is software validation only, not dietary advice. See `docs/synthetic_scoring_test_profile.md`.

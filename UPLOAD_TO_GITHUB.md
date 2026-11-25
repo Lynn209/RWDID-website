@@ -12,3 +12,10 @@ The homepage is now calculator-first. Methods, analysis code and input instructi
 
 
 The questionnaire now mirrors the UKB Oxford WebQ checkbox → amount workflow for 76 categorical items. Six Showcase total-weight fields are entered in g/day. The complete response-category crosswalk and coding exceptions are documented in `docs/ukb_questionnaire_response_mapping.md`.
+
+
+## v5 UKB response-alignment checks
+- The bread-roll amount field 101160 is linked to the multiple-response bread-type selector 20094.
+- The website includes the amount in the refined-grains component only when Field 20094 is exactly White alone (`[1]`), matching the frozen R pipeline.
+- The five Data-Coding 100001 grain fields retain the Showcase `2+` option mapped to 2.0.
+- The build checks all 82 mappings, 15 scoring parameters, exact Friendly13 HEX order, and a synthetic maximum-score scenario.
