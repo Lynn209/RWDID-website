@@ -62,6 +62,12 @@ button,input,select{font:inherit}
 .item-consumed input{accent-color:var(--friendly-4);width:14px;height:14px;margin:0}
 .amount-control{display:grid;gap:4px}
 .amount-control[hidden]{display:none}
+.selector-control{display:grid;gap:6px;margin-top:8px}
+.selector-control[hidden]{display:none}
+.selector-option-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+.selector-option{display:flex;align-items:flex-start;gap:6px;padding:6px 7px;border:1px solid #e6eaf0;border-radius:6px;background:#fff;color:#536075;font-size:9px;line-height:1.35}
+.selector-option input{flex:0 0 auto;margin:1px 0 0;accent-color:var(--friendly-1)}
+.selector-option:has(input:checked){border-color:var(--friendly-1);background:color-mix(in srgb,var(--friendly-1) 7%,white)}
 .amount-label{font-size:9px;color:#68758a;font-weight:650}
 .field-source-note{font-size:8px;line-height:1.4;color:#8a5a20;background:#fff9eb;border-left:2px solid #d9a441;padding:6px 7px;margin:6px 0 0;border-radius:3px}
 .field-caution{font-size:8px;line-height:1.4;color:#765b2b;background:#fffaf0;border-left:2px solid #e2c27c;padding:5px 7px;margin:6px 0 0;border-radius:3px}
@@ -170,6 +176,7 @@ th{background:#f8f9fb;font-weight:800;color:#475467}
   .sidebar{position:static;grid-template-columns:1fr 1fr;order:-1}
   .privacy-note{grid-column:1/-1}
   .field-grid{grid-template-columns:1fr}
+  .selector-option-list{grid-template-columns:1fr}
   .method-grid,.guide-grid{grid-template-columns:1fr}
 }
 @media(max-width:460px){

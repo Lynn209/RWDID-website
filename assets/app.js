@@ -57,6 +57,7 @@
     const id = `field-${item.active_item_id}`;
     const itemId = escapeHTML(item.active_item_id);
     const isContinuous = Number(item.encoding_id) === 0;
+    const isDerivedBread = item.is_derived_bread_item === true;
 
     if (isContinuous) {
       return `<div class="item-response continuous-response">
@@ -73,19 +74,44 @@
       `<option value="${escapeHTML(o.code)}">${escapeHTML(o.label)}</option>`
     ).join("");
 
+    const amountControl = `<div class="amount-control" hidden>
+      <label class="amount-label" for="${id}">Amount consumed</label>
+      <select class="answer response-input" id="${id}"
+        data-item-id="${itemId}" disabled>
+        <option value="">Select UKB response</option>
+        ${options}
+      </select>
+    </div>`;
+
+    if (isDerivedBread) {
+      const selectorOptions = (item.selector_response_options || []).map(option => `
+        <label class="selector-option">
+          <input type="checkbox" class="bread-type-check"
+            data-item-id="${itemId}" value="${escapeHTML(option.code)}" disabled>
+          <span>${escapeHTML(option.label)}</span>
+        </label>
+      `).join("");
+
+      return `<div class="item-response derived-bread-response">
+        <label class="item-consumed">
+          <input type="checkbox" class="item-consumed-check" data-item-id="${itemId}">
+          <span>Consumed yesterday</span>
+        </label>
+        ${amountControl}
+        <div class="selector-control" hidden>
+          <span class="amount-label">Bread type · Field ID ${escapeHTML(item.selector_field_id)} · Select all that apply</span>
+          <div class="selector-option-list">${selectorOptions}</div>
+          <p class="field-caution">The frozen research pipeline includes this bread-roll amount in the refined-grains component only when the recorded bread type is White alone (code 1). If multiple types are selected, this row contributes zero, matching the original analysis code.</p>
+        </div>
+      </div>`;
+    }
+
     return `<div class="item-response">
       <label class="item-consumed">
         <input type="checkbox" class="item-consumed-check" data-item-id="${itemId}">
         <span>Consumed yesterday</span>
       </label>
-      <div class="amount-control" hidden>
-        <label class="amount-label" for="${id}">Amount consumed</label>
-        <select class="answer response-input" id="${id}"
-          data-item-id="${itemId}" disabled>
-          <option value="">Select UKB response</option>
-          ${options}
-        </select>
-      </div>
+      ${amountControl}
     </div>`;
   }
 
@@ -121,9 +147,11 @@
         const portion = item.portion_size_g == null ? "" : ` · Table S1 portion ${fmt(item.portion_size_g, 1)} g`;
         const meta = isContinuous
           ? `UKB Showcase Field ID ${escapeHTML(item.table_s1_field_id)} · Continuous g/day${portion}`
-          : `Field ID ${escapeHTML(item.table_s1_field_id)} · Data-Coding ${escapeHTML(item.encoding_id)}${portion}`;
-        const codingNote = item.field_id === 102710
-          ? `<p class="field-source-note">Showcase coding 100001 stores the upper category as 2+ (code 200); the frozen RWDID pipeline maps it to 2.0. This calculator follows that coding.</p>`
+          : item.is_derived_bread_item
+            ? `UKB Field ID ${escapeHTML(item.field_id)} · type selector ${escapeHTML(item.selector_field_id)} · Data-Coding ${escapeHTML(item.encoding_id)}${portion}`
+            : `Field ID ${escapeHTML(item.table_s1_field_id)} · Data-Coding ${escapeHTML(item.encoding_id)}${portion}`;
+        const codingNote = Number(item.encoding_id) === 100001
+          ? `<p class="field-source-note">Showcase Data-Coding 100001 stores the upper category as 2+ (code 200); the frozen RWDID pipeline maps it to 2.0. This calculator follows that released coding for all five fields using this encoding.</p>`
           : "";
         const questionnaireHelp = item.questionnaire_help_note
           ? `<p class="field-caution">${escapeHTML(item.questionnaire_help_note)}</p>`
@@ -175,18 +203,36 @@
       const group = e.target.closest(".food-group");
       const input = $(".response-input", card);
       const amount = $(".amount-control", card);
+      const selector = $(".selector-control", card);
 
       if (e.target.checked) {
         $(".no-intake-check", group).checked = false;
         input.disabled = false;
         amount.hidden = false;
+        if (selector) {
+          selector.hidden = false;
+          $$(".bread-type-check", card).forEach(typeCheck => {
+            typeCheck.disabled = false;
+          });
+        }
       } else {
         input.value = "";
         input.disabled = true;
         amount.hidden = true;
+        if (selector) {
+          selector.hidden = true;
+          $$(".bread-type-check", card).forEach(typeCheck => {
+            typeCheck.checked = false;
+            typeCheck.disabled = true;
+          });
+        }
       }
       updateProgress();
     }));
+
+    $$(".bread-type-check").forEach(check => {
+      check.addEventListener("change", updateProgress);
+    });
 
     $$(".no-intake-check").forEach(check => check.addEventListener("change", e => {
       const group = e.target.closest(".food-group");
@@ -195,6 +241,15 @@
       $$(".item-consumed-check", group).forEach(itemCheck => {
         itemCheck.checked = false;
         itemCheck.disabled = noIntake;
+      });
+
+      $$(".bread-type-check", group).forEach(typeCheck => {
+        typeCheck.checked = false;
+        typeCheck.disabled = true;
+      });
+
+      $$(".selector-control", group).forEach(selector => {
+        selector.hidden = true;
       });
 
       $$(".response-input", group).forEach(input => {
@@ -224,6 +279,12 @@
         check.checked = false;
         check.disabled = false;
       });
+
+      $$(".bread-type-check", group).forEach(check => {
+        check.checked = false;
+        check.disabled = true;
+      });
+      $$(".selector-control", group).forEach(selector => { selector.hidden = true; });
 
       $$(".response-input", group).forEach(input => {
         const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
@@ -256,6 +317,11 @@
         const check = $(`.item-consumed-check[data-item-id="${item.active_item_id}"]`, el);
         if (check && check.checked) {
           if (!input || input.value === "") return false;
+          if (item.is_derived_bread_item) {
+            const card = input.closest(".field-card");
+            const selectedTypes = $$(".bread-type-check:checked", card).map(x => x.value);
+            if (selectedTypes.length === 0) return false;
+          }
           anyIntake = true;
         }
       }
@@ -300,7 +366,18 @@
             raw = input.value;
           } else {
             const check = $(`.item-consumed-check[data-item-id="${item.active_item_id}"]`, el);
-            raw = check && check.checked ? input.value : "0";
+            if (check && check.checked) {
+              if (item.is_derived_bread_item) {
+                const card = input.closest(".field-card");
+                const selectedTypes = $$(".bread-type-check:checked", card).map(x => x.value);
+                const includeAmount = window.RWDIDScoring.isDerivedItemIncluded(item, selectedTypes);
+                raw = includeAmount ? input.value : "0";
+              } else {
+                raw = input.value;
+              }
+            } else {
+              raw = "0";
+            }
           }
         }
         const portion = window.RWDIDScoring.decodeItemValue(item, raw);
@@ -398,6 +475,11 @@
         check.checked = false;
         check.disabled = false;
       });
+      $$(".bread-type-check").forEach(check => {
+        check.checked = false;
+        check.disabled = true;
+      });
+      $$(".selector-control").forEach(selector => { selector.hidden = true; });
       $$(".response-input").forEach(input => {
         const item = items.find(x => String(x.active_item_id) === String(input.dataset.itemId));
         const amount = $(".amount-control", input.closest(".field-card"));
