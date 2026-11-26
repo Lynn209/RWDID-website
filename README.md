@@ -22,14 +22,6 @@ A static, browser-based calculator for the frozen 15-component RWDID and RWDID-C
 ## Exact Friendly13 palette
 `data/friendly13_palette.json` contains the ordered HEX vector returned by the user's verified `cols4all::c4a("friendly13")` output using `cols4all` 0.11. The GitHub Actions workflow regenerates and validates the same palette before deployment. The site does not substitute another palette.
 
-## Deploy
-1. Extract the ZIP.
-2. Upload the **contents** of this folder to the root of `Lynn209/RWDID-website`, replacing the corresponding files.
-3. Confirm `index.html`, `assets/`, `data/`, `docs/`, `scripts/`, and `.github/workflows/pages.yml` are at repository root.
-4. In GitHub **Settings → Pages**, keep the source set to **GitHub Actions**.
-5. Commit to `main`, then confirm the `Build and deploy RWDID GitHub Pages` workflow succeeds.
-6. Hard-refresh the published page.
-
 ## Scoring
 - RWDID: 15 binary components weighted by frozen training-derived β coefficients; range 0–1.
 - RWDID-C: 15 continuous proportional component scores summed with equal weights; range 0–15.
