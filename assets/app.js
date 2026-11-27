@@ -7,6 +7,15 @@
   let items = [];
   let params = null;
   let latestResult = null;
+  const APP_VERSION = "7.0.0";
+  const BREAD_ROLL_SELECTOR_OPTIONS = Object.freeze([
+    { code: "1", label: "White" },
+    { code: "2", label: "Mixed" },
+    { code: "3", label: "Wholemeal" },
+    { code: "4", label: "Seeded" },
+    { code: "5", label: "Other" }
+  ]);
+  window.RWDID_APP_VERSION = APP_VERSION;
 
   const escapeHTML = v => String(v ?? "").replace(/[&<>"']/g, c => ({
     "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
@@ -24,7 +33,8 @@
   }
 
   async function loadJSON(path) {
-    const response = await fetch(path);
+    const separator = path.includes("?") ? "&" : "?";
+    const response = await fetch(`${path}${separator}v=${APP_VERSION}`, { cache: "no-store" });
     if (!response.ok) throw new Error(`Could not load ${path} (${response.status}).`);
     return response.json();
   }
@@ -54,7 +64,7 @@
   }
 
   function isDerivedWhiteBread(item) {
-    return Number(item.field_id) === 101160 && Number(item.selector_field_id) === 20094;
+    return Number(item.field_id) === 101160;
   }
 
   function renderField(item) {
@@ -63,7 +73,7 @@
     const isContinuous = Number(item.encoding_id) === 0;
 
     if (isDerivedWhiteBread(item)) {
-      const selectorOptions = (item.selector_options || []).map(option => `
+      const selectorOptions = BREAD_ROLL_SELECTOR_OPTIONS.map(option => `
         <label class="selector-option">
           <input type="checkbox" class="bread-roll-type-check"
             data-item-id="${itemId}" data-selector-code="${escapeHTML(option.code)}">
@@ -78,9 +88,10 @@
           <span>No bread roll consumed</span>
         </label>
         <div class="selector-block">
-          <div class="selector-heading">${escapeHTML(item.selector_question_prompt || "Which type(s) of bread roll did you eat yesterday?")}</div>
-          <div class="bread-roll-type-list">${selectorOptions}</div>
-          <small class="selector-meta">UKB Field ID ${escapeHTML(item.selector_field_id)} · Data-Coding ${escapeHTML(item.selector_encoding_id)} · Multiple response</small>
+          <div class="selector-heading">Type(s) of bread roll eaten</div>
+          <div class="selector-instruction">Which type(s) of bread roll did you eat yesterday? Select all that apply.</div>
+          <div class="bread-roll-type-list" data-selector-field-id="20094" data-selector-option-count="5">${selectorOptions}</div>
+          <small class="selector-meta">UK Biobank Field ID 20094 · Data-Coding 81 · Multiple response</small>
         </div>
         <div class="amount-control bread-roll-amount-control" hidden>
           <label class="amount-label" for="${id}">How many bread rolls/baps/buns/bagels did you consume?</label>
@@ -90,7 +101,7 @@
             ${amountOptions}
           </select>
         </div>
-        <p class="selector-explanation">Frozen scoring rule: the amount is included only when <strong>White</strong> is the sole selected type (code 1). Other types selected alone, or White selected together with another type, contribute zero to this derived white-bread item.</p>
+        <p class="selector-explanation">Research scoring rule: Field 101160 contributes to the refined-grains score only when <strong>White</strong> is the sole selected type. Mixed, Wholemeal, Seeded, Other, and any combination of multiple types are recorded but do not contribute to this frozen white-bread item.</p>
       </div>`;
     }
 
@@ -188,7 +199,7 @@
         const note = cleanNote(item);
         const portion = item.portion_size_g == null ? "" : ` · Table S1 portion ${fmt(item.portion_size_g, 1)} g`;
         const selectorMeta = isDerivedWhiteBread(item)
-          ? ` · Type selector: Field ID ${escapeHTML(item.selector_field_id)}`
+          ? " · Linked type selector: Field ID 20094 (Data-Coding 81)"
           : "";
         const actualFieldId = escapeHTML(item.field_id ?? item.table_s1_field_id);
         const meta = isContinuous
@@ -201,9 +212,10 @@
           ? `<p class="field-caution">${escapeHTML(item.questionnaire_help_note)}</p>`
           : "";
 
-        return `<div class="field-card">
+        const displayFoodItem = isDerivedWhiteBread(item) ? "Bread roll intake" : item.food_item;
+        return `<div class="field-card"${isDerivedWhiteBread(item) ? ' data-linked-selector="20094"' : ""}>
           <div class="field-label">
-            ${escapeHTML(item.food_item)}
+            ${escapeHTML(displayFoodItem)}
             ${note ? `<span class="field-info" tabindex="0" title="${escapeHTML(note)}" aria-label="Additional question information">i</span>` : ""}
           </div>
           <p class="field-prompt">${escapeHTML(prompt)}</p>
@@ -489,6 +501,28 @@
     if (!Array.isArray(params.components) || params.components.length !== 15) {
       throw new Error("Frozen parameter file must contain 15 components.");
     }
+
+    const breadRollItems = items.filter(item => Number(item.field_id) === 101160);
+    if (breadRollItems.length !== 1) {
+      throw new Error(`Expected exactly one UKB Field 101160 bread-roll amount item; found ${breadRollItems.length}.`);
+    }
+    const breadRollItem = breadRollItems[0];
+    if (breadRollItem.selector_field_id != null && Number(breadRollItem.selector_field_id) !== 20094) {
+      throw new Error("Field 101160 is linked to an unexpected selector field; expected UKB Field 20094.");
+    }
+    // The linked UKB selector is a fixed five-option Showcase field. Normalize it
+    // here as well as in the JSON mapping so an older cached mapping cannot make
+    // the Wholemeal/Mixed options disappear from the live questionnaire.
+    Object.assign(breadRollItem, {
+      selector_field_id: 20094,
+      selector_field_title: "Type of bread roll eaten",
+      selector_encoding_id: 81,
+      selector_response_type: "categorical_multiple",
+      selector_options: BREAD_ROLL_SELECTOR_OPTIONS.map(option => ({ ...option })),
+      selector_match_rule: "exactly_one_selected_code",
+      selector_value_code: "1",
+      selector_question_prompt: "Which type(s) of bread roll did you eat yesterday?"
+    });
 
     renderQuestionnaire();
     updateProgress();

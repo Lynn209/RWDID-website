@@ -61,14 +61,16 @@ button,input,select{font:inherit}
 .item-consumed{display:flex;align-items:center;gap:7px;color:#536075;font-size:10px;cursor:pointer}
 .item-consumed input{accent-color:var(--friendly-4);width:14px;height:14px;margin:0}
 .derived-bread-response{gap:8px}
-.selector-block{display:grid;gap:6px;border:1px solid #edf0f4;border-radius:7px;padding:8px;background:#fbfcfd}
-.selector-heading{font-size:9px;font-weight:750;color:#43516a;line-height:1.4}
-.bread-roll-type-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(78px,1fr));gap:5px}
-.selector-option{display:flex;align-items:center;gap:4px;border:1px solid #e5e9ef;border-radius:6px;background:#fff;padding:6px 5px;font-size:9px;color:#536075;cursor:pointer;min-width:0}
-.selector-option input{accent-color:var(--friendly-5);width:12px;height:12px;margin:0;flex:0 0 auto}
+.selector-block{display:grid;gap:8px;border:1px solid #cfd8e6;border-radius:9px;padding:11px;background:#f8fafc}
+.selector-heading{font-size:12px;font-weight:800;color:#23334d;line-height:1.4}
+.bread-roll-type-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:7px}
+.selector-option{display:flex;align-items:center;gap:7px;border:1px solid #d8e0eb;border-radius:7px;background:#fff;padding:9px 8px;font-size:11px;font-weight:650;color:#34445e;cursor:pointer;min-width:0;min-height:38px}
+.selector-option input{accent-color:var(--friendly-5);width:15px;height:15px;margin:0;flex:0 0 auto}
 .selector-option span{overflow-wrap:anywhere}
-.selector-meta{font-size:8px;color:#929bad}
-.selector-explanation{font-size:8px;line-height:1.45;color:#765b2b;background:#fffaf0;border-left:2px solid var(--friendly-2);padding:6px 7px;margin:0;border-radius:3px}
+.selector-meta{font-size:9px;color:#7b879b}
+.selector-instruction{font-size:10px;line-height:1.4;color:#64748b}
+.build-version{font-size:9px;font-weight:800;color:#64748b;background:#e9eef5;border-radius:999px;padding:3px 6px;margin-left:5px}
+.selector-explanation{font-size:9px;line-height:1.5;color:#765b2b;background:#fffaf0;border-left:2px solid var(--friendly-2);padding:6px 7px;margin:0;border-radius:3px}
 .selector-explanation strong{color:#614816}
 .bread-roll-no-intake-label{font-weight:650}
 .amount-control{display:grid;gap:4px}

@@ -18,7 +18,7 @@
   document.addEventListener("DOMContentLoaded", async () => {
     try {
       await window.RWDIDPaletteReady;
-      const response = await fetch("data/rwdid_parameters.json");
+      const response = await fetch("data/rwdid_parameters.json?v=7.0.0", { cache: "no-store" });
       if (!response.ok) throw new Error("Parameter file could not be loaded.");
       const p = await response.json();
       const body = document.getElementById("parameter-table-body");

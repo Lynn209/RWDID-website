@@ -4,6 +4,7 @@
   const EXPECTED_NAME = "cols4all::friendly13";
   const EXPECTED_VERSION = "0.11";
   const EXPECTED_COUNT = 13;
+  const ASSET_VERSION = "7.0.0";
 
   function contrastText(hex) {
     const rgb = hex.replace("#", "").match(/.{2}/g).map(v => parseInt(v, 16) / 255);
@@ -15,7 +16,7 @@
   }
 
   async function loadPalette() {
-    const response = await fetch("data/friendly13_palette.json", { cache: "no-store" });
+    const response = await fetch(`data/friendly13_palette.json?v=${ASSET_VERSION}`, { cache: "no-store" });
     if (!response.ok) {
       throw new Error("The calculator could not load its required colour palette. Please check the GitHub Pages deployment.");
     }
