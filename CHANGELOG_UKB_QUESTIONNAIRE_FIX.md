@@ -39,3 +39,14 @@
 ### Validation
 - Mapping, selector coding, selector gating, palette and score-engine tests are run before packaging.
 - Browser interaction tests cover White only, non-White only, White plus another type, no bread-roll intake, group-level no intake, clear and reset.
+
+
+## V7.0.0 — Explicit Field 20094 selector and deployment versioning
+
+- Made the bread-roll type block explicitly visible with all five options: White, Mixed, Wholemeal, Seeded and Other.
+- Renamed the displayed item to “Bread roll intake” to avoid implying the type selector is already fixed to White.
+- Kept the exact frozen White-only scoring gate.
+- Added runtime selector normalization for Field 101160 → Field 20094 (Data-Coding 81).
+- Added V7.0.0 cache-busting to CSS, JavaScript and JSON requests, plus a visible build marker.
+- Added V7 mapping/deployment validation and a scoring regression test.
+- No score definitions or research analysis code changed.

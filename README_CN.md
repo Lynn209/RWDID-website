@@ -25,3 +25,12 @@
 
 ## V6：面包卷类型联动修复
 Field 101160（面包卷摄入量）现在与 UKB Field 20094（面包卷类型，多选，Data-Coding 81）联动，提供 White、Mixed、Wholemeal、Seeded、Other 五种选项。严格复现原始 Step_02_1_1：只有当 Field 20094 恰好仅选择 White（代码1）时，Field 101160 的数量才计入最终白面包卷伪组分；其他单一类型或多类型组合均计为该伪组分的0。Field 20094 只是联动问卷字段，不是新增评分项。82个评分输入、15个组分、评分区间、β系数、RWDID-C参数和公式全部保持冻结。详见 `docs/ukb_questionnaire_response_mapping.md` 和 `CHANGELOG_UKB_QUESTIONNAIRE_FIX.md`。
+
+
+## V7.0.0 面包卷类型联动修复
+
+V7 将精制谷物组中的面包卷项目显示为“Bread roll intake”，并始终明确显示 UKB Field 20094 的五个多选类型：White、Mixed、Wholemeal、Seeded、Other。选择至少一种类型后，才显示 Field 101160 的数量选项。
+
+评分严格复现冻结 R 代码：仅当 Field 20094 恰好单选 White（code 1）时，Field 101160 的数量才计入白面包衍生项目；其他单选及任何多选组合均不计入。Field 20094 不是新增评分项目。
+
+本版本为 CSS、JavaScript 和 JSON 请求增加 `v=7.0.0` 缓存版本标记，并在网页顶部显示 `V7.0.0`，便于核实 GitHub Pages 实际部署版本。请将 ZIP 内文件直接上传到仓库根目录，不要把整个外层文件夹作为二级目录上传。保留仓库已有的 GitHub Pages workflow。
